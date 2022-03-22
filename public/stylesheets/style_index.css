@@ -1,0 +1,86 @@
+
+.navbar {
+    grid-area: 1 / 1 / 2 / 6;
+    height: 90px
+}
+
+.div2 {
+    grid-area: 2 / 1 / 12 / 6;
+    height: 75vh;
+    background: url("https://live.staticflickr.com/65535/51918696648_024e99cf00_k.jpg");
+    background-size: cover;
+}
+
+
+
+.container {
+    display: flex;
+    height: 80vh;
+}
+
+.section {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background: rgba(0, 0, 0, 0.486);
+    transition: flex .4s ease;
+    position: relative;
+}
+
+.section .overlay {
+    background: rgb(238, 7, 180);
+    width: 100%;
+    height: auto;
+    position: absolute;
+    transition: background-color .8s ease;
+}
+
+.textIndex {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.nav-link {
+    color: white;
+    link-decoration: none;
+}
+
+.section .content {
+    z-index: 2;
+}
+
+.section:hover {
+    flex: 2;
+    background: rgba(255, 0, 191, 0.651);
+}
+
+.section:hover .overlay {
+    background-color: #cc249a;
+}
+
+.apaColor {
+    color: #ffa4db;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#technology {
+    background-image: url(../images/index01.png);
+    background-position: cover;
+}
+
+#marketing {
+    background-image: url(../images/index02.png);
+}
+
+#advertising {
+    background-image: url(../images/index03.png);
+    background-position: cover;
+}

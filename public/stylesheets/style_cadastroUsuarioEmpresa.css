@@ -1,0 +1,117 @@
+.bodyPage {
+    background: black;
+}
+
+.placeholder_Custom {
+    color: rgb(0, 45, 75);
+    background-color: hsl(0, 0%, 100%);
+    border: 2px solid rgb(0, 45, 75);
+    margin: 1px;
+}
+
+.check,
+.select {
+    background-color: #540cd8;
+    border: 2px solid: rgb(0, 45, 75);
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: 'Ruda', sans-serif;
+    padding: 7px;
+    height: 1rem;
+    color: #000;
+}
+
+input::-webkit-input-placeholder {
+    color: rgb(0, 0, 15);
+    padding: 5px;
+}
+
+select::-webkit-input-placeholder {
+    color: #4ca1a3;
+}
+/*
+input:-moz-placeholder{
+color: #f5f5ff;
+}
+input:-ms-input-placeholder{
+color: #f5f5ff;
+}*/
+
+.elem-grupo {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #010c30;
+    color: #ffffff;
+    font-family: 'Ruda', sans-serif;
+    font-size: 1rem;
+    border: 2px solid rgb(0, 45, 75);
+    margin-bottom: 1rem;
+}
+
+.submit {
+    width: 30%;
+    height: 4Rem;
+    background: rgb(17, 168, 4);
+    border: 2px solid rgb(4, 121, 43);
+    color: white;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    border-radius: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-bottom: 10%;
+}
+
+.reset {
+    width: 50%;
+    height: 4rem;
+    background: rgb(255, 3, 3);
+    border: 2px solid rgb(122, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    border-radius: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-bottom: 10%;
+}
+
+.reset:hover {
+    border: 2px solid rgb(99, 0, 0));
+    color: rgb(99, 0, 0);
+    background: rgb(255, 154, 154);
+}
+
+.submit:hover {
+    border: 2px solid rgb(2, 63, 22);
+    color: #006134;
+    background: #b6ffdd;
+}
+
+.textarea {
+    box-sizing: border-box;
+    padding: 0.5rem;
+    border: 2px solid rgb(12, 10, 3);
+    color: #000002;
+    word-wrap: normal;
+    word-spacing: 8px;
+}
+
+.radioInput {
+    color: white;
+}
+
+.email {
+    width: 15rem;
+    height: 1rem;
+    background-color: #3f0071;
+    border: 4px solid #83037c;
+    border-radius: 1rem;
+}

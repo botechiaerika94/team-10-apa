@@ -1,0 +1,148 @@
+.bodyPage {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 97vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 6;
+    height: 90px
+}
+
+.div2 {
+    grid-area: 2 / 1 / 12 / 6;
+    height: auto;
+    background: whitesmoke;
+}
+
+.div3 {
+    grid-area: 12 / 1 / 13 / 6;
+    max-height: 20px;
+}
+
+
+/*navbar*/
+
+.menu {
+    margin-top: 0px;
+    height: 80px;
+    border: 2px solid #e70c8f;
+    border-radius: 0 0 15px 15px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(48, 1, 25, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    -webkit-border-radius: 0 0 15px 15px;
+    -moz-border-radius: 0 0 15px 15px;
+    -ms-border-radius: 0 0 15px 15px;
+    -o-border-radius: 0 0 15px 15px;
+    margin-bottom: 40px;
+    background-color: rgb(255, 0, 149);
+    padding-right: 4rem;
+    text-align: center;
+}
+
+.dropdown-menu {
+    border: 0px;
+    padding: 0.5em;
+    margin: auto;
+    width: 50% auto;
+    text-align: center;
+}
+
+.dropdown-divider {
+    color: #e70c8f;
+    width: 100%;
+}
+
+.apaBrand {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.7rem;
+    color: #E70C8F;
+}
+
+.apaLink {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: #E70C8F;
+}
+
+.nLink {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #060004;
+}
+
+.nlink a:link {
+    color: black;
+}
+
+.nlink a:hover {
+    color: rgb(252, 167, 252);
+}
+
+.menu-expand {
+    text-align: margin-top: 1em;
+    padding-bottom: 1rem;
+    margin: 0px solid #E70C8F;
+    border-radius: 15px;
+}
+
+.menu-expand li:hover {
+    background: rgb(252, 167, 252);
+}
+
+.news__link::after {
+    content: "";
+    width: 130%;
+    height: 8remp;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.apa-name {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    color: #e70c8f;
+}
+
+
+/*navfooter*/
+
+.apaBrand-bottom {
+    display: block;
+    color: #E70C8F;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.7rem;
+}
+
+.bg-custom {
+    background-color: #bd0172;
+    width: 100vw;
+    height: 50px;
+    align-content: center;
+}
+
+.bg-custom-02 {
+    color: black;
+    background: #AAFFAC;
+    border: 2px dotted black;
+    border-radius: 15px;
+}
+
+bg-02 {
+    background: url("../images/svg/bg-02.svg");
+    background-repeat: repeat;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: black;
+}

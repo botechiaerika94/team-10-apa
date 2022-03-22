@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="APA AFTER-NIGHT" content="BUSCADOR DE TELOS, TELOS SEARCH ENGINE, TELOS ARGENTINA, ARGENTINA, CABA, TELOS-CABA">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%- include('../partials/head'); %>
+        <link rel='stylesheet' href='/stylesheets/style.css' type="text/css" />
+        <link rel='stylesheet' href='/stylesheets/style_cadastroUsuarioEmpresa.css' type="text/css" />
+
+        <script src="https://kit.fontawesome.com/0c502158eb.js" crossorigin="anonymous"></script>
+        <title> APA!
+            <%= title %>
+        </title>
+
+
+</head>
+
+<body class="bodyPage">
+    <%- include('../partials/navbarTop');%>
+
+        <div class="div2">
+            </style>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-6 bg-side">
+
+                    </div>
+                    <div class="col-12 col-md-6 bg-form">
+                        <!-- final navbar---------------------- -->
+                        <form class="form-group" action="" method="POST">
+
+                            <div class="elem-grupo">
+                                <label for="nombre">Nombre y Responsable:</label>
+                                <input type="text" name="nombre" class="placeholder_Custom" placeholder="nombre y apellido" required>
+                            </div>
+                            <div class="elem-grupo">
+                                <label for="nombreUsuario">Nombre Establecimiento:</label>
+                                <input type="text" name="nombreUsuario" class="placeholder_Custom" placeholder="Nombre LOCAL" required>
+                            </div>
+                            <div class="elem-grupo">
+                                <label for="email"></label>E-MAIL para ENVIAR PROPUESTA PERSONALIZADA :</label>
+                                <input type="text" name="nombre" class="placeholder_Custom" placeholder="nombre@mail.com" required>
+                            </div>
+
+                            <div class="elem-grupo ">
+                                <label for="checkboxGroup">OBJETIVO BUSCADO:</label>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="checkbox" name="hobbies" value="Música">
+                                        <label for="Música">PUBLICIDAD</label>
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="checkbox" name="practicidad" value="Música">
+                                        <label for="Música">PRACTICIDAD </label>
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="checkbox" name="hobbies" value="Música">
+                                        <label for="Música">VISIBILIDAD WEB</label>
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="checkbox" name="hobbies" value="Música">
+                                        <label for="Música">CONTROL </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elem-grupo">
+                                <label for="mensaje">Algun DESEO ESPECIAL como <br/>OBJETIVO de la EMPRESA?</label>
+                                <textarea class="textarea mensaje" name="usuario_mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+                            </div>
+                            <div>
+                                <button class="submit" type="submit">ENVIAR  <i class="bi bi-send"></i></button>
+                                <button class="reset" type="reset" type="reset">BORRAR DATOS <i class="bi bi-x-square-fill"></i></button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        <%- include('../partials/navbarBottom'); %>
+</body>
+
+</html>

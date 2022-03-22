@@ -1,0 +1,16 @@
+.col-login {
+    margin: 2px solid gray;
+    border-radius: 15px;
+    vertical-align: middle;
+}
+
+.text-custom {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.brand-name {
+    color: #ff0099;
+}

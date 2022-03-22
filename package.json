@@ -1,0 +1,25 @@
+{
+  "name": "team-10-apa",
+  "version": "1.0.0",
+  "description": "grupo 10 apa api",
+  "main": "./src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/app.js",
+    "dev": "nodemon ./src/app.js"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "suarez rocio y erika botechia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BotechiaErika/team-10-apa/issues"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "normalize.css": "^8.0.1"
+  }
+}

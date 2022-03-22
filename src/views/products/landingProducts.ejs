@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="APA AFTER-NIGHT" content="BUSCADOR DE TELOS, TELOS SEARCH ENGINE, TELOS ARGENTINA, ARGENTINA, CABA, TELOS-CABA">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%- include('../partials/head'); %>
+        <link rel='stylesheet' href='/stylesheets/style.css' type="text/css" />
+        <link rel='stylesheet' href='/stylesheets/style_landingProducts.css' type="text/css" />
+        <!--FONT AWESOME  -->
+        <script src="https://kit.fontawesome.com/0c502158eb.js " crossorigin="anonymous "></script>
+        <title>APA!
+            <%= title ;%>
+        </title>
+
+</head>
+
+<body class="bodyPage bg-light">
+    <%- include('../partials/navbarTop'); %>
+
+        <div class="div2 bg-light">
+            <section id="hero ">
+                <div class="row g-0 h-100">
+                    <div class="col-lg-6 d-flex bg-light">
+                        <div class="content mx-auto align-self-center px-4 my-5">
+                            <div class="d-block mb-3"><span class="badge bg-custom-02 me-2">Nuevo</span><span class="text-secondary">haga tu cadastro en el</span><strong> CLUB!</strong>
+                            </div>
+                            <h1 class="display-4 mb-4"><span class="apa-name"> APA!</span> After Night<span class="apa-name">.</span>
+                                <p class="lead mb-4">Dile adiós a los buscadores Complicados en el momento del placer tenga toda la info facil y practica en tus manos</p>
+                                <a href="/cadastroUsuario" class="btn btn-primary mb-5">Abre tu cuenta hoy</a>
+                                <div class="d-flex">
+                                    <div class="d-flex me-2">
+
+                                    </div>
+                                    <div class="d-flex me-4">
+                                        <img src="images/svg/icoon01.svg" class="me-8 image-responsive" max-height="15px">
+                                        <div>
+                                            <small>Placer</small>
+                                            <p class="fw-bold mb-0">Facil</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex bg-frame-03">
+                        <div class="content mx-auto align-self-center px-1 my-2">
+                            <img src="https://live.staticflickr.com/65535/51951757261_3bba5e6e1d_z.jpg" class="img-fluid rounded" max-height="320px" style="margin-top: -9px;" alt="hombreavatar" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <header class="header w-100 text-center ">
+                <div class="hero bg-light">
+                    <div class="px-2 py-2 my-9 text-center">
+                    </div>
+                    <h1 class="display-2 fw-bold h101"><span class="apa-name">APA!</span>CABA</h1>
+                    <p class="herod "> FACILIDAD, VENTAJAS y PLACER ahora en tu celu con APA! app!</p>
+            </header>
+            <div class="container bg-light">
+                <div class="row">
+
+                    <!-- Card 1 -->
+                    <div class="col-md-4 card-container">
+                        <div class="card-flip">
+                            <!-- Card 2 Front -->
+                            <div class="card front">
+                                <img src=https://live.staticflickr.com/65535/51930776611_573237a898_o.png " class="card-img-top img-fluid ">
+                        <div class="card-block " id="divC1front ">
+                            <h4 class="card-title ">
+                                Comuna <p> <%= comunaID ;%></p>
+                            </h4>
+                                <p class="card-text "><%= comunaIncludes%></p>
+                        </div>
+                    </div>
+                    <!-- End Card 1 Front -->
+
+                    <!-- Card 1 Back -->
+                    <div class="card back ">
+                        <div class="card-header ">
+                            C.A.B.A.
+                        </div>
+                        <div class="card-block ">
+                            <h4 class="card-title ">COMUNA  <%= comunaID ;%></h4>
+                            <p class="card-text "><%= comunaParaghy ;%>.</p>
+                            <a href="/productos/comuna-<%=comunaID%>" class="btn btn-primary">APA! MOSTRA</a>
+                            </div>
+                        </div>
+                        <!-- End Card 1 Back -->
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 2 Front -->
+                        <div class="card front">
+                            <img src="https://live.staticflickr.com/65535/51931299427_2281f3a92d_o.png" class="card-img-top img-fluid" alt="" "comuna 2">
+                            <div class="card-block">
+                                <h4 class="card-title">Front Card Title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <!-- End Card 2 Front -->
+
+                        <!-- Card 2 Back -->
+                        <div class="card back">
+                            <div class="card-header">
+                                C.A.B.A.
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Special title treatment</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <!-- End Card 2 Back -->
+                    </div>
+                </div>
+                <!-- End Card 2 -->
+
+                <!-- Card 3 -->
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 3 Front -->
+                        <div class="card front">
+                            <img src="https://live.staticflickr.com/65535/51932357033_aa6f098015_o.png" alt="comuna 3" class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">Front Card Title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <!-- End Card 3 Front -->
+
+                        <!-- Card 3 Back -->
+                        <div class="card back">
+                            <div class="card-header">
+                                C.A.B.A.
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Special title treatment</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <!-- End Card 3 Back -->
+                        <!-- End Card 3 Back -->
+                    </div>
+                </div>
+                <!-- Card 4 -->
+
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 4 Front -->
+                        <div class="card front">
+                            <img src="https://live.staticflickr.com/65535/51931299707_c0b5726679_o.png" alt="comuna 4" class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">Front Card Title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <!-- End Card 4 Front -->
+
+                        <!-- Card 4 Back -->
+                        <div class="card back">
+                            <div class="card-header">
+                                C.A.B.A.
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Special title treatment</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <!-- End Card 4 Back -->
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 5 Front -->
+                        <div class="card front">
+                            <img src="https://live.staticflickr.com/65535/51932356783_9c6188276a_o.png" alt="comuna 5" class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">Front Card Title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <!-- End Card 5 Front -->
+
+                        <!-- Card 5 Back -->
+                        <div class="card back">
+                            <div class="card-header">
+                                C.A.B.A.
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Special title treatment</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <!-- End Card 5 Back -->
+                    </div>
+                </div>
+                <!-- End Card 5 -->
+
+                <!--            CARD 6-->
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 6 Front -->
+                        <div class="card front">
+                            <img src="https://live.staticflickr.com/65535/51932279611_3a09bd09e6_o.png" alt="comuna 6" class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">Front Card Title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <!-- End Card 6 Front -->
+
+                        <!-- Card 6 Back -->
+                        <div class="card back">
+                            <div class="card-header">
+                                C.A.B.A.
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Special title treatment</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <!-- End Card 6 Back -->
+                    </div>
+                </div>
+
+                <!-- Card 7 Front -->
+
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 7 Front -->
+                        <div class="card front">
+                            <img src="https://live.staticflickr.com/65535/51937488067_0f7029922f_o.png" alt="construccion" class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">Front Card Title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                            </div>
+                        </div>
+                        <!-- End Card 7 Front -->
+
+                        <!-- Card 7 Back -->
+                        <div class="card back">
+                            <div class="card-header">
+                                C.A.B.A.
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Special title treatment</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <!-- End Card 7 Back -->
+                    </div>
+                </div>
+                <!-- Card 8 -->
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 8 Front -->
+                        <div class="card front">
+                            <img src="https://live.staticflickr.com/65535/51937488067_0f7029922f_o.png" alt="construccion" class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">Front Card Title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <!-- End Card 8 Front -->
+
+                        <!-- Card 8 Back -->
+                        <div class="card back">
+                            <div class="card-header">
+                                C.A.B.A.
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Special title treatment</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <!-- End Card 8 Back -->
+                    </div>
+                </div>
+                <!-- End Card 8 -->
+
+                <!-- Card 9 -->
+
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 9 Front -->
+                        <div class="card front">
+                            <img src="https://live.staticflickr.com/65535/51937488067_0f7029922f_o.png" alt="construccion" class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">Front Card Title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <!-- End Card 9 Front -->
+
+                        <!-- Card 9 Back -->
+                        <div class="card back">
+                            <div class="card-header">
+                                C.A.B.A.
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Special title treatment</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <!-- End Card 9 Back -->
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 4 Front -->
+                        <div class="card front">
+                            <img src="https://live.staticflickr.com/65535/51937488067_0f7029922f_o.png" alt="construccion" class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">Front Card Title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <!-- End Card 4 Front -->
+
+                        <!-- Card 4 Back -->
+                        <div class="card back">
+                            <div class="card-header">
+                                C.A.B.A.
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Special title treatment</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <!-- End Card 4 Back -->
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 5 Front -->
+                        <div class="card front">
+                            <img src="https://live.staticflickr.com/65535/51937488067_0f7029922f_o.png" alt="construccion" class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">Front Card Title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <!-- End Card 5 Front -->
+
+                        <!-- Card 5 Back -->
+                        <div class="card back">
+                            <div class="card-header">
+                                C.A.B.A.
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Special title treatment</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <!-- End Card 5 Back -->
+                    </div>
+                </div>
+                <!-- End Card 5 -->
+
+                <!--            CARD 6-->
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 6 Front -->
+                        <div class="card front">
+                            <img src="https://live.staticflickr.com/65535/51937488067_0f7029922f_o.png" alt="construccion" class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">Front Card Title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <!-- End Card 6 Front -->
+
+                        <!-- Card 6 Back -->
+                        <div class="card back">
+                            <div class="card-header">
+                                C.A.B.A.
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Special title treatment</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <!-- End Card 6 Back -->
+                    </div>
+                </div>
+
+
+                <!-- Card 4 -->
+
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 4 Front -->
+                        <div class="card front">
+                            <img src="https://live.staticflickr.com/65535/51937488067_0f7029922f_o.png" alt="construccion" class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">Front Card Title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <!-- End Card 4 Front -->
+
+                        <!-- Card 4 Back -->
+                        <div class="card back">
+                            <div class="card-header">
+                                C.A.B.A.
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Special title treatment</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <!-- End Card 4 Back -->
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 5 Front -->
+                        <div class="card front">
+                            <img src="https://live.staticflickr.com/65535/51937488067_0f7029922f_o.png" alt="construccion" class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">Front Card Title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <!-- End Card 5 Front -->
+
+                        <!-- Card 5 Back -->
+                        <div class="card back">
+                            <div class="card-header">
+                                C.A.B.A.
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Special title treatment</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <!-- End Card 5 Back -->
+                    </div>
+                </div>
+                <!-- End Card 5 -->
+
+                <!--            CARD 6-->
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 6 Front -->
+                        <div class="card front">
+                            <img src="https://live.staticflickr.com/65535/51937488067_0f7029922f_o.png" alt="construccion" class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">Front Card Title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <!-- End Card 6 Front -->
+
+                        <!-- Card 6 Back -->
+                        <div class="card back">
+                            <div class="card-header">
+                                C.A.B.A.
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Special title treatment</h4>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <!-- End Card 6 Back -->
+                    </div>
+                </div>
+
+                <%- include('../partials/footer'); %>
+            </div>
+            <%- include('../partials/navbarBottom'); %>
+</body>
+
+</html>

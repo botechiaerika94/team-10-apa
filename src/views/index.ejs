@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="APA AFTER-NIGHT" content="BUSCADOR DE TELOS, TELOS SEARCH ENGINE, TELOS ARGENTINA, ARGENTINA, CABA, TELOS-CABA">
+    <%- include('./partials/head'); %>
+    <link rel='stylesheet' href='/stylesheets/style.css' type="text/css" />
+    <link rel='stylesheet' href='/stylesheets/style_index.css' type="text/css" />
+
+    <title>BIEN-VENIDO
+        <%= title %>
+    </title>
+    <!--FONT AWESOME  -->
+    <script src="https://kit.fontawesome.com/0c502158eb.js " crossorigin="anonymous "></script>
+</head>
+
+<body class="bodyPage">
+<%- include('./partials/navbarTop'); %>
+<section class="div2">
+
+    <div class="container">
+        <div id="marketing" class="section">
+            <div class="content">
+                <a href="/cadastroEmpresa" class="nav-link">
+                    <h1 class="textIndex"><span class="apaColor">APA!</span><br/> EMPRESAS </h1>
+                </a>
+            </div>
+            <div class="overlay"></div>
+        </div>
+
+        <div id="technology" class="section">
+            <div class="content">
+                <a class="nav-link" href="/apa-club">
+                    <h1 class="textIndex"><span class="apaColor">APA</span><br/> CLUB!</h1>
+                </a>
+            </div>
+            <div class="overlay"></div>
+        </div>
+
+        <div id="advertising" class="section">
+            <div class="content">
+                <a href="/productos" class="nav-link">
+                    <h1 class="textIndex"><span class="apaColor">APA </span><br/>CABA!</h1>
+                </a>
+            </div>
+        </div>
+        <div class="overlay"></div>
+
+    </div>
+    </a>
+    </div>
+</section>
+
+<%- include('./partials/navbarBottom'); %>
+
+</body>
+
+</html>
