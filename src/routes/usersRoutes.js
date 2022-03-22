@@ -1,10 +1,7 @@
-const mainController = require('./../controllers/mainControllers.js')
+const usersController = require('./../controllers/usersControllers.js')
 const express = require('express');
 const router = express.Router();
-router.get('/', usuariosRouters.usuariosCover)
-router.get('/login', usuariosRouters.iniciarSeccion)
-router.get('/login/miCuenta' , usuariosRouters.miCuenta)
-router.get('/login/error' , usuariosRouters.loginError)
-router.get('/crearCuenta', usuariosRouters.crearCuenta)
-router.get('/crearCuenta/miCuenta' , usuariosRouters.nuevaCuenta)
+
+router.get('/', usersController.login)
+router.get('/nuevos-socios', usersController.crearCuenta)
 module.exports = router
