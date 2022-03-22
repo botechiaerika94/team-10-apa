@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="APA AFTER-NIGHT" content="BUSCADOR DE TELOS, TELOS SEARCH ENGINE, TELOS ARGENTINA, ARGENTINA, CABA, TELOS-CABA">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%- include('partials/head'); %>
+    <link rel='stylesheet' href='/stylesheets/style.css' type="text/css" />
+    <link rel='stylesheet' href='/stylesheets/style_login.css' type="text/css" />
+    <!--FONT AWESOME  -->
+    <script src="https://kit.fontawesome.com/0c502158eb.js " crossorigin="anonymous "></script>
+    <title>ERROR 404 </title>
+
+</head>
+<body class="bodyPage bg-light bg-01">
+<%- include('partials/navbarTop'); %>
+<div class="div2 bg-01">
+    <div class="container  w-75  bg-light mt-5 rounded shadow bg-01">
+        <div class="row align-items-stretch bg-01">
+            <div class="col bg d-none d-lg-block col-md-6 col-lg-5 col-xl-6 rounded bg-01">
+                <img src="https://live.staticflickr.com/65535/51931318959_8cb2596d6f_o.png" alt="error 404" class="img-responsive" style="max-height: 400px;"/>
+            </div>
+
+            <div class="col bg-light col-login ">
+                <div class="py-5 ">
+                    <h2 class="error"> WOHOOOOO!<br>
+                        ERROR 404
+                    </h2>
+                    <p>ENCONTRASTE UNA PAGINA QUE NO EXISTE</p>
+                    <div class="btn-group btn-group-lg py-6 mt-6" role="group" aria-label="Basic mixed styles example">
+                        <a href="./../" class="btn btn-danger">VOLVER</a>
+                        <a href="/productos" class="btn btn-warning">BUSCAR</a>
+                        <a href="/home" class="btn btn-success">HOME</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%- include('partials/navbarBottom'); %>
+
+
+</html>

@@ -1,0 +1,127 @@
+:root {
+    --primary: #f244c3;
+    --dark: #000000;
+    --light: #ffffff;
+    --grey: #f5f5f5;
+}
+
+
+.py-6 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.div .card-back .card-header{
+    background: #FC6767FF;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: black;
+}
+
+.btn-primary:hover {
+    background-color: #ffa4db;
+    border-color: var(--primary);
+    color: black;
+}
+
+.btn-primary:visited {
+    background-color: #fad801;
+    border-color: #ff009a;
+    color: black;
+    margin: 2px 'solid' #ff009a;
+    transition: background-color 3ms;
+}
+.btn-primary:active {
+    background-color: #fad801;
+    border-color: var(--primary);
+    color: black;
+    margin: 2px 'solid' #fad801;
+    transition: background-color 3ms;
+}
+.btn-light {
+    background-color: var(--light);
+    color: var(--primary);
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.bg-light {
+    background-color: var(--grey) !important;
+}
+
+.content {
+    max-width: 480px;
+}
+
+.section {
+    max-height: 800px;
+}
+
+.step {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.step::after {
+    content: "";
+    border-right: 1px solid var(--dark);
+    opacity: .2;
+    height: 60px;
+    position: absolute;
+    top: 34px;
+}
+
+
+
+.call-to-action {
+    border-radius: 50px;
+}
+
+.call-to-action img {
+    max-width: 280px;
+}
+
+.cta-form {
+    max-width: 480px;
+}
+
+.cta-form .form-control {
+    min-height: 82px;
+}
+
+.cta-form .btn {
+    top: 12px;
+    right: 12px;
+}
+
+@media (max-width: 992px) {
+
+    section {
+        height: unset;
+    }
+    .call-to-action img {
+        max-width: 100%;
+    }
+    .w-75 {
+        width: 100% !important;
+    }
+}
+
+.navbar btn{
+    padding: 10px;
+}
+
+.bg-frame-03{
+    background-color: #060004;
+    background-image: url(../images/svg/bg-03.svg);
+}

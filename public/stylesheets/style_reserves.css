@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+.menu {
+    margin-top: 0px;
+    height: 100%;
+    width: 100vw;
+    border: 2px solid #e70c8f;
+    border-radius: 0 0 15px 15px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(48, 1, 25, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    -webkit-border-radius: 0 0 15px 15px;
+    -moz-border-radius: 0 0 15px 15px;
+    -ms-border-radius: 0 0 15px 15px;
+    -o-border-radius: 0 0 15px 15px;
+}
+
+.dropdown-menu {
+    border: 1px solid #e70c8f;
+}
+
+.dropdown-divider {
+    color: #e70c8f;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.bg-01 {
+    background: black url(../images/bg02.svg);
+    background-repeat: repeat;
+}
+
+.apaBrand {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    font-size: 2.7rem;
+    color: #e70c8f;
+}
+
+.apaLink {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 0.5rem;
+    color: #1d0744;
+}
+
+.nLink {
+    font-family: "Josefin
+ Sans", sans-serif;
+ font-weight: 400;
+    font-size: 1.3rem;
+    color: #060004;
+}
+
+.bg-01 {
+    background-color: gray;
+    background: url("../images/protruding-squares.svg");
+    background-repeat: repeat;
+    padding: 0px;
+    margin: 0px;
+}
+
+.th2-01 {
+    color: green;
+    font-family: "Hind", sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+header {
+    max-height: 430px;
+}
+
+.promoP {
+    background: black;
+    color: white;
+}
+
+.form-item .placeholder {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+    position: relative;
+    width: 300px;
+    height: 36px;
+    /* Background/White */
+    background: #ffffff;
+    /* Grey/400 */
+    border: 1px solid #afafaf;
+    box-sizing: border-box;
+    border-radius: 14px;
+}

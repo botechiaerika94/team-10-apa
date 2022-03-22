@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="APA AFTER-NIGHT" content="BUSCADOR DE TELOS, TELOS SEARCH ENGINE, TELOS ARGENTINA, ARGENTINA, CABA, TELOS-CABA">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect " href="https://fonts.gstatic.com " crossorigin>
+
+  <link rel=" preconnect " href="https://fonts.googleapis.com ">
+  <link rel="preconnect " href="https://fonts.gstatic.com " crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap " rel="stylesheet ">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,700&display=swap " rel="stylesheet ">
+  <link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@700&family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css " rel="stylesheet " integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3 " crossorigin="anonymous ">
+  <!--BST 5 ICONS-->
+  <link rel='stylesheet' href=./../../../public/stylesheets/style_productDetails.css' type="text/css" />
+  <link rel='stylesheet' href='./../../../public/stylesheets/style.css' type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <!--FONT AWESOME  -->
+  <script src="https://kit.fontawesome.com/0c502158eb.js" crossorigin="anonymous"></script>
+  <title>APA! <%= title ;%> </title>
+</head>
+
+<body class="bodyPage">
+<div class="div1">
+  <%- include('./../partials/navbarTop') ;%>
+<div class="div2 rounded ">
+  <div class="container-fluid rounded">
+    <div class="row">
+      <div class="col-md-10 col-11 mx-auto bg-light rounded">
+        <div class="row-mt-5 gx-3">
+          <!--*********************LADO IZQUIERDO*******************************-->
+          <div class="col-md-12 col-lg-8 mx-auto main_cart mb-lg-0 mb-5">
+            <div class="card-p-4">
+              <div class="row mt-5 gx-3">
+                <div class="py-4 font-weight-bold">
+                  <h2 class="py-4  font-weight-bold">Items del Carrito</h2>
+                </div>
+                  <!--**************************DIV IMG PARA CART*******************-->
+                  <div class="row">
+                    <div class="col-md-5 col-11 mx-auto bg-light rounded justify-content-center rounded align-items-center shadow product_img">
+                      <img src="https://live.staticflickr.com/65535/51925353464_b8d92e0872_o.png" alt="img-cart" class="img-fluid rounded"/>
+                    </div>
+                    <!--**************************DIV PARA DETALLES DEL PRODUCTO*******************-->
+                    <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                      <div class="row">
+                        <!--**************************NOMBRE DEL PRODUCTO*******************-->
+                        <div class="col-6 cart-title">
+                          <h2 class="mb-4 product_name text-muted"><strong><p> <%= suite; %> </p></strong></h2>
+                          <p class="descripcion">"Combo con 1 champagne a precio promocional"</p>
+                          <p class="valor"><strong>Valor:</strong>2300-3400</p>
+                          <p class="ubicacion">
+                          <p class="ubicacion"><strong>Zona: CABALLITO</strong><br></p><strong>Acceso:</strong> Querandies 4486
+                          <strong>Garage:</strong> Rio de Janeiro 271
+                          </p>
+                        </div>
+                        <!--***********AGREGAR-SACAR PRODUCTO*******************-->
+                        <div class="col-6">
+                          <ul class="pagination justify-content-end set_quantify">
+                            <li class="page-link">
+                              <button class="page-link" onclick="decreaseNumber()">
+                                <i class="bi bi-dash-circle-fill"></i></button>
+                            </li>
+                            <li class="page-item"><input type="text" name="" class="page-link" value="1" id="text-box">
+                            </li>
+                            <li class="page-item">
+                              <button class="page-link" onClick="increaseNumber()">
+                                <i class="bi bi-plus-circle-fill"></i>
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!--***********AGREGAR-SACAR PRECIO******************-->
+                      <div class="row">
+                        <div class="col-8 d-flex justify-content-between remove_item">
+                          <p><i class="bi bi-trash-fill text-danger"></i>DELETAR Item</p>
+                          <p><i class="bi bi-bag-heart-fill text-success"></i>AGREGAR Item</p>
+                        </div>
+                      </div>
+                      <div class="col-4 d-flex justify-content-end price_money">
+                        <h3>$<span id="item_value">00.00</span></h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--***********2 item****************-->
+
+  <div class="col-md-12 col-lg-8 mx-auto main_cart mb-lg-0 mb-5">
+    <div class="card-p-4 bg-light">
+            <div class="row mt-5 gx-3">
+              <div class="py-4 font-weight-bold">
+                <h2 class="py-4  font-weight-bold">Items del Carrito</h2>
+              </div>
+              <div class="row">
+                <!--*********DIV IMG PARA CART*******************-->
+                <div class="row">
+                  <div class="col-md-5 col-11 mx-auto bg-light rounded justify-content-center rounded align-items-center shadow product_img">
+                    <img src="https://live.staticflickr.com/65535/51928362521_c1e700eb51_o.png" alt="img-cart" class="img-fluid rounded"/>
+                  </div>
+                  <!--**************************DIV PARA DETALLES DEL PRODUCTO*******************-->
+                  <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                    <div class="row">
+                      <!--**************************NOMBRE DEL PRODUCTO*******************-->
+                      <div class="col-6 cart-title">
+                        <h2 class="mb-4 product_name text-muted"><p><%= combo01 ;%></p> </h2>
+                        <p class="descripcion">"COMBO VALOR EXCLUSIVO APA CLUB"</p>
+                      </div>
+                      <!--***********AGREGAR-SACAR PRODUCTO*******************-->
+                      <div class="col-6">
+                        <ul class="pagination justify-content-end set_quantify">
+                          <li class="page-link">
+                            <button class="page-link" onclick="decreaseNumber()">
+                              <i class="bi bi-dash-circle-fill"></i></button>
+                          </li>
+                          <li class="page-item"><input type="text" name="" class="page-link" value="1" id="text-box">
+                          </li>
+                          <li class="page-item">
+                            <button class="page-link" onClick="increaseNumber()">
+                              <i class="bi bi-plus-circle-fill"></i>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!--***********AGREGAR-SACAR PRECIO******************-->
+                    <div class="row">
+                      <div class="col-8 d-flex justify-content-between remove_item">
+                        <p><i class="bi bi-trash-fill text-danger"></i>DELETAR Item</p>
+                        <p><i class="bi bi-bag-heart-fill text-success"></i>AGREGAR Item</p>
+                      </div>
+                    </div>
+                    <div class="col-4 d-flex justify-content-end price_money">
+                      <h3>$<span id="item_value2">1500pesos</span></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+</div>
+    <!--*********************LADO IZQUIERDO***********-->
+    <div class="col-md-12 col-lg-4 col-11 mx-auto mt-md-5">
+   <div class="right_side p-3 shadow bg-white">
+<h2 class="product_name mb-5">
+  <!--<%= nombre-side%>-->nombre lado
+</h2>
+<div class="price_indiv d-flex justify-content-between">
+  <p class="rebaja">REBAJA #01</p>
+  <p class="rebaja">$0.00pesos</p>
+</div>
+     <div class="price_indiv d-flex justify-content-between">
+       <p class="rebaja">REBAJA COMBO #01</p>
+       <p class="rebaja">$500pesos</p>
+     </div>
+     <hr/>
+     <div class="total-amt justify-content-between font-weight-bold">
+<!--33:46-->
+     </div>
+   </div>
+    </div>
+        <!--fin P2-->
+      </div>
+    </div>
+</div>
+</div>
+
+  </div>
+
+  <%- include('../partials/navbarBottom'); %>
+</body>
+</html>

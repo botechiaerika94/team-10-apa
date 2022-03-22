@@ -1,0 +1,137 @@
+.apaColor {
+    color: #e70c8f;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.label {
+    display: block;
+    font-family: "Hanum Gothic";
+    padding-bottom: 1.25em;
+    font-size: 1.25em;
+}
+
+.bodyPage {
+    background: black;
+}
+
+.placeholder_Custom {
+    color: rgb(85, 82, 255);
+    background-color: hsl(225, 100%, 99%);
+    border: 2px solid #040d889a;
+    margin: 3px;
+}
+
+.check,
+.select {
+    background-color: #f9f3df;
+    border: 2px solid #ff00dd;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: 'Ruda', sans-serif;
+    padding: 7px;
+    height: 1.5rem;
+    color: #000;
+}
+
+input::-webkit-input-placeholder {
+    color: rgb(85, 82, 255);
+    padding: 5px;
+}
+
+select::-webkit-input-placeholder {
+    color: #4ca1a3;
+}
+
+input:-moz-placeholder {
+    color: #f5f5ff;
+}
+
+input:-ms-input-placeholder {
+    color: #f5f5ff;
+}
+
+.elem-grupo {
+    background-color: white;
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #0099ff;
+    color: #1f1483;
+    font-family: 'Ruda', sans-serif;
+    font-size: 1rem;
+    border: 2px solid rgb(255, 3, 150);
+    margin-bottom: 1rem;
+}
+
+.submit {
+    width: 30%;
+    height: 3.5rem;
+    background: rgb(17, 168, 4);
+    border: 2px solid rgb(4, 121, 43);
+    color: white;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    border-radius: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-bottom: 10%;
+}
+
+.reset {
+    width: 30%;
+    height: 3.5rem;
+    background: rgb(255, 3, 3);
+    border: 2px solid rgb(122, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    border-radius: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-bottom: 10%;
+}
+
+button:hover {
+    border: 2px solid rgb(2, 0, 2);
+    color: #3f43fd;
+}
+
+.textarea {
+    box-sizing: border-box;
+    padding: 0.5rem;
+    border: 2px solid rgb(255, 3, 150);
+    color: #000002;
+    word-wrap: normal;
+    word-spacing: 8px;
+}
+
+.radioInput {
+    color: white;
+}
+
+.email {
+    width: 15rem;
+    height: 1rem;
+    background-color: #3f0071;
+    border: 4px solid #83037c;
+    border-radius: 1rem;
+}
+
+.reset:hover {
+    border: 2px solid rgb(99, 0, 0));
+    color: rgb(99, 0, 0);
+    background: rgb(255, 154, 154);
+}
+
+.submit:hover {
+    border: 2px solid rgb(2, 63, 22);
+    color: #006134;
+    background: #b6ffdd;
+}
