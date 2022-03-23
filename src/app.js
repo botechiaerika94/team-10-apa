@@ -14,13 +14,13 @@ const mainRouters = require('./routes/mainRoutes.js')
 const apaClubRouter = require('./routes/apaClubRoutes.js')
 const usersRouter = require('./routes/usersRoutes.js')
 const productsRouter = require('./routes/productsRoutes.js')
-//const empresasRouter = require('./routes/empresasRouters.js')
+const enterpriseRouter = require('./routes/enterpriseRoutes.js')
 
 app.use('/', mainRouters);
 app.use('/apa-club', apaClubRouter);
 app.use('/usuarios', usersRouter);
 app.use('/productos', productsRouter);
-//app.use('/empresas', empresasRouter);
+app.use('/empresas', enterpriseRouter);
 //app.use('/locales', productosRouter);
 app.use('/*' , (req, res) => {res.render('error404')})
 

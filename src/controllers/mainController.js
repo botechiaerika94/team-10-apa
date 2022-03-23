@@ -4,9 +4,6 @@ let controller = {
     },
     landingUser: (req, res) => {
         res.render('main/home', { title: 'HOME' });
-    },
-    iniciarE: (req, res) => {
-        res.render('empresas/login', { title: 'Login EMPRESA!' });
     }
 }
 module.exports = controller
