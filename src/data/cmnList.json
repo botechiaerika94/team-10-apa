@@ -1,0 +1,30 @@
+function Comuna(comunaID, comunaI, comunaP, comunaImg) {
+    this.comunaID = comunaID;
+    this.comunaI = comunaI;
+    this.comunaParagphy = comunaP;
+    this.comunaImg = comunaImg;
+}
+console.log(Comuna())
+
+let cm01 = new Comuna(1, "Retiro, San Nicolás, Puerto Madero, San Telmo, Montserrat y Constitución", "La Comuna 1 está integrada por los 	barrios de  Retiro, San Nicolás, Puerto Madero, San Telmo, Montserrat y Constitución.")
+let cm02 = new Comuna(2, "Recoleta", "Esta Comuna está integrada por el barrio de Recoleta.")
+let cm03 = new Comuna(3, "Balvanera y San Cristóbal", "Esta Comuna está integrada por los barrios de Balvanera y San Cristóbal.")
+let cm04 = new Comuna(4, "La Boca, Barracas, Parque Patricios y Nueva Pompeya.", "Esta Comuna está integrada por los barrios de La Boca, Barracas, Parque Patricios y Nueva Pompeya.", )
+let cm05 = new Comuna(5, "Almagro y Boedo", "Entre ALMAGRO y BOEDO se queda el alcance de la Comuna 5")
+let cm06 = new Comuna(6, 'Caballito', 'Lo barrio en ascension de caballito incluye la comuna 6')
+let cm07 = new Comuna(7, "Flores y Parque Chacabuco", "Contenido en CONSTRUCCION");
+let cm08 = new Comuna(8, "Villa Soldati, Villa Riachuelo, Villa Lugano", "Contenido en CONSTRUCCION");
+let cm09 = new Comuna(9, "Liniers, Mataderos y Parque Avellaneda", "Contenido en CONSTRUCCION");
+let cm10 = new Comuna(10, "Villa Real, Monte Castro, Versalles, Floresta, Vélez Sarsfield y Villa Luro", "Contenido en CONSTRUCCION");
+let cm11 = new Comuna(11, " Villa General Mitre, Villa Devoto, Villa del Parque y Villa Santa Rita", "Contenido en CONSTRUCCION");
+let cm12 = new Comuna(12, "Coghlan, Saavedra, Villa Urquiza y Villa Pueyrredón.", "Contenido en CONSTRUCCION");
+let cm13 = new Comuna(13, "Núñez, Belgrano y Colegiales", "Contenido en CONSTRUCCION");
+let cm14 = new Comuna(14, "Palermo", "Contenido en CONSTRUCCION");
+let cm15 = new Comuna(15, " Chacarita, Villa Crespo, La Paternal, Villa Ortúzar, Agronomía y Parque Chas", "Contenido en CONSTRUCCION");
+
+
+let cmCABA = [cm01, cm02, cm03, cm04, cm05, cm06, cm07, cm08, cm09, cm10, cm11, cm12, cm13, cm14, cm15]
+
+
+const cmJSON = JSON.stringify(cmCABA)
+module.exports = cmJSON

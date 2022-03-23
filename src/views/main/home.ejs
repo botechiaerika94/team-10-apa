@@ -7,17 +7,17 @@
     <meta name="APA AFTER-NIGHT" content="BUSCADOR DE TELOS, TELOS SEARCH ENGINE, TELOS ARGENTINA, ARGENTINA, CABA, TELOS-CABA">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%- include('../partials/head'); %>
-    <link rel='stylesheet' href='/stylesheets/style.css' type="text/css" />
-    <link rel='stylesheet' href='/stylesheets/style_landingUser.css' type="text/css" />
-    <title>APA!
-        <%= title %>
-    </title>
-    <!--FONT AWESOME  -->
-    <script src="https://kit.fontawesome.com/0c502158eb.js " g="anonymous "></script>
+        <link rel='stylesheet' href='/stylesheets/style.css' type="text/css" />
+        <link rel='stylesheet' href='/stylesheets/style_landingUser.css' type="text/css" />
+        <title>APA!
+            <%= title %>
+        </title>
+        <!--FONT AWESOME  -->
+        <script src="https://kit.fontawesome.com/0c502158eb.js " crossorigin="anonymous "></script>
 </head>
 <div class="bodyPage">
     <%- include('../partials/navbarTop'); %>
-    <div class="div2">
+
         <section id="hero ">
             <div class="row g-0 h-100">
                 <div class="col-lg-6 d-flex bg-light">
@@ -142,12 +142,11 @@
                             <p class="text-primary fw-bold">Leer más <i class="fas fa-arrow-right ms-2"></i></p>
                         </a>
                     </div>
-
-                    <%- include('../partials/footer'); %>
                 </div>
+            </div>
         </section>
-    </div>
-    <%- include('../partials/navbarBottom'); %>
-    </body>
+        <%- include('../partials/footer'); %>
+            <%- include('../partials/navbarBottom'); %>
+                </body>
 
 </html>
