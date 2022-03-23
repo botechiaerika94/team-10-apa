@@ -1,5 +1,7 @@
 const PORT = 9669
 const express = require('express');
+const mongoose = require('mongoose');
+
 const path = require('path');
 const methodOverride = require('method-override')
 const app = express();
@@ -21,9 +23,8 @@ app.use('/apa-club', apaClubRouter);
 app.use('/usuarios', usersRouter);
 app.use('/productos', productsRouter);
 app.use('/empresas', enterpriseRouter);
-app.use('/*' , (req, res) => {res.render('error404')})
 
 
-app.listen(process.env.PORT||9669, function(){
+app.listen(process.env.PORT || 9669, function() {
     console.log(`WS EXPRESS CORRIENDO EN ${PORT}`)
 })

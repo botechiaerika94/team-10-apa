@@ -1,3 +1,9 @@
+let locales = [{
+    idL: 0;
+    comunaID: 1
+    nameL: pL:
+}]
+
 let controller = {
     landingProducts: (req, res) => {
         res.render('products/landingProducts', {
@@ -18,7 +24,9 @@ let controller = {
         const idL = req.res.idL
         res.render('products/comunaLocales', {
             title: 'Local ' + idL,
-            comuna: (comunaID)
+            {
+                comuna: 'comuna' + locales.comunaID,
+            }
 
         })
     }
