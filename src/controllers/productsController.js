@@ -16,8 +16,10 @@ let controller = {
     },
     detallesL: (req, res) => {
         const idL = req.res.idL
-        res.render('products/detallesNOClientes', {
-            title: 'Local ' + idL
+        res.render('products/comunaLocales', {
+            title: 'Local ' + idL,
+            comuna: (comunaID)
+
         })
     }
 }
