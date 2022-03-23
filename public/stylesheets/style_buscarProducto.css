@@ -6,13 +6,10 @@
     line-height: 1.5385;
     color: #333;
     text-align: left;
-    background-color: #2196F3
+    background-color: transparent;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Poppins&display=swap');
-body {
-    background-color: #eee
-}
 
 * {
     padding: 0;
