@@ -21,7 +21,6 @@ app.use('/apa-club', apaClubRouter);
 app.use('/usuarios', usersRouter);
 app.use('/productos', productsRouter);
 app.use('/empresas', enterpriseRouter);
-//app.use('/locales', productosRouter);
 app.use('/*' , (req, res) => {res.render('error404')})
 
 

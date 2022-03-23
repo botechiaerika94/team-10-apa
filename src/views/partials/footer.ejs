@@ -2,10 +2,11 @@
 <section class="d-flex pt-5 pb-0 h-100">
     <div class="container align-self-center">
         <div class="bg-primary text-light text-center p-5 rounded w-75 mx-auto mb-5">
-            <h2 class="display-4 fw-bold">Abre tu cuenta hoy</h2>
+            <h2 class="display-4 fw-bold">Registrate y Disfrutalo</h2>
             <p class="lead">Es rápidoo y sencillo, solo te tomará menos de 5 minutos</p>
             <div class="cta-form position-relative mx-auto d-none d-md-block">
-                <input type="email" class="form-control" placeholder="Correo electrónico">
+                <form action="/usuarios/register" method="GET">
+                <input type="email" class="form-control" placeholder="Correo electrónico" name="footer_register">
                 <button type="submit" class="btn btn-primary position-absolute">Abre tu cuenta hoy</button>
             </div>
             <div class="d-md-none">
