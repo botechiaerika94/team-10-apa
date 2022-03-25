@@ -26,5 +26,5 @@ app.use('/empresas', enterpriseRouter);
 
 
 app.listen(process.env.PORT || 9669, function() {
-    console.log(`WS EXPRESS CORRIENDO EN ${PORT}`)
+    console.log('WS EXPRESS CORRIENDO EN 9669')
 })

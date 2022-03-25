@@ -1,4 +1,4 @@
-function Locales(localID, comunaID, nameL, addressL, webL, descriptionL, servicesL, priceRangeL, servicesL, imgLogo, img1, img2, img3, img4) {
+function Locales(localID, comunaID, nameL, addressL, webL, descriptionL, servicesL, priceRangeL, servicesL, imgLogo, img1, img2, img3, img4, img5) {
     this.localID = localID,
         this.comunaID = comunaID,
         this.nameL = nameL,
