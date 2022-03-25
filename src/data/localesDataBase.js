@@ -1,6 +1,8 @@
-function Locales(localID, comunaID, nameL, addressL, webL, descriptionL, servicesL, priceRangeL, servicesL, imgLogo, img1, img2, img3, img4, img5) {
-    this.localID = localID,
+function Locales(localID, comunaID, GID, nameL, addressL, webL, descriptionL, servicesL, priceRangeL, servicesL, img1, img2, img3, img4, img5) {
+    this.id = id,
+        this.localID = localID,
         this.comunaID = comunaID,
+        this.idG = idG,
         this.nameL = nameL,
         this.addressL = addressL,
         this.webL = webL,
@@ -14,11 +16,10 @@ function Locales(localID, comunaID, nameL, addressL, webL, descriptionL, service
         this.img4 = img4,
         this.img5 = img5
 }
-Locales()
-Locales(localID, comunaID, nameL, addressL, webL, descriptionL, servicesL, priceRangeL, servicesL, img1, img2, img3, img4, img5)
 
-local00 = new Locales(localID, comunaID, nameL, addressL, webL, descriptionL, servicesL, priceRangeL, servicesL, img1, img2, img3, img4, img5)
-local01 = newLocales(1, 1, 'Osiris', addressL, webL, descriptionL, servicesL, priceRangeL, servicesL, imgLogo, 'https://ibb.co/1RNKwLp', ' https://ibb.co/2Ws9Fzw', 'https://ibb.co/2Ws9Fzw', 'https://ibb.co/0XJKKhV', 'https://ibb.co/4pMnJ3n')
+Locales()
+let localesCreate = new Locales(localID, comunaID, GID, nameL, addressL, webL, descriptionL, servicesL, priceRangeL, servicesL, img1, img2, img3, img4, img5)
+let local01 = newLocales(1, 1, 'Osiris', addressL, webL, descriptionL, servicesL, priceRangeL, servicesL, imgLogo, 'https://ibb.co/1RNKwLp', ' https://ibb.co/2Ws9Fzw', 'https://ibb.co/2Ws9Fzw', 'https://ibb.co/0XJKKhV', 'https://ibb.co/4pMnJ3n')
 
 for (comunaID === )
     let numero = 1;
