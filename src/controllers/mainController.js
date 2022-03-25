@@ -4,6 +4,9 @@ let controller = {
     },
     landingUser: (req, res) => {
         res.render('main/home', { title: 'HOME' });
+    },
+    tableT: (req, res) =>{
+        res.send('Table')
     }
 }
 module.exports = controller
