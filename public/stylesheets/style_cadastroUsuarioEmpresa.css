@@ -4,14 +4,14 @@
 
 .placeholder_Custom {
     color: rgb(0, 45, 75);
-    background-color: hsl(0, 0%, 100%);
-    border: 2px solid rgb(0, 45, 75);
-    margin: 1px;
+    background-color: hsl(197, 43%, 89%);
+    border: 1px solid rgb(19, 82, 165);
+    border-radius: 15px;
 }
 
 .check,
 .select {
-    background-color: #540cd8;
+    background: #540cd8;
     border: 2px solid: rgb(0, 45, 75);
     box-sizing: border-box;
     font-size: 1rem;
