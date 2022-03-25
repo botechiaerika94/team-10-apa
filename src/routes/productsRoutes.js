@@ -6,5 +6,6 @@ const router = express.Router();
 router.get('/', productsController.landingProducts)
 router.get('/comuna-:comunaID', productsController.comunasP)
 router.get('/comuna-:comunaID/:idGID?', productsController.detallesL)
-
+router.get('/ofertas', productsController.sale)
+router.get('/NS', productsController.pn)
 module.exports = router;

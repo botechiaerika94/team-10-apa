@@ -22,6 +22,12 @@ let controller = {
         res.render('products/comunaLocales', {
             title: 'Local ' + idGID,
         })
+    },
+        sale: (req, res)=>{
+            res.render('products/ofertas', {title: 'ofertas'})
+        },
+        pn: (req, res)=>{
+    res.sendFile('testeTemplate/baseNOsocios')
     }
 }
 module.exports = controller
