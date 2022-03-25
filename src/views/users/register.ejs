@@ -16,9 +16,6 @@
 </head>
 <body class="bodyPage">
 <%- include('../partials/navbarTop');%>
-
-<div class="div2">
-
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-6 bg-form"></div>
@@ -62,18 +59,13 @@
                     </div>
                     <div class="elem-grupo">
                         <label for="mensaje">Comentarios</label>
-                        <textarea class="textarea mensaje" name="usuario_mensaje" id="mensaje" cols="30" rows="10" required></textarea>
-                    </div>
-                    <div>
-                        <button class="submit" type="submit">ENVIAR  <i class="bi bi-send"></i></button>
-                        <button class="reset" type="reset" type="reset">BORRAR DATOS <i class="bi bi-x-square-fill"></i></button>
+                        <textarea class="textarea mensaje" name="mensaje" id="mensaje" cols="1" rows="0" ></textarea>
+                        <button type="submit">ENVIAR  <i class="bi bi-send"></i></button>
+                        <button  type="reset" type="reset">BORRAR DATOS <i class="bi bi-x-square-fill"></i></button>
                     </div>
                 </form>
             </div>
         </div>
-
-
-</div>
 
 <%- include('../partials/navbarBottom'); %>
 </body>

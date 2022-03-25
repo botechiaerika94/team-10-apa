@@ -1,6 +1,6 @@
 let controller = {
     apaClub: (req, res) => {
-        res.send('BIEN - VENIDO AL CLUB')
+        res.render('apaClub/dash01', {title: 'Bien-venido al CLUB!'})
     },
     buscar: (req, res) => {
         res.render('apaClub/buscarProducto', { title: 'BUSCAR' });
