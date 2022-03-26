@@ -9,7 +9,7 @@
 
 - USAR FUNCION CONSTRUCTORA DE CLASE LOCALES
 ```js 
-function Locales(id, cmRL, cmnID, gRL, aL, wL, rooomsL, dL, servicesL priceL, img1, img2, img3, img4, img5){
+function Locales(id, cmRL, cmnID, gRL, aL, wL, roomsL, dL, servicesL priceL, img1, img2, img3, img4, img5){
         this.id = id, //id
         this.cmRL = cmRL, //registro en la COMUNA --> 1 AL 9
         this.cmnID = cmnID, // numeero comuna quue pertenence
