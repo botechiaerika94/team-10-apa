@@ -1,30 +1,41 @@
-const PORT = 9669
+/**************REQUISICION + FUNCIONALIDAD de EXPRESS ***************/
 const express = require('express');
 const mongoose = require('mongoose');
 
+
+/**NODE ENVIRNOMENT VARIABLES */
+/**************VARIABLES GLOBALES  ***************/
 const path = require('path');
+
+const app = express()
+
 const methodOverride = require('method-override')
-const app = express();
+app.use(methodOverride('_method'))
+    //RECIBE + ENTTENDE USUARIIO PERO NO RECIBI VISITA
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json())
-app.use(express.static(path.join(__dirname, './../public')));
+
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
-app.use(methodOverride('_method'))
 
-const mainRouters = require('./routes/mainRoutes.js')
-const apaClubRouter = require('./routes/apaClubRoutes.js')
-const usersRouter = require('./routes/usersRoutes.js')
-const productsRouter = require('./routes/productsRoutes.js')
-const enterpriseRouter = require('./routes/enterpriseRoutes.js')
+app.use(session
+        /***********middlewares****** */
 
-app.use('/', mainRouters);
-app.use('/apa-club', apaClubRouter);
-app.use('/usuarios', usersRouter);
-app.use('/productos', productsRouter);
-app.use('/empresas', enterpriseRouter);
+        /***********CARPETAS PUBLICAS****** */
+        app.use(express.static(path.join(__dirname, './../public')));
+        /**************REQUISICION***************/
+        const mainRouters = require('./routes/mainRoutes.js')
+        const apaClubRouter = require('./routes/apaClubRoutes.js')
+        const usersRouter = require('./routes/usersRoutes.js')
+        const productsRouter = require('./routes/productsRoutes.js')
+        const enterpriseRouter = require('./routes/enterpriseRoutes.js')
 
+        /** RUAS QUE LLEVAN A ROUTES-> CONTROLLERS* */
+        app.use('/', mainRouters); app.use('/apa-club', apaClubRouter); app.use('/usuarios', usersRouter); app.use('/productos', productsRouter); app.use('/empresas', enterpriseRouter);
 
-app.listen(process.env.PORT || 9669, function() {
-    console.log('WS EXPRESS CORRIENDO EN 9669')
-})
+        /**************WS LISTEN ON 6669 ***************/
+        app.listen(process.env.PORT || 6669, () => {
+            console.log('WS LEVANTADO Y CORRIENDO EN 9669')
+        })
+
+        module.exports = app
