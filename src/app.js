@@ -18,7 +18,6 @@ app.use(express.json())
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
 
-app.use(session
         /***********middlewares****** */
 
         /***********CARPETAS PUBLICAS****** */
@@ -34,7 +33,7 @@ app.use(session
         app.use('/', mainRouters); app.use('/apa-club', apaClubRouter); app.use('/usuarios', usersRouter); app.use('/productos', productsRouter); app.use('/empresas', enterpriseRouter);
 
         /**************WS LISTEN ON 6669 ***************/
-        app.listen(process.env.PORT || 6669, () => {
+        app.listen(process.env.PORT || 6699, () => {
             console.log('WS LEVANTADO Y CORRIENDO EN 9669')
         })
 
