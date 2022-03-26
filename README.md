@@ -8,6 +8,7 @@
 ## FORM LOCALES
 
 - USAR FUNCION CONSTRUCTORA DE CLASE LOCALES
+```js 
 function Locales(id, cmRL, cmnID, gRL, aL, wL, rooomsL, dL, servicesL priceL, img1, img2, img3, img4, img5){
         this.id = id, //id
         this.cmRL = cmRL, //registro en la COMUNA --> 1 AL 9
@@ -27,14 +28,13 @@ function Locales(id, cmRL, cmnID, gRL, aL, wL, rooomsL, dL, servicesL priceL, im
         }
 Locales()
 let localesCreate = new Locales(id, cmRL, cmnID, gRL, aL, wL, rooomsL, dL, servicesL priceL, img1, img2, img3, img4, img5)
-
+```
 definir 9 locales para cada comuna (1 al 6 + palermo y belgrano)
  Luego de terminado hacer array
- 
- let locales = [local01, local02 '...', local03]
+ ```js
+ let locales = [local01, local02 '...', local03]```
  resultado de console.log(locales) es array de locales eligidos para pagina coomunas luego dee ahii seguimos con habitaciones
-
-
-
-const loocalesJSON = JSON.stringify(locales)
-console.log(cmJSON)
+salvar en archivo localesDataBase.json
+```js
+const localesJSON = JSON.stringify(locales)
+console.log(localesJSON)```
