@@ -422,3 +422,27 @@ textarea {
         padding-top: 35px;
     }
 }
+
+* {
+    list-style: none;
+    text-decoration: none;
+}
+
+.btn-edit {
+    background: #0c0c0c;
+    border: 1px solid #a8a8a8;
+    border-radius: 4.8px;
+    color: rgb(255, 255, 255);
+}
+
+.btn-read {
+    background: #ffffff;
+    border: 1px solid #313030;
+    border-radius: 0px;
+}
+
+.btn-delete {
+    background: #ffc0c0;
+    border: 1px solid #f56a6a;
+    border-radius: 4.8px;
+}
