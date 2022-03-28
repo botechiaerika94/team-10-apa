@@ -23,45 +23,36 @@
 
         <div class="center">
             <section id="content">
-                <h2 class="subheader">Últimos artículos</h2>
 
-                <script type="text/javascript">
-                    window.addEventListener("load", function() {
-                        var template = document.getElementById("article-template");
-                        var articles = document.getElementById("articles");
+                <h1 class="subheader">Formulario</h1>
 
-                        for (var i = 1; i <= 5; i++) {
-                            var clonado = template.cloneNode(true);
-                            clonado.removeAttribute("id");
+                <form class="mid-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" />
+                    </div>
 
-                            var h2 = clonado.getElementsByTagName("h2")[0];
-                            h2.innerHTML = h2.textContent + ' ' + i;
+                    <div class="form-group">
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" name="apellidos" />
+                    </div>
 
-                            articles.appendChild(clonado);
-                        }
+                    <div class="form-group">
+                        <label for="bio">Biografia</label>
+                        <textarea name="bio"></textarea>
+                    </div>
 
-                    });
-                </script>
+                    <div class="form-group radibuttons">
+                        <input type="radio" name="genero" value="hombre" /> Hombre
+                        <input type="radio" name="genero" value="mujer" /> Mujer
+                        <input type="radio" name="genero" value="otro" /> Otro
+                    </div>
 
-                <!--Listado articulos-->
-                <div id="articles">
-                    <article class="article-item" id="article-template">
-                        <div class="image-wrap">
-                            <img src="https://unhabitatmejor.leroymerlin.es/sites/default/files/styles/header_category/public/2018-10/4%20paisaje%20macedonia.jpg?itok=AELknmF8" alt="Paisaje" />
-                        </div>
+                    <div class="clearfix"></div>
 
-                        <h2>Articulo de prueba</h2>
-                        <span class="date">
-                        Hace 5 minutos
-                    </span>
-                        <a href="#">Leer más</a>
+                    <input type="submit" value="Enviar" class="btn btn-success" />
 
-                        <div class="clearfix"></div>
-                    </article>
-
-                    <!--AÑADIR ARTICULOS VIA JS-->
-
-                </div>
+                </form>
 
             </section>
 
