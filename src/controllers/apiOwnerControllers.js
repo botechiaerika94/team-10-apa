@@ -5,7 +5,7 @@ const usersList = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
 
 let controller = {
-    listUsers: (req, res) => {
+    list: (req, res) => {
         res.render('apiOwner/showUsers', {
             title: 'Lista de Usuarios',
             usersList: usersList

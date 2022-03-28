@@ -24,13 +24,14 @@
 
         <div class="center">
             <section id="content">
+                <hr>
                 <h2 class="subheader text-center py-6">Lista Usuarios</h2>
-
+                </hr>
                 <div id="articles">
                     <article class="article-item" id="article-template">
                         <%for(let u of usersList){ %>
                             <div class="image-wrap">
-                                <img src="<%=u.avatar%>" alt="Avatar  User" />
+                                <img src="<%=u.avatar%>" alt="Avatar  User" class="rounded" height="50px" width="130px" />
                             </div>
                             <h2>
                                 <%=u.user_name%>
@@ -39,7 +40,7 @@
                                 <%=u.id%>
                             </p>
                             <p><strong>Numero Registro Usuario:</strong>
-                                <%=u.user_register%>
+                                <%=u.register_user%>
                             </p>
 
                             <div class="btn-group btn-group-sm">
