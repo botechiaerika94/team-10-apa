@@ -141,7 +141,7 @@
     border-radius: 15px;
 }
 
-bg-02 {
+.bg-02 {
     background: url("../images/svg/bg-02.svg");
     background-repeat: repeat;
 }
