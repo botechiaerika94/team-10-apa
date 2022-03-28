@@ -25,6 +25,9 @@ let controller = {
     },
     pn: (req, res) => {
         res.sendFile('testeTemplate/baseNOsocios')
+    },
+    ofefe: (req, res) => {
+        res.render('products/detallesPOfe')
     }
 }
 module.exports = controller
