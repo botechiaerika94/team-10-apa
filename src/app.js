@@ -11,7 +11,7 @@ const app = express()
 
 const methodOverride = require('method-override')
 app.use(methodOverride('_method'))
-    //RECIBE + ENTTENDE USUARIIO PERO NO RECIBI VISITA
+    // CAPTURA FORM EN OBJETO LITERAL Y CONVIERE EN JSON
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json())
 
