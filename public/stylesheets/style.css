@@ -150,3 +150,9 @@
     text-decoration: none;
     color: black;
 }
+
+.ownerApi {
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.5rem;
+    color: #dbd7ff;
+}
