@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <title>
+        <%=title%>
+    </title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Mesa de Entrada</h2>
+        <h3>APA - Empresas</h3>
+
+        <form class="form-horizontal">
+            <fieldset>
+                <!-- Form Name -->
+                <legend>Nuevo Registro</legend>
+                <!-- Text input-->
+
+                <!-- #01 - NUEVO REGISTRO  -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="local_id">Credencial del Local</label>
+                    <div class="col-md-4">
+                        <input id="local_id" name="local_id" placeholder="Ingrese el Numero " class="form-control input-md" required="" type="text">
+                    </div>
+                </div>
+                <!-- #02 - NUEVA ENTRADA  -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="product_name">Nombre del SERVICIO:</label>
+                    <div class="col-md-4">
+                        <input id="product_name" name="product_name" placeholder="Ingrese el Nombre de lo Servicio" class="form-control input-md" required="" type="text">
+                    </div>
+                </div>
+                <!-- #01 -  PRECIO  -->
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="product_priceTurno">Ingrese el Precio del TURNO</label>
+                    <div class="col-md-4">
+                        <input id="product_priceTurno" name="product_priceTurno" placeholder="Precio Turno" class="form-control input-md" required="" type="text">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="type_priceTurno">Ingrese el TIPO de Turno</label>
+                    <div class="col-md-4">
+                        <input id="type_priceTurno" name="type_priceTurno" placeholder="Tipo de Turno" class="form-control input-md" required="" type="text">
+                    </div>
+                </div>
+                <!-- Select Basic -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="product_categorie">PRODUCT CATEGORY</label>
+                    <div class="col-md-4">
+                        <select id="product_categorie" name="product_categorie" class="form-control">
+			</select>
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="available_quantity">AVAILABLE QUANTITY</label>
+                    <div class="col-md-4">
+                        <input id="available_quantity" name="available_quantity" placeholder="AVAILABLE QUANTITY" class="form-control input-md" required="" type="text">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="product_weight">PRODUCT WEIGHT</label>
+                    <div class="col-md-4">
+                        <input id="product_weight" name="product_weight" placeholder="PRODUCT WEIGHT" class="form-control input-md" required="" type="text">
+
+                    </div>
+                </div>
+
+                <!-- Textarea -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="product_description">PRODUCT DESCRIPTION</label>
+                    <div class="col-md-4">
+                        <textarea class="form-control" id="product_description" name="product_description"></textarea>
+                    </div>
+                </div>
+
+                <!-- Textarea -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="product_description">Breve Descripcion del Pro</label>
+                    <div class="col-md-4">
+                        <textarea class="form-control" id="product_name_fr" name="product_name_fr"></textarea>
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="percentage_discount">PERCENTAGE DISCOUNT</label>
+                    <div class="col-md-4">
+                        <input id="percentage_discount" name="percentage_discount" placeholder="PERCENTAGE DISCOUNT" class="form-control input-md" required="" type="text">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="stock_alert">STOCK ALERT</label>
+                    <div class="col-md-4">
+                        <input id="stock_alert" name="stock_alert" placeholder="STOCK ALERT" class="form-control input-md" required="" type="text">
+
+                    </div>
+                </div>
+
+                <!-- Search input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="stock_critical">STOCK CRITICAL</label>
+                    <div class="col-md-4">
+                        <input id="stock_critical" name="stock_critical" placeholder="STOCK CRITICAL" class="form-control input-md" required="" type="search">
+
+                    </div>
+                </div>
+
+                <!-- Search input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="tutorial">TUTORIAL</label>
+                    <div class="col-md-4">
+                        <input id="tutorial" name="tutorial" placeholder="TUTORIAL" class="form-control input-md" required="" type="search">
+
+                    </div>
+                </div>
+
+                <!-- Search input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="localList">LOCAL  LIST</label>
+                    <div class="col-md-4">
+                        <input id="tutorial_fr" name="tutorial_fr" placeholder="TUTORIAL FR" class="form-control input-md" required="" type="search">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="online_date">ONLINE DATE</label>
+                    <div class="col-md-4">
+                        <input id="online_date" name="online_date" placeholder="ONLINE DATE" class="form-control input-md" required="" type="text">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="author">AUTHOR</label>
+                    <div class="col-md-4">
+                        <input id="author" name="author" placeholder="AUTHOR" class="form-control input-md" required="" type="text">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="enable_display">ENABLE DISPLAY</label>
+                    <div class="col-md-4">
+                        <input id="enable_display" name="enable_display" placeholder="ENABLE DISPLAY" class="form-control input-md" required="" type="text">
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="comment">COMMENT</label>
+                    <div class="col-md-4">
+                        <input id="comment" name="comment" placeholder="COMMENT" class="form-control input-md" required="" type="text">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="approuved_by">APPROUVED BY</label>
+                    <div class="col-md-4">
+                        <input id="approuved_by" name="approuved_by" placeholder="APPROUVED BY" class="form-control input-md" required="" type="text">
+
+                        <!-- File Button -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="filebutton">main_image</label>
+                            <div class="col-md-4">
+                                <input id="filebutton" name="filebutton" class="input-file" type="file">
+                            </div>
+                        </div>
+                        <!-- File Button -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="filebutton">auxiliary_images</label>
+                            <div class="col-md-4">
+                                <input id="filebutton" name="filebutton" class="input-file" type="file">
+                            </div>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="singlebutton">Single Button</label>
+                            <div class="col-md-4">
+                                <button id="singlebutton" name="singlebutton" class="btn btn-primary">Button</button>
+                                <button id="singlebutton" name="singlebutton" class="btn btn-primary">Button</button>
+                            </div>
+                        </div>
+
+            </fieldset>
+        </form>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>idProducto</th>
+                    <th>idComuna</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Default</td>
+                    <td>Defaultson</td>
+                    <td>def@somemail.com</td>
+                </tr>
+                <tr class="success">
+                    <td>Success</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr class="danger">
+                    <td>Danger</td>
+                    <td>Moe</td>
+                    <td>mary@example.com</td>
+                </tr>
+                <tr class="info">
+                    <td>Info</td>
+                    <td>Dooley</td>
+                    <td>july@example.com</td>
+                </tr>
+                <tr class="warning">
+                    <td>Warning</td>
+                    <td>Refs</td>
+                    <td>bo@example.com</td>
+                </tr>
+                <tr class="active">
+                    <td>Active</td>
+                    <td>Activeson</td>
+                    <td>act@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+</body>
+
+</html>

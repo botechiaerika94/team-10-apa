@@ -35,7 +35,7 @@ app.use('/apa-club', apaClubRouter);
 app.use('/usuarios', usersRouter);
 app.use('/productos', productsRouter);
 app.use('/empresas', enterpriseRouter);
-app.use('/owners', apiOwnerRouter);
+app.use('/ApiControl', apiOwnerRouter);
 
 /**************WS LISTEN ON 6669 ***************/
 app.listen(process.env.PORT || 6699, () => {
