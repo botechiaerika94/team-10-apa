@@ -12,8 +12,13 @@ let controller = {
         });
     },
     read: (req, res) => {
-        let readUser = req.params.user_register
-        res.render('apiOwners/')
+        let register_user = usersList.register_user
+        let readUser = req.params.register_user
+        res.render('apiOwners/detailsUsers', {
+            title: 'Detalles Usuario ' + listUsers.regiser_user,
+            usersList: usersList
+        })
     }
 }
+
 module.exports = controller
