@@ -28,13 +28,14 @@ const apaClubRouter = require('./routes/apaClubRoutes.js')
 const usersRouter = require('./routes/usersRoutes.js')
 const productsRouter = require('./routes/productsRoutes.js')
 const enterpriseRouter = require('./routes/enterpriseRoutes.js')
-
-/** RUAS QUE LLEVAN A ROUTES-> CONTROLLERS* */
+const apiOwnerRouter = require('./routes/apiOwnerRoutes.js')
+    /** RUAS QUE LLEVAN A ROUTES-> CONTROLLERS* */
 app.use('/', mainRouters);
 app.use('/apa-club', apaClubRouter);
 app.use('/usuarios', usersRouter);
 app.use('/productos', productsRouter);
 app.use('/empresas', enterpriseRouter);
+app.use('/owners', apiOwnerRouter);
 
 /**************WS LISTEN ON 6669 ***************/
 app.listen(process.env.PORT || 6699, () => {

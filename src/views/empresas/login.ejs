@@ -1,76 +1,80 @@
 <doctype html>
-<html lang="es">
+    <html lang="es">
 
-<head>
+    <head>
 
-    <meta charset="UTF-8">
-    <meta name="APA AFTER-NIGHT" content="BUSCADOR DE TELOS, TELOS SEARCH ENGINE, TELOS ARGENTINA, ARGENTINA, CABA, TELOS-CABA">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <%- include('../partials/head'); %>
-    <link rel='stylesheet' href='/stylesheets/style.css' type="text/css" />
-    <link rel='stylesheet' href='/stylesheets/style_login.css' type="text/css" />
-    <!--FONT AWESOME  -->
-    <script src="https://kit.fontawesome.com/0c502158eb.js " crossorigin="anonymous "></script>
-    <title>APA!
-        <%= title ;%>
-    </title>
-    <style>
-        .bodyPage{
-            background-color: #f1bedd;
-        }
+        <meta charset="UTF-8">
+        <meta name="APA AFTER-NIGHT" content="BUSCADOR DE TELOS, TELOS SEARCH ENGINE, TELOS ARGENTINA, ARGENTINA, CABA, TELOS-CABA">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <%- include('../partials/head'); %>
+            <link rel='stylesheet' href='/stylesheets/style.css' type="text/css" />
+            <link rel='stylesheet' href='/stylesheets/style_login.css' type="text/css" />
+            <!--FONT AWESOME  -->
+            <script src="https://kit.fontawesome.com/0c502158eb.js " crossorigin="anonymous "></script>
+            <title>APA!
+                <%= title ;%>
+            </title>
+            <style>
+                .bodyPage {
+                    background-color: #f1bedd;
+                }
+                
+                .bg {
+                    background-color: #f73d93;
+                }
+            </style>
+    </head>
 
-        .bg{
-            background-color: #f73d93;
-        }
-    </style>
-</head>
+    <body class="bodyPage">
+        <%- include('../partials/navbarTop'); %>
 
-<body class="bodyPage">
-<%- include('../partials/navbarTop'); %>
+            <div class="container ">
+                <div class="row ">
+                    <div class="col">
+                    <div class="col-12">
 
-<div class="container ">
-    <div class="row ">
-        <div class="col-12 col-lg-6">
-            <h2 class="apa-name text-center py-4">
-                APA! <span class="text-dark">LOGIN</span>
-            </h2>
-        </div>
-        <form action="/users/login" method="POST">
-                <div class="mb-4">
-                    <label for="user" class="form-label">
+                        <h2 class="apa-name text-center py-1">
+                            APA! <span class="text-dark">LOGIN</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="col">
+                    <form action="/users/login" method="POST">
+                        <div class=" mb-4">
+                            <label for="user" class="form-label">
                         Nombre Usuario
                     </label>
-                    <input type="text" class="form-control" name="user">
-                </div>
-                <div class="mb-4">
-                    <label for="password" class="form-label">
+                            <input type="text" class="form-control" name="user">
+                        </div>
+                        <div class="mb-4">
+                            <label for="password" class="form-label">
                         Contraseña
                     </label>
-                    <input type="text" class="form-control" name="user">
-                </div>
-                <div class="mb-4 form-check">
-                    <input type="checkbox" name="connected" class="form-check-input" id="">
-                    <label for="connected" class="form-check-label">Mantenerme Conectado</label>
-                </div>
-                <div class="d-grid">
-                    <button type="submit" class="btn btn-primary">Iniciar Sección </button>
-                    <div class="my-3">
-                        <span>NO sos SOCIO?</span>
-                        <a href="#">REGISTRATE</a>
-                        <span><br/>
+                            <input type="text" class="form-control" name="user">
+                        </div>
+                        <div class="mb-4 form-check">
+                            <input type="checkbox" name="connected" class="form-check-input" id="">
+                            <label for="connected" class="form-check-label">Mantenerme Conectado</label>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Iniciar Sección </button>
+                            <div class="my-3">
+                                <span>NO sos SOCIO?</span>
+                                <a href="#">REGISTRATE</a>
+                                <span><br/>
                             <a href="#">
                                 Recuperar Contraseña
                             </a>
                         </span>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
+
+                            </div>
+                        </div>
+                    </form>
 
 
 
-<%- include('../partials/navbarBottom'); %>
+                    <%- include('../partials/navbarBottom'); %>
 
-</body>
-</html>
+    </body>
+
+    </html>

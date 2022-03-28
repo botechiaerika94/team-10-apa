@@ -6,15 +6,17 @@
 
 // LER ARCHIVO
 const fs = require('fs')
-
-// OBJECTO COMPLET0
+const usersList = JSON.parse(data)
+    // OBJECTO COMPLET0
 fs.readFile('./users.json', 'utf-8', (error, data) => {
     try {
-        const usersList = JSON.parse(data)
         console.log(usersList);
     } catch (e) {
         console.log('LISTA DE USUARIOS CON ERROR!')
     }
 });
+
+// read FILE SYNC
+
 
 // retorna object
