@@ -6,7 +6,7 @@ let controller = {
         res.render('apaClub/buscarProducto', { title: 'BUSCAR' });
     },
     miCuenta: (req, res) => {
-        res.render('apaClub/dash01', { title: 'MiCuenta' });
+        res.render('users/dashboard', { title: 'MiCuenta' });
     }
 }
 module.exports = controller
