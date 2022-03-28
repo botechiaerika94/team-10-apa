@@ -10,6 +10,10 @@ let controller = {
             title: 'Lista de Usuarios',
             usersList: usersList
         });
+    },
+    read: (req, res) => {
+        let readUser = req.params.user_register
+        res.render('apiOwners/')
     }
 }
 module.exports = controller
