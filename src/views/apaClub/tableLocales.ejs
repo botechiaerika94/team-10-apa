@@ -4,21 +4,20 @@
 <head>
     <title>Bootstrap Example</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <title>
-        <%=title%>
-    </title>
+
+
 </head>
 
 <body>
 
     <div class="container">
+
         <h2>Mesa de Entrada</h2>
         <h3>APA - Empresas</h3>
 
@@ -56,6 +55,46 @@
                         <input id="type_priceTurno" name="type_priceTurno" placeholder="Tipo de Turno" class="form-control input-md" required="" type="text">
                     </div>
                 </div>
+=======
+        <h2>Contextual Classes</h2>
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+        <!------ Include the above in your HEAD tag ---------->
+
+        <form class="form-horizontal">
+            <fieldset>
+
+                <!-- Form Name -->
+                <legend>locales</legend>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="local_id">ID</label>
+                    <div class="col-md-4">
+                        <input id="local_id" name="local_id" placeholder=" ID local" class="form-control input-md" required="" type="text">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="product_name">localID</label>
+                    <div class="col-md-4">
+                        <input id="product_name" name="product_name" placeholder="PRODUCT NAME" class="form-control input-md" required="" type="text">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="product_name_fr">nameL</label>
+                    <div class="col-md-4">
+                        <input id="product_name_fr" name="product_name_fr" placeholder="PRODUCT DESCRIPTION FR" class="form-control input-md" required="" type="text">
+
+                    </div>
+                </div>
+
+
                 <!-- Select Basic -->
                 <div class="form-group">
                     <label class="col-md-4 control-label" for="product_categorie">PRODUCT CATEGORY</label>
@@ -93,7 +132,7 @@
 
                 <!-- Textarea -->
                 <div class="form-group">
-                    <label class="col-md-4 control-label" for="product_description">Breve Descripcion del Pro</label>
+
                     <div class="col-md-4">
                         <textarea class="form-control" id="product_name_fr" name="product_name_fr"></textarea>
                     </div>
@@ -167,6 +206,7 @@
                     <label class="col-md-4 control-label" for="enable_display">ENABLE DISPLAY</label>
                     <div class="col-md-4">
                         <input id="enable_display" name="enable_display" placeholder="ENABLE DISPLAY" class="form-control input-md" required="" type="text">
+
                     </div>
                 </div>
 
@@ -205,7 +245,8 @@
                             <label class="col-md-4 control-label" for="singlebutton">Single Button</label>
                             <div class="col-md-4">
                                 <button id="singlebutton" name="singlebutton" class="btn btn-primary">Button</button>
-                                <button id="singlebutton" name="singlebutton" class="btn btn-primary">Button</button>
+          <button id="singlebutton" name="singlebutton" class="btn btn-primary">Button</button>
+
                             </div>
                         </div>
 

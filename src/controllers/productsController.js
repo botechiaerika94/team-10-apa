@@ -1,3 +1,4 @@
+
 const fs = require('fs')
 const path = require('path')
     //REQUIRE PATH, READ FILE and SYNC JSON DOCUMENT
@@ -20,14 +21,13 @@ let controller = {
             title: locales
         })
     },
-    sale: (req, res) => {
-        res.render('products/ofertas', { title: 'ofertas' })
-    },
-    pn: (req, res) => {
-        res.sendFile('testeTemplate/baseNOsocios')
-    },
-    ofefe: (req, res) => {
-        res.render('products/detallesPOfe')
-    }
-}
+
+    detallesL: (req, res) => {
+        const idL = req.res.idL
+        res.render('products/comunaLocales', {
+            title: 'Local ' + idL,
+            {
+                comuna: 'comuna' + locales.comunaID,
+        })
+    }}
 module.exports = controller

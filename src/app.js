@@ -3,8 +3,6 @@ const express = require('express');
 const mongoose = require('mongoose');
 
 
-/**NODE ENVIRNOMENT VARIABLES */
-/**************VARIABLES GLOBALES  ***************/
 const path = require('path');
 
 const app = express()
@@ -28,18 +26,21 @@ const apaClubRouter = require('./routes/apaClubRoutes.js')
 const usersRouter = require('./routes/usersRoutes.js')
 const productsRouter = require('./routes/productsRoutes.js')
 const enterpriseRouter = require('./routes/enterpriseRoutes.js')
+
 const apiOwnerRouter = require('./routes/apiOwnerRoutes.js')
-    /** RUAS QUE LLEVAN A ROUTES-> CONTROLLERS* */
+  
 app.use('/', mainRouters);
 app.use('/apa-club', apaClubRouter);
 app.use('/usuarios', usersRouter);
 app.use('/productos', productsRouter);
 app.use('/empresas', enterpriseRouter);
+
 app.use('/ApiControl', apiOwnerRouter);
+
 
 /**************WS LISTEN ON 6669 ***************/
 app.listen(process.env.PORT || 6699, () => {
     console.log('WS LEVANTADO Y CORRIENDO EN 6699')
 })
 
-module.exports = app
+module.exports=Router
