@@ -33,8 +33,8 @@ app.set('views', path.join(__dirname, '/views'));
         app.use('/', mainRouters); app.use('/apa-club', apaClubRouter); app.use('/usuarios', usersRouter); app.use('/productos', productsRouter); app.use('/empresas', enterpriseRouter);
 
         /**************WS LISTEN ON 6669 ***************/
-        app.listen(process.env.PORT || 6699, () => {
-            console.log('WS LEVANTADO Y CORRIENDO EN 9669')
+        app.listen(process.env.PORT || 8080, () => {
+            console.log('WS LEVANTADO Y CORRIENDO EN 8080')
         })
 
         module.exports = app
