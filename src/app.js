@@ -9,7 +9,7 @@ const app = express()
 
 const methodOverride = require('method-override')
 app.use(methodOverride('_method'))
-    // CAPTURA FORM EN OBJETO LITERAL Y CONVIERE EN JSON
+    // Prepara app para method POST - CAPTURAR FORM --> LITERAL OBJECT + FORMATO JSON
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json())
 
@@ -32,13 +32,11 @@ app.use('/apa-club', apaClubRouter);
 app.use('/usuarios', usersRouter);
 app.use('/productos', productsRouter);
 app.use('/empresas', enterpriseRouter);
-
 app.use('/ApaOwners', apiOwnerRouter);
 
-
 /**************WS LISTEN ON 6669 ***************/
-app.listen(process.env.PORT || 6699, () => {
-    console.log('WS LEVANTADO Y CORRIENDO EN 6699')
+app.listen(process.env.PORT || 8080, () => {
+    console.log('WS LEVANTADO Y CORRIENDO EN 8080')
 })
 
 module.exports = app
