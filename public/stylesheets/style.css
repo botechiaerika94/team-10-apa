@@ -156,3 +156,9 @@
     font-size: 1.5rem;
     color: #dbd7ff;
 }
+
+.bg-5 {
+    background-color: #570315;
+    border-radius: 15px;
+    align-items: center;
+}
