@@ -17,7 +17,7 @@ let controller = {
                 notesE: req.body.notesE
             }
             //GUARDAR INFO!
-        res.redirect('empresas/club')
+        res.send('Bien venido a APA')
     }
 }
 module.exports = controller
