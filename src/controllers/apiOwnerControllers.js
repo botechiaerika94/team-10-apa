@@ -6,7 +6,7 @@ const usersList = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 const localsList = JSON.parse(fs.readFileSync(localesFilePath, 'utf-8'));
 let controller = {
     dashAPA: (req, res) => {
-        res.render('apiOwners/dashOwnersAPA', {
+        res.render('apiOwner/ownersHome', {
             title: 'owners apa'
         })
     },
