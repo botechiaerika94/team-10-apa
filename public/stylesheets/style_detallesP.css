@@ -1,0 +1,48 @@
+nav>.nav.nav-tabs {
+    border: none;
+    color: #fff;
+    background: #272e38;
+    border-radius: 0;
+}
+
+nav>div a.nav-item.nav-link,
+nav>div a.nav-item.nav-link.active {
+    border: none;
+    padding: 18px 25px;
+    color: #fff;
+    background: #272e38;
+    border-radius: 0;
+}
+
+nav>div a.nav-item.nav-link.active:after {
+    content: "";
+    position: relative;
+    bottom: -60px;
+    left: -10%;
+    border: 15px solid transparent;
+    border-radius: 30px;
+    border-top-color: #0f0e0e;
+}
+
+.tab-content {
+    background: #fdfdfd;
+    line-height: 25px;
+    border: 1px solid #ddd;
+    border-top: 5px solid #c40083;
+    border-bottom: 5px solid #c40083;
+    padding: 30px 25px;
+}
+
+nav>div a.nav-item.nav-link:hover,
+nav>div a.nav-item.nav-link:focus {
+    border: none;
+    background: #c40083;
+    color: rgb(233, 223, 223);
+    border-radius: 0;
+    transition: background 0.20s linear;
+}
+
+body {
+    background-image: url(../images/svg/bg-01.svg);
+    background-repeat: repeat;
+}
