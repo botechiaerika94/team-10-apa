@@ -23,10 +23,10 @@ let controller = {
             title: 'Local ' + idLocal,
         })
     },
-    detallesP: (req, res) => {
+    detallesR: (req, res) => {
         let idRooms = req.params.idRooms
         res.render('products/detallesP', {
-            title: 'Producto ' + idP,
+            title: 'Producto ' + idRooms,
         })
     },
     sale: (req, res) => {
