@@ -1,7 +1,7 @@
 /**************REQUISICION + FUNCIONALIDAD de EXPRESS ***************/
+require('dotenv').config
 const express = require('express');
-const mongoose = require('mongoose');
-
+const port = process.env.PORT
 
 const path = require('path');
 
@@ -38,8 +38,8 @@ app.use('/ApaOwners', apiOwnerRouter);
 app.use('/buscarApa', searchRouter)
 
 /**************WS LISTEN ON 6669 ***************/
-app.listen(process.env.PORT || 8080, () => {
-    console.log('WS LEVANTADO Y CORRIENDO EN 8080')
+app.listen(port, () => {
+    console.log('WS LEVANTADO Y CORRIENDO EN 6669')
 })
 
 module.exports = app
