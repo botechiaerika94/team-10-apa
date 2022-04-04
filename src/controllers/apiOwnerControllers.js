@@ -1,9 +1,9 @@
 const fs = require('fs')
 const path = require('path')
 const usersFilePath = path.join(__dirname, '../data/usersDataBase.json')
-const localsFilePath = path.join(__dirname, '../data/localesDataBase.json')
+const localesFilePath = path.join(__dirname, '../data/localesDataBase.json')
 const usersList = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
-const localsList = JSON.parse(fs.readFileSync(localsFilePath, 'utf-8'))
+const localsList = JSON.parse(fs.readFileSync(localesFilePath, 'utf-8'));
 
 
 let controller = {
@@ -18,7 +18,7 @@ let controller = {
             usersList: usersList
         });
     },
-    read: (req, res) => {
+    showUByID: (req, res) => {
         let register_user = usersList.register_user
         let readUser = req.params.register_user
         res.render('apiOwner/detailsUsers', {
@@ -27,10 +27,12 @@ let controller = {
         })
     },
     listLocals: (req, res) => {
+        let rgL = req.params.rgL;
         res.render('apiOwner/showLocals', {
             title: 'listar Locales',
             localsList: localsList
         })
     }
 }
+module.exports = controller
 module.exports = controller

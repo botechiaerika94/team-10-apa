@@ -24,7 +24,7 @@ let controller = {
         })
     },
     detallesP: (req, res) => {
-        let idP = req.params.idP
+        let idRooms = req.params.idRooms
         res.render('products/detallesP', {
             title: 'Producto ' + idP,
         })
