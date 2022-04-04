@@ -1,0 +1,19 @@
+[{
+    "comunaID": 1,
+    "nameL": "Hotel Acuario",
+    "rgL": "rgL0001",
+    "aL": " Brasil 1777",
+    "cL": "+54 11 4304-3579",
+    "wL": "No Tiene WEB",
+    "roomsL": "['Normal','Especial','Suite','Suite-Especial','Hidro']",
+    "dL": "Telo en barrio de Constitucion",
+    "sL": "Puntuado como 4.3 estrellas en varias Fuentes por Usuarios",
+    "priceL": [" Suite: AR$ 659" , "Suite Especial, AR$680" , "Suite Acuario: AR$ 700" , "Suite Ejecutiva, AR$ 750"],
+    "tyP": ["Turno 8 horas - Lunes a Viernes (Ingreso 6am - Termino 14pm", "Turno 3 HORAS - Domingo a Jueves","Turno 2 horas, viernes y sabados a partir de las 00:00" ],
+    "img0": "https://i.ibb.co/fMPNDj7/rg-L00-img00.png",
+    "img1": "https://i.ibb.co/23zFmFH/Acuario-3-suite-Especial.jpg",
+    "img2": "https://i.ibb.co/qgTHWb5/Acuario-04-hidro.jpg",
+    "img3": "https://ibb.co/30LJTK2",
+    "img4":  "https://i.ibb.co/rytfvhg/Acuario-2-suite.jpg",
+    "img5": " "
+}]
