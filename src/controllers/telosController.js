@@ -13,29 +13,26 @@ let controller = {
             comunas: comunas
         })
     },
-    comunasP: (req, res) => {
+    showByID: (req, res) => {
         let comunaID = req.params.comunaID
         res.render('telos/productosComuna', {
             title: 'Comuna ' + comunaID
         })
     },
-    detailsL: (req, res) => {
+    showByRooms: (req, res) => {
         let idC = req.params.idComuna
         res.render('telos/details', {
             title: 'Local ' + idC,
         })
     },
-    detallesR: (req, res) => {
+    searchByKeys: (req, res) => {
         let idRooms = req.params.idRooms
         res.render('telos/detallesP', {
             title: 'Producto ' + idRooms,
         })
     },
-    sale: (req, res) => {
+    create: (req, res) => {
         res.render('telos/ofertas', { title: ofertasMes.title, ofertasMes: { ofertasMes } })
-    },
-    searchByKey:{
-
     }
 }
 module.exports = controller
