@@ -7,32 +7,35 @@ const ofertasDataBaseFilePath = path.join(__dirname, '../data/ofertasDataBase.js
 const comunas = JSON.parse(fs.readFileSync(comunasFilePath, 'utf-8'));
 const ofertasMes = JSON.parse(fs.readFileSync(ofertasDataBaseFilePath, 'utf-8'));
 let controller = {
-    landingProducts: (req, res) => {
-        res.render('products/landingProducts', {
+    list: (req, res) => {
+        res.render('telos/list', {
             title: 'PRODUCTOS - CABA',
             comunas: comunas
         })
     },
     comunasP: (req, res) => {
         let comunaID = req.params.comunaID
-        res.render('products/productosComuna', {
+        res.render('telos/productosComuna', {
             title: 'Comuna ' + comunaID
         })
     },
-    detallesL: (req, res) => {
-        let idLocal = req.params.idLocal
-        res.render('products/comunaLocales', {
-            title: 'Local ' + idLocal,
+    detailsL: (req, res) => {
+        let idC = req.params.idComuna
+        res.render('telos/details', {
+            title: 'Local ' + idC,
         })
     },
     detallesR: (req, res) => {
         let idRooms = req.params.idRooms
-        res.render('products/detallesP', {
+        res.render('telos/detallesP', {
             title: 'Producto ' + idRooms,
         })
     },
     sale: (req, res) => {
-        res.render('products/ofertas', { title: ofertasMes.title, ofertasMes: { ofertasMes } })
+        res.render('telos/ofertas', { title: ofertasMes.title, ofertasMes: { ofertasMes } })
+    },
+    searchByKey:{
+
     }
 }
 module.exports = controller

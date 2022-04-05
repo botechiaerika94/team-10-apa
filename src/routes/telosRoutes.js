@@ -1,0 +1,10 @@
+const productsController = require('../controllers/telosController.js')
+const express = require('express')
+const router = express.Router()
+router.get('/', productsController.list)
+router.get('/:idL', productsController.showID)
+router.get('/:idL/:idRooms?', productsController.showByRooms)
+router.get('/search?', productsController.searchByKey)
+router.get('/newLocal', productsController.crete)
+router.get('/ofertas', productsController.sale)
+module.exports = router

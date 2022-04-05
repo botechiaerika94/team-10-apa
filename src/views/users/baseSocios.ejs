@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./public/stylesheets/normalize.css" type="text/css" />
+    <link rel=" preconnect " href="https://fonts.googleapis.com ">
+    <link rel="preconnect " href="https://fonts.gstatic.com " crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap " rel="stylesheet ">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,700&display=swap " rel="stylesheet ">
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@700&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css " rel="stylesheet " integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3 " crossorigin="anonymous ">
+    <!--BST 5 ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/public/stylesheets/style_discoUser.css" type="text/css" />
+    <title>
+        <%= title ; %>
+    </title>
+    <!--FONT AWESOME  -->
+    <script src="https://kit.fontawesome.com/0c502158eb.js " crossorigin="anonymous "></script>
+    <style>
+<body>
+<main class="container">
+    <aside class="servers">
+        <div class="servers-collection">
+            <div class="server focusable server-friends unread" role="button" aria-label="Friends unread">
+                <div class="server-icon"><svg><use xlink:href="#icon-friends" /></svg></div>
+            </div>
+        </div>
+
+        <div class="servers-collection">
+            <div class="server focusable unread" role="button" aria-label="Discord Developers unread">
+                <div class="server-icon"><img src="https://cdn.discordapp.com/icons/41771983423143937/edc44e98a690a1f76c5ddec68a0a6b9e.png" /></div>
+            </div>
+        </div>
+
+        <div class="servers-collection">
+            <div class="server focusable active" role="button" aria-label="My Server" aria-selected="true">
+                <div class="server-icon"><img src="https://discordapp.com/assets/0e291f67c9274a1abdddeb3fd919cbaa.png" /></div>
+            </div>
+        </div>
+    </aside>
+
+    <aside class="channels">
+        <header class="channels-header focusable">
+            <h3 role="header" class="channels-header-name"></h3>
+            <svg role="button" aria-label="Dropdown" class="channels-header-dropdown"><use xlink:href="#icon-dropdown" /></svg>
+        </header>
+
+        <section class="channels-list">
+            <header class="channels-list-header focusable">
+                <h5>Text Channels</h5>
+            </header>
+
+            <ul class="channels-list-text">
+                <li class="channel focusable channel-text active">
+                    <span class="channel-name">general</span>
+                    <button class="button" role="button" aria-label="Invite"><svg><use xlink:href="#icon-invite" /></svg></button>
+                    <button class="button" role="button" aria-label="settings"><svg><use xlink:href="#icon-channel-settings" /></svg></button>
+                </li>
+
+                <li class="channel focusable channel-text">
+                    <span class="channel-name">help</span>
+                    <button class="button" role="button" aria-label="Invite"><svg><use xlink:href="#icon-invite" /></svg></button>
+                    <button class="button" role="button" aria-label="settings"><svg><use xlink:href="#icon-channel-settings" /></svg></button>
+                </li>
+            </ul>
+
+            <header class="channels-list-header focusable">
+                <h5>Voice Channels</h5>
+            </header>
+        </section>
+
+        <footer class="channels-footer">
+            <img class="avatar" alt="Avatar" src="https://discordapp.com/assets/0e291f67c9274a1abdddeb3fd919cbaa.png" />
+            <div class="channels-footer-details">
+                <span class="username">yourself</span>
+                <span class="tag">#0001</span>
+            </div>
+            <div class="channels-footer-controls button-group">
+                <button role="button" aria-label="Mute" class="button button-mute"><svg><use xlink:href="#icon-mute" /></svg></button>
+                <button role="button" aria-label="Deafen" class="button button-deafen"><svg><use xlink:href="#icon-deafen" /></svg></button>
+                <button role="button" aria-label="Settings" class="button button-settings"><svg><use xlink:href="#icon-settings" /></svg></button>
+            </div>
+        </footer>
+    </aside>
+
+    <div class="vert-container">
+        <menu type="toolbar" class="menu">
+            <h2 class="menu-name">general</h2>
+        </menu>
+
+        <section class="chat">
+
+        </section>
+    </div>
+</main>
+
+
+<!-- ICONS -->
+<svg id="icon-friends" viewBox="-289 382 32 27.1"></svg>
+
+<svg id="icon-mute" viewBox="0 0 16 16"></svg>
+
+<svg id="icon-deafen" viewBox="0 0 16 16"></svg>
+
+<svg id="icon-settings" viewBox="0 0 16 16"></svg>
+
+<svg id="icon-dropdown" viewBox="0 0 18 18"><style>.dd{stroke:#ABADAF;stroke-width:2px;stroke-dashoffset:1;stroke-dasharray:inherit}</style><path class="dd" stroke="#FFF" d="M4.5 4.5l9 9" stroke-linecap="round"></path><path class="dd" stroke="#FFF" d="M13.5 4.5l-9 9" stroke-linecap="round"></path></svg>
+
+<svg id="icon-invite" viewBox="0 0 16 16"></svg>
+
+<svg id="icon-channel-settings" viewBox="0 0 16 16"></svg>
+<main class="container">
+    <aside class="servers">
+        <div class="servers-collection">
+            <div class="server focusable server-friends unread" role="button" aria-label="Friends unread">
+                <div class="server-icon"><svg><use xlink:href="#icon-friends" /></svg></div>
+            </div>
+        </div>
+
+        <div class="servers-collection">
+            <div class="server focusable unread" role="button" aria-label="Discord Developers unread">
+                <div class="server-icon"><img src="https://cdn.discordapp.com/icons/41771983423143937/edc44e98a690a1f76c5ddec68a0a6b9e.png" /></div>
+            </div>
+        </div>
+        <!------ Include the above in your HEAD tag ---------->
+        <div class="center">
+            <section id="content">
+                <hr>
+                <h2 class="subheader text-center py-6">APA!
+
+                </h2>
+                </hr>
+                <div id="articles">
+                    <article class="article-item" id="article-template">
+
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">INFORMACION PERSONAL</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-3 col-lg-3 " >
+                                        <img alt="User Pic" class=" img-circle img-responsive ">
+                                    </div>
+
+                                    <!--<div class="col-xs-10 col-sm-10 hidden-md hidden-lg "> <br>
+                  <dl>
+                    <dt>DEPARTMENT:</dt>
+                    <dd>Administrator</dd>
+                    <dt>HIRE DATE</dt>
+                    <dd>11/12/2013</dd>
+                    <dt>DATE OF BIRTH</dt>
+                       <dd>11/12/2013</dd>
+                    <dt>GENDER</dt>
+                    <dd>Male</dd>
+                  </dl>
+                </div>-->
+                                    <div class=" col-md-9 col-lg-9 ">
+                                        <table class="table table-user-information ">
+                                            <tbody>
+                                            <tr>
+                                                <td>CODIGO:</td>
+                                                <td>Programming</td>
+                                            </tr>
+                                            <tr>
+                                                <td>NOMBRE:</td>
+                                                <td>06/23/2013</td>
+                                            </tr>
+                                            <tr>
+                                                <td>DOCUMENTO:</td>
+                                                <td>01/24/1988</td>
+                                            </tr>
+
+                                            <tr>
+
+                                            <tr>
+                                                <td>Email</td>
+                                                <td><a href="mailto:info@support.com ">info@support.com</a></td>
+                                            </tr>
+                                            <td>NUMERO TELEFONICO:</td>
+                                            <td>123-4567-890(Landline)
+                                            </td>
+
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-heading ">
+                                <h3 class="panel-title ">DOCUMENTACION</h3>
+                            </div>
+                            <div class="panel-body ">
+                                <div class="row ">
+
+                                    <!--<div class="col-xs-10 col-sm-10 hidden-md hidden-lg "> <br>
+                  <dl>
+                    <dt>DEPARTMENT:</dt>
+                    <dd>Administrator</dd>
+                    <dt>HIRE DATE</dt>
+                    <dd>11/12/2013</dd>
+                    <dt>DATE OF BIRTH</dt>
+                       <dd>11/12/2013</dd>
+                    <dt>GENDER</dt>
+                    <dd>Male</dd>
+                  </dl>
+                </div>-->
+                                    <div class=" col-md-9 col-lg-9 ">
+                                        <table class="table table-user-information ">
+                                            <tbody>
+                                            <tr>
+                                                <td>FOTO DOCUMENTO:</td>
+                                                <td>Programming</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Certificado de Notas/ICFES:</td>
+                                                <td>06/23/2013</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Certificado de residencia:</td>
+                                                <td>01/24/1988</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Recibo Publico:</td>
+                                                <td>Male</td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+
+                                        <a href="# " class="btn btn-primary ">Actualizar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-heading ">
+                                <h3 class="panel-title ">CAMBIO CONTRASEÑA</h3>
+                            </div>
+                            <div class="panel-body ">
+                                <div class="row ">
+
+                                    <!--<div class="col-xs-10 col-sm-10 hidden-md hidden-lg "> <br>
+                  <dl>
+                    <dt>DEPARTMENT:</dt>
+                    <dd>Administrator</dd>
+                    <dt>HIRE DATE</dt>
+                    <dd>11/12/2013</dd>
+                    <dt>DATE OF BIRTH</dt>
+                       <dd>11/12/2013</dd>
+                    <dt>GENDER</dt>
+                    <dd>Male</dd>
+                  </dl>
+                </div>-->
+                                    <div class=" col-md-9 col-lg-9 ">
+                                        <table class="table table-user-information ">
+                                            <tbody>
+                                            <tr>
+                                                <td>Contraseña:</td>
+                                                <td>Programming</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Nueva Contraseña:</td>
+                                                <td>06/23/2013</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Confirmar Nueva Contraseña:</td>
+                                                <td>01/24/1988</td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+
+                                        <a href="# " class="btn btn-primary ">Cambiar Contraseña</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                </div>
+                </article>
+                <!--AÑADIR ARTICULOS VIA JS-->
+
+        </div>
+        </section>
+
+        <aside id="sidebar ">
+            <div id="nav-blog " class="sidebar-item ">
+                <h3>Puedes hacer esto</h3>
+                <a href="# " class="btn btn-success ">OPINAR</a>
+            </div>
+
+            <div id="search " class="sidebar-item ">
+                <h3>BUSCAR TELO</h3>
+                <p>Encuentra el TELO que buscas!</p>
+                <form>
+                    <input type="text " name="search " />
+                    <input type="submit " name="submit " value="Buscar " class="btn " />
+                </form>
+            </div>
+        </aside>
+        <%}%>
+        <div class="clearfix "></div>
+        </div>
+        <div class="servers-collection">
+            <div class="server focusable active" role="button" aria-label="My Server" aria-selected="true">
+                <div class="server-icon"><img src="https://discordapp.com/assets/0e291f67c9274a1abdddeb3fd919cbaa.png" /></div>
+            </div>
+        </div>
+    </aside>
+
+    <aside class="channels">
+        <header class="channels-header focusable">
+            <h3 role="header" class="channels-header-name"></h3>
+            <svg role="button" aria-label="Dropdown" class="channels-header-dropdown"><use xlink:href="#icon-dropdown" /></svg>
+        </header>
+
+        <section class="channels-list">
+            <header class="channels-list-header focusable">
+                <h5>Text Channels</h5>
+            </header>
+
+            <ul class="channels-list-text">
+                <li class="channel focusable channel-text active">
+                    <span class="channel-name">general</span>
+                    <button class="button" role="button" aria-label="Invite"><svg><use xlink:href="#icon-invite" /></svg></button>
+                    <button class="button" role="button" aria-label="settings"><svg><use xlink:href="#icon-channel-settings" /></svg></button>
+                </li>
+
+                <li class="channel focusable channel-text">
+                    <span class="channel-name">help</span>
+                    <button class="button" role="button" aria-label="Invite"><svg><use xlink:href="#icon-invite" /></svg></button>
+                    <button class="button" role="button" aria-label="settings"><svg><use xlink:href="#icon-channel-settings" /></svg></button>
+                </li>
+            </ul>
+
+            <header class="channels-list-header focusable">
+                <h5>Voice Channels</h5>
+            </header>
+        </section>
+
+        <footer class="channels-footer">
+            <img class="avatar" alt="Avatar" src="https://discordapp.com/assets/0e291f67c9274a1abdddeb3fd919cbaa.png" />
+            <div class="channels-footer-details">
+                <span class="username">yourself</span>
+                <span class="tag">#0001</span>
+            </div>
+            <div class="channels-footer-controls button-group">
+                <button role="button" aria-label="Mute" class="button button-mute"><svg><use xlink:href="#icon-mute" /></svg></button>
+                <button role="button" aria-label="Deafen" class="button button-deafen"><svg><use xlink:href="#icon-deafen" /></svg></button>
+                <button role="button" aria-label="Settings" class="button button-settings"><svg><use xlink:href="#icon-settings" /></svg></button>
+            </div>
+        </footer>
+    </aside>
+
+    <div class="vert-container">
+        <menu type="toolbar" class="menu">
+            <h2 class="menu-name">general</h2>
+        </menu>
+
+        <section class="chat">
+
+        </section>
+    </div>
+</main>
+
+
+<!-- ICONS -->
+<svg id="icon-friends" viewBox="-289 382 32 27.1"></svg>
+
+<svg id="icon-mute" viewBox="0 0 16 16"></svg>
+
+<svg id="icon-deafen" viewBox="0 0 16 16"></svg>
+
+<svg id="icon-settings" viewBox="0 0 16 16"></svg>
+
+<svg id="icon-dropdown" viewBox="0 0 18 18"></svg>
+
+<svg id="icon-invite" viewBox="0 0 16 16"></svg>
+
+<svg id="icon-channel-settings" viewBox="0 0 16 16"></svg>
+
+
+</html>
+
+</body>
