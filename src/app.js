@@ -32,7 +32,7 @@ app.use('/usuarios', usersRouter);
 app.use('/telos', telosRouter);
 app.use('/empresas', enterpriseRouter);
 app.use('/ApaOwners', apiOwnerRouter);
-app.use('/staff', staffRouter)
+app.use('/staff', staffRouter);
 
 /**************WS LISTEN ON 6669 ***************/
 app.listen(process.env.PORT || 8080, () => {

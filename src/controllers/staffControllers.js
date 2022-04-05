@@ -1,6 +1,9 @@
 let controller = {
-    dash: (req, res) => {
+    listE: (req, res) => {
         res.render('staff/staffBase')
+    },
+    createE: (req, res) => {
+        res.render('staff/createProducts')
     }
 }
 module.exports = controller
