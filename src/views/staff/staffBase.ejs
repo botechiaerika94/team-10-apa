@@ -619,25 +619,20 @@
 </head>
 
 <body>
-    <main class="container">
+    <main class="container" style="width: 100vw; margin: 0px">
         <aside class="servers">
-            <div class="servers-collection">
-                <div class="server focusable server-friends unread" role="button" aria-label="Friends unread">
-                    <div class="server-icon"><svg><use xlink:href="#icon-friends" /></svg></div>
-                </div>
-            </div>
+
 
             <div class="servers-collection">
                 <div class="server focusable unread" role="button" aria-label="Discord Developers unread">
-                    <div class="server-icon"><img src="https://cdn.discordapp.com/icons/41771983423143937/edc44e98a690a1f76c5ddec68a0a6b9e.png" /></div>
                 </div>
+            </div>
             </div>
 
             <div class="servers-collection">
                 <div class="server focusable active" role="button" aria-label="My Server" aria-selected="true">
-                    <div class="server-icon"><img src="https://discordapp.com/assets/0e291f67c9274a1abdddeb3fd919cbaa.png" /></div>
+
                 </div>
-            </div>
         </aside>
 
         <aside class="channels">
@@ -691,7 +686,57 @@
 
             <section class="chat">
 
-            </section>
+
+                <form class="form">
+
+                    <div class="form-group">
+                        <label for="data">Data</label>
+                        <input type="date" id="data" class="form-control" required autofocus/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quantidade">Quantidade</label>
+                        <input type="number" min="1" step="1" id="quantidade" class="form-control" value="1" required/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="valor">Valor</label>
+                        <input id="valor" type="number" class="form-control" min="0.01" step="0.01" value="0.0" required />
+                    </div>
+
+                    <button class="btn btn-primary" type="submit">Incluir</button>
+                </form>
+
+                <div class="text-center">
+                    <button class="btn btn-primary text-center" type="button">
+    Importar Negociações
+</button>
+                    <button class="btn btn-primary text-center" type="button">
+    Apagar
+</button>
+                </div>
+                <br>
+
+
+                <table class="table table-hover table-bordered">
+                    <thead>
+                        <tr>
+                            <th>DATA</th>
+                            <th>QUANTIDADE</th>
+                            <th>VALOR</th>
+                            <th>VOLUME</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        </tfoot>
+                </table>
+
+
+        </div>
+        </div>
+        </section>
         </div>
     </main>
 

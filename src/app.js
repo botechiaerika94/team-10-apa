@@ -2,11 +2,8 @@
 require('dotenv').config
 const express = require('express');
 const port = process.env.PORT
-
 const path = require('path');
-
 const app = express()
-
 const methodOverride = require('method-override')
 app.use(methodOverride('_method'))
     // Prepara app para method POST - CAPTURAR FORM --> LITERAL OBJECT + FORMATO JSON
