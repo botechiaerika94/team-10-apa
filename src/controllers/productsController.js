@@ -2,8 +2,10 @@ const fs = require('fs')
 const path = require('path')
     //REQUIRE PATH, READ FILE and SYNC JSON DOCUMENT
 const comunasFilePath = path.join(__dirname, '../data/comunasDataBase.json')
+const ofertasDataBaseFilePath = path.join(__dirname, '../data/ofertasDataBase.json')
     //JSON OBJECT --> JS OBJECT
 const comunas = JSON.parse(fs.readFileSync(comunasFilePath, 'utf-8'));
+const ofertasMes = JSON.parse(fs.readFileSync(ofertasDataBaseFilePath, 'utf-8'));
 let controller = {
     landingProducts: (req, res) => {
         res.render('products/landingProducts', {
@@ -30,7 +32,7 @@ let controller = {
         })
     },
     sale: (req, res) => {
-        res.render('products/ofertas', { title: 'ofertas' })
+        res.render('products/ofertas', { title: ofertasMes.title, ofertasMes: { ofertasMes } })
     }
 }
 module.exports = controller
