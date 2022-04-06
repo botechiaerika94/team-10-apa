@@ -23,6 +23,7 @@ const usersRouter = require('./routes/usersRoutes.js')
 const productsRouter = require('./routes/productsRoutes.js')
 const enterpriseRouter = require('./routes/enterpriseRoutes.js')
 const apiOwnerRouter = require('./routes/apiOwnerRoutes.js')
+    //const searchRouter = require('./routes/searchRoutes.js')
 
 app.use('/', mainRouters);
 app.use('/apa-club', apaClubRouter);
@@ -30,6 +31,7 @@ app.use('/usuarios', usersRouter);
 app.use('/productos', productsRouter);
 app.use('/empresas', enterpriseRouter);
 app.use('/ApaOwners', apiOwnerRouter);
+//app.use('/buscarApa', searchRouter)
 
 /**************WS LISTEN ON 6669 ***************/
 app.listen(process.env.PORT || 8080, () => {
