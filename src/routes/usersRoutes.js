@@ -1,8 +1,8 @@
-const usersController = require('./../controllers/usersControllers.js')
+const usersControllers = require('./../controllers/usersControllers.js')
 const express = require('express');
-const router = express.Router();
+const router = express.Router()
 
-router.get('/', usersController.login)
-router.get('/nuevos-socios', usersController.crearCuenta)
+router.get('/', usersControllers.login)
+router.get('/nuevos-socios', usersControllers.crearCuenta)
 
 module.exports = router

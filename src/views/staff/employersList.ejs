@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Negociações</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.css" />
+</head>
+
+<body class="container">
+    <h1 class="text-center">Entradas y Salidas (Money_Moviment!)</h1>
+
+    <form class="form">
+        <div class="form-group ">
+            <label for="datetime-picker">Fecha y Hora de Inicio</label>
+            <input type="datetime-picker" id="data" class="form-control" required autofocus />
+        </div>
+
+        <div class="form-group">
+            <label for="quantidade">Quantidade</label>
+            <input type="number" min="1" step="1" id="quantidade" class="form-control" value="1" required />
+        </div>
+
+        <div class="form-group">
+            <label for="value">Valor</label>
+            <input id="value" type="number" class="form-control" min="2" step="1" value="0.0" required />
+        </div>
+
+        <button class="btn btn-primary" type="submit">Incluir</button>
+    </form>
+
+    <div class="text-center">
+        <button class="btn btn-primary text-center" type="button">
+        Importar Negociações
+      </button>
+        <button class="btn btn-primary text-center" type="button">Apagar</button>
+    </div>
+    <br />
+    <br />
+
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr>
+                <th>DATA</th>
+                <th>QUANTIDADE</th>
+                <th>VALOR</th>
+                <th>VOLUME</th>
+            </tr>
+        </thead>
+
+        <tbody></tbody>
+
+        <tfoot></tfoot>
+    </table>
+</body>
+
+</html>
