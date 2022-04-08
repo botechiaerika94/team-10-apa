@@ -417,3 +417,39 @@ main .publicacion .botones button svg {
     width: 32px;
     height: 32px;
 }
+
+.apaBrand-bottom {
+    display: block;
+    color: #E70C8F;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.7rem;
+}
+
+.bg-custom {
+    background-color: #bd0172;
+    width: 100vw;
+    height: 50px;
+    align-content: center;
+}
+
+.bg-custom-02 {
+    color: black;
+    background: #AAFFAC;
+    border: 2px dotted black;
+    border-radius: 15px;
+}
+
+.bg-02 {
+    background: url("../images/svg/bg-02.svg");
+    background-repeat: repeat;
+}
+
+.footer{
+    color: black;
+}
+.footer-link {
+    text-decoration: none;
+    color: black;
+}
+
