@@ -4,7 +4,9 @@ const usersFilePath = path.join(__dirname, '../data/usersDataBase.json')
 const usersList = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 let controller = {
     apaClub: (req, res) => {
-        res.send('club')
+        res.render('apaClub/perfilApa', {
+            title: 'Perfil del Socio'
+        })
     },
     buscar: (req, res) => {
         res.render('apaClub/buscarProducto', { title: 'BUSCAR' });
@@ -13,6 +15,13 @@ let controller = {
         res.render('users/dashboard', {
             title: 'miCuenta',
             usersList: usersList
+        })
+    },
+    edit: (req, res) => {
+        let user = req.params.user_register
+        res.render('apaClub/perfilApa', {
+            title: 'Perfil Usuario' + userList.id,
+            user: usersList
         })
     }
 }
