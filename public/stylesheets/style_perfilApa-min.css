@@ -122,6 +122,8 @@ header .botones .perfil {
     height: 40px;
     padding: 0 7px;
     background: none;
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
     min-width: max-content;
 }
 
@@ -414,7 +416,4 @@ main .publicacion .botones button svg {
 .icoon {
     width: 32px;
     height: 32px;
-    background-color: #48C3EE;
-    border-radius: 10px;
-    padding: 5.5px;
 }
