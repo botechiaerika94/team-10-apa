@@ -1,8 +1,8 @@
 /**************REQUISICION + FUNCIONALIDAD de EXPRESS ***************/
-require('dotenv').config
-const express = require('express');
-const port = process.env.PORT
-
+//require('dotenv').config
+//const express = require('express');
+//const port = process.env.PORT
+const express = require('express')
 const path = require('path');
 
 const app = express()
@@ -32,7 +32,7 @@ const searchRouter = require('./routes/searchRoutes.js')
 app.use('/', mainRouters);
 app.use('/apa-club', apaClubRouter);
 app.use('/usuarios', usersRouter);
-app.use('/productos', productsRouter);
+app.use('/telos', productsRouter);
 app.use('/empresas', enterpriseRouter);
 app.use('/ApaOwners', apiOwnerRouter);
 app.use('/buscarApa', searchRouter)
