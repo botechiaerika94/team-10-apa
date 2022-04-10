@@ -23,6 +23,9 @@ let controller = {
             title: 'Perfil Usuario' + userList.id,
             user: usersList
         })
+    },
+    showCart: (req, res) => {
+        res.render('apaClub/apaClub_shopCart', { title: 'APA RESERVAS' })
     }
 }
 module.exports = controller

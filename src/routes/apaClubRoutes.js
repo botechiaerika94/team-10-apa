@@ -11,4 +11,5 @@ router.get('/editarPerfil/:register_user', apaClubController.edit)
     //router.post('/editarPerfil/:register_user ', apaClubController.edit)
     //router.post('/editarPerfil/:register_user ', apaClubController.storage)
     //router.delete('/editarPerfil/:register_user ', apaClubController.delete)
+router.get('/carritoApa', apaClubController.showCart)
 module.exports = router
