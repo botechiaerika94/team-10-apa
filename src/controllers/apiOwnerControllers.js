@@ -18,8 +18,7 @@ let controller = {
     },
     showUByID: (req, res) => {
         let register_user = req.params.register_user
-        res.render('apiOwner/detailsUsers',
-            {
+        res.render('apiOwner/detailsUsers', {
             title: 'Detalles Usuario ' + register_user,
             usersList: usersList
         })
@@ -29,6 +28,30 @@ let controller = {
         res.render('apiOwner/showLocals', {
             title: 'listar Locales',
             localsList: localsList
+        })
+    },
+    createLocal: (req, res) => {
+        res.render('apiOwner/newEnterprise.ejs', { title: "FORM EMPRESA" })
+    },
+    storeLocal: (req, res) => {
+
+        class CreateTelo {
+            constructor() {
+                this.nameHotel = req.body.nameHotel,
+                    this.emailHotel = req.body.emailHotel,
+                    this.telephoneHotel = req.body.telephoneHotel,
+                    this.webPageHotel = req.body.webPageHotel,
+                    this.addressHotel = req.body.addressHotel,
+                    this.parkingHotel = req.body.parkingHotel,
+                    this.comuna = `Comuna: + ${req.body.comuna}`
+            }
+        }
+
+        let createTelo = new CreateTelo()
+        console.log(createTelo)
+        let newEJSON = JSON.stringify(fs.readFileSync(createTelo))
+        app.get(newEJSON, (req, res) => {
+            JSON.exports(__dirname, './../data/newEjson.json')
         })
     }
 }
