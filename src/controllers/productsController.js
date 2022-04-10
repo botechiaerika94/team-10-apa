@@ -6,12 +6,11 @@ const ofertasDataBaseFilePath = path.join(__dirname, '../data/ofertasDataBase.js
     //JSON OBJECT --> JS OBJECT
 const comunas = JSON.parse(fs.readFileSync(comunasFilePath, 'utf-8'));
 const ofertasMes = JSON.parse(fs.readFileSync(ofertasDataBaseFilePath, 'utf-8'));
+
+/* ******LANDING ******* */
 let controller = {
-    landingProducts: (req, res) => {
-        res.render('products/landingProducts', {
-            title: 'PRODUCTOS - CABA',
-            comunas: comunas
-        })
+    index: (req, res) => {
+        res.render('products/ofertas', { title: ofertasMes.title, ofertasMes: { ofertasMes } })
     },
     comunasP: (req, res) => {
         let comunaID = req.params.comunaID
@@ -31,8 +30,11 @@ let controller = {
             title: 'Producto ' + idRooms,
         })
     },
-    sale: (req, res) => {
-        res.render('products/ofertas', { title: ofertasMes.title, ofertasMes: { ofertasMes } })
+    listCABA: (req, res) => {
+        res.render('products/landingProducts', {
+            title: 'PRODUCTOS - CABA',
+            comunas: comunas
+        })
     }
 }
 module.exports = controller
