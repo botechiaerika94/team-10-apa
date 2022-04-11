@@ -28,15 +28,12 @@ const staffRouter = require('./routes/staffRoutes.js')
     /**************define end points***************/
 app.use('/', mainRouters);
 app.use('/apa-club', apaClubRouter);
-app.use('/usuarios', usersRouter);
 app.use('/telos', productsRouter);
 app.use('/empresas', enterpriseRouter);
 app.use('/ApaOwners', apiOwnerRouter);
 app.use('/ApaGame', gameAIRouter);
 app.use('/staff', staffRouter)
     /***********Server listen 6996****** */
-app.listen(process.env.PORT || 6996, () => {
-    console.log('WS LEVANTADO Y CORRIENDO EN 6996')
 })
 
 module.exports = app
