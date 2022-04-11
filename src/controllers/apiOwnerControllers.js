@@ -10,7 +10,7 @@ let controller = {
             title: 'owners apa'
         })
     },
-    list: (req, res) => {
+    listSocios: (req, res) => {
         res.render('apiOwner/showUsers', {
             title: 'Lista de Usuarios',
             usersList: usersList
@@ -18,13 +18,12 @@ let controller = {
     },
     showUByID: (req, res) => {
         let register_user = req.params.register_user
-        res.render('apiOwner/detailsUsers',
-            {
+        res.render('apiOwner/:showRGU', {
             title: 'Detalles Usuario ' + register_user,
             usersList: usersList
         })
     },
-    listLocals: (req, res) => {
+    showRGL: (req, res) => {
         let rgL = req.params.rgL;
         res.render('apiOwner/showLocals', {
             title: 'listar Locales',
