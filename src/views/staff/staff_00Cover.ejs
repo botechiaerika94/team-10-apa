@@ -29,14 +29,14 @@
                 </div>
                 <nav class="menu d-flex d-sm-block justify-content-center flex-wrap">
                     <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="5" height="10" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 10 5">
                             <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
                         </svg> Inicio
                     </a>
                     <a href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text-fill" viewBox="0 0 16 16">
                             <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1h-4z"/>
-                        </svg> Entradas
+                        </svg>Registro de Punto
                     </a>
                     <a href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
@@ -64,8 +64,9 @@
                 <main class="container">
                     <div class="row my-5 d-flex justify-content-center">
                         <div class="col-8 text-center">
-                            <h1 class="display-4">Precios</h1>
-                            <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium itaque at ratione! Adipisci qui ea delectus totam officia vitae ducimus quasi, quas reiciendis voluptas nostrum impedit! Atque facilis natus expedita.</p>
+                            <h1 class="display-4"><strong class="text-alert">Registre</strong><br/> su momentoo de INICIO y FINAL de LABURO</h1>
+                            <p class="lead">Es importante <strong>CUMPLIR EL HORARIO</strong> una vez que el registro exacto ocurrre de forma <strong></strong>AUTOMATICA registrando FECHA y HORARIO</p><strong>.</p>
+                                <small class="text-alert">En caso de difcultades comunicarse INMEDIATAMENTE con el soporte por chat de la app a fin de regularizarmos los horarios y sistema </small>
                         </div>
                     </div>
 
@@ -131,7 +132,50 @@
                     </div>
                 </main>
 
+<!-- Caja de dialogo -->
+<div class="modal-dialog">
+    <!-- Contenido de la caja -->
+    <div class="modal-content">
+        <!-- Encabezado de la caja -->
+        <div class="modal-header">
+            <h5 class="modal-title">Hola Equipo! Sos<strong> @<=%e.name%>!</strong></h5>
+                        </div>
 
+                        <!-- Cuerpo de la caja -->
+                        <div class="modal-body">
+                            <medium>Ingrese su Contraseña para Confirmar su <strong>Inicio de Jornada Laboral</strong></medium>
+                            <form class="form-group" method="POST" action="/staff/owner/controlFuncionarios">
+                                <label for="passportStart">@<%=e.name%> , ingrese su <strong>Contraseña Personal</strong></label>
+                                <div class="col-6">
+                                    <div class="input-group input-group-sm mb-3">
+                                        <span class="input-group-text">Pequeño</span>
+                                        <input type="text" class="form-control" aria-label="Nombre">
+                                    </div>
+                                    <div class="input-group input-group-lg mb-3">
+                                        <span class="input-group-text">Grande</span>
+                                        <input type="text" class="form-control" aria-label="Nombre">
+                                    </div>
+
+                                    <div class="input-group">
+                                        <label for="pais" class="input-group-text">Pais</label>
+                                        <select name="" id="pais" class="form-select">
+						
+						<button class="btn btn-primary">Enviar</button type="submit">
+						<button class="btn btn-alert">Cancelar</button type="cancel">
+					</div>
+				</div>
+				<input 
+			</div>
+
+                <!-- Pie de pagina de la caja -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Acepto</button>
+                </div>
+        </div>
+    </div>
+</div>
+</div>
 </body>
 
 </html>

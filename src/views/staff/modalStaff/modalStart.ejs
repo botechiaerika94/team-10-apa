@@ -1,0 +1,44 @@
+<!-- Caja de dialogo -->
+<div class="modal-dialog">
+    <!-- Contenido de la caja -->
+    <div class="modal-content">
+        <!-- Encabezado de la caja -->
+        <div class="modal-header">
+            <h5 class="modal-title">Hola Equipo! Sos<strong> @<=%e.name%>!</strong></h5>
+        </div>
+
+        <!-- Cuerpo de la caja -->
+        <div class="modal-body">
+            <medium>Ingrese su Contraseña para Confirmar su <strong>Inicio de Jornada Laboral</strong></medium>
+            <form class="form-group" method="POST" action="/staff/owner/controlFuncionarios">
+                <label for="passportStart">@<%=e.name%> , ingrese su <strong>Contraseña Personal</strong></label>
+                <div class="col-6">
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text">Pequeño</span>
+                        <input type="text" class="form-control" aria-label="Nombre">
+                    </div>
+                    <div class="input-group input-group-lg mb-3">
+                        <span class="input-group-text">Grande</span>
+                        <input type="text" class="form-control" aria-label="Nombre">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="pais" class="input-group-text">Pais</label>
+                        <select name="" id="pais" class="form-select">
+						
+						<button class="btn btn-primary">Enviar</button type="submit">
+						<button class="btn btn-alert">Cancelar</button type="cancel">
+					</div>
+				</div>
+				<input 
+			</div>
+
+                <!-- Pie de pagina de la caja -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Acepto</button>
+                </div>
+        </div>
+    </div>
+</div>
+</div>

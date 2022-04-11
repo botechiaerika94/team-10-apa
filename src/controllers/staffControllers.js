@@ -1,9 +1,11 @@
 let controller = {
     index: (req, res) => {
-        res.render('staff/staff_01', { title: 'STAFF1' })
+        res.render('staff/staff_00Cover', { title: 'Bien Venid@s Equipo!' })
     },
-    index1: (req, res) => {
-        res.render('staff/staff_02', { title: 'STAFF4' })
+    readStaff: (req, res) => {
+        res.render('staff/staff_01formRegister', {
+            title: 'Configuración del  Equipo '
+        })
     },
     index2: (req, res) => {
         res.render('staff/staff_03', { title: 'STAFF2' })
