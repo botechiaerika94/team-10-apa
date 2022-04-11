@@ -7,7 +7,7 @@ const app = express()
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
 /***********static  files***************************/
-app.use(express.static(path.join(__dirname, './../public')));
+app.use(express.static(path.join(__dirname, './../public')))
 
 /***********middlewares expreess*******/
 const methodOverride = require('method-override')
@@ -23,7 +23,6 @@ const usersRouter = require('./routes/usersRoutes.js')
 const productsRouter = require('./routes/productsRoutes.js')
 const enterpriseRouter = require('./routes/enterpriseRoutes.js')
 const apiOwnerRouter = require('./routes/apiOwnerRoutes.js')
-    //const searchRouter = require('./routes/searchRoutes.js')
 const gameAIRouter = require('./routes/gameAIRoutes.js')
 const staffRouter = require('./routes/staffRoutes.js')
     /**************define end points***************/
@@ -33,8 +32,7 @@ app.use('/usuarios', usersRouter);
 app.use('/telos', productsRouter);
 app.use('/empresas', enterpriseRouter);
 app.use('/ApaOwners', apiOwnerRouter);
-//app.use('/buscarApa', searchRouter)
-app.use('/ApaGame', gameAIRouter)
+app.use('/ApaGame', gameAIRouter);
 app.use('/staff', staffRouter)
     /***********Server listen 6996****** */
 app.listen(process.env.PORT || 6996, () => {

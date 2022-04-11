@@ -61,78 +61,77 @@
             </aside>
 
             <main class="main col">
-                <div class="row">
-                    <div class="columna col-12 col-lg-7">
-                        <div class="widget nueva_entrada">
-                            <h3 class="titulo">Nueva Entrada</h3>
-                            <!DOCTYPE html>
-                            <html lang="es">
+                <main class="container">
+                    <div class="row my-5 d-flex justify-content-center">
+                        <div class="col-8 text-center">
+                            <h1 class="display-4">Precios</h1>
+                            <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium itaque at ratione! Adipisci qui ea delectus totam officia vitae ducimus quasi, quas reiciendis voluptas nostrum impedit! Atque facilis natus expedita.</p>
+                        </div>
+                    </div>
 
-                            <head>
-                                <meta charset="UTF-8">
-                                <meta name="APA AFTER-NIGHT" content="BUSCADOR DE TELOS, TELOS SEARCH ENGINE, TELOS ARGENTINA, ARGENTINA, CABA, TELOS-CABA">
-                                <meta name="viewport" content="width=device-width, initial-scale=1">
-                                <%- include('../partials/head.ejs')%>
-                                    <!--FONT AWESOME  -->
-                                    <script src="https://kit.fontawesome.com/0c502158eb.js " crossorigin="anonymous "></script>
-                                    <link rel='stylesheet' href='/public/stylesheets/normalize.css' type="text/css">
-                                    <link rel='stylesheet' href='/stylesheets/style.css' type="text/css">
-                                    <link rel='stylesheet' href='/stylesheets/style_ownersHome.css' type="text/css">
-                                    <!------ Include the above in your HEAD tag ---------->
-                                    <main class="main col">
-                                        <div class="row">
-                                            <div class="columna col-12 col-lg-7">
-                                                <div class="widget nueva_entrada">
+                    <div class="row">
+                        <!-- Card 1 -->
+                        <div class="col">
+                            <div class="card mb-4" style="min-width: 250px;">
+                                <div class="card-header">
+                                    <h4 class="my-0 text-center">Gratis</h4>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h1>$0 <span class="text-muted">/ mes</span></h1>
+                                    <ul class="list-unstyled">
+                                        <li>10 usuarios incluidos</li>
+                                        <li>2 GB de espacio</li>
+                                        <li>Soporte por email</li>
+                                        <li>Acceso al centro de ayuda</li>
+                                    </ul>
+                                    <button class="btn btn-outline-primary btn-lg btn-block">Registrate Gratis</button>
+                                </div>
+                            </div>
+                        </div>
 
-                                                    </header>
+                        <!-- Card 2 -->
+                        <div class="col">
+                            <!-- Card 2 -->
+                            <div class="card mb-4" style="min-width:250px;">
+                                <div class="card-header">
+                                    <h4 class="my-0 text-center">Profesional</h4>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h1>$15 <span class="text-muted">/ mes</span></h1>
+                                    <ul class="my-3 list-unstyled">
+                                        <li>20 usuarios incluidos</li>
+                                        <li>10 GB de espacio</li>
+                                        <li>Soporte por email</li>
+                                        <li>Acceso al centro de ayuda</li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-lg btn-block">Empezar Ahora</button>
+                                </div>
+                            </div>
+                        </div>
 
-                                                    <div class="center">
-                                                        <section id="content">
+                        <!-- Card 3 -->
+                        <div class="col">
+                            <!-- Card 3 -->
+                            <div class="card mb-4" style="min-width:250px;">
+                                <div class="card-header">
+                                    <h4 class="my-0 text-center">Empresas</h4>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h1>$29 <span class="text-muted">/ mes</span></h1>
+                                    <ul class="my-3 list-unstyled">
+                                        <li>30 usuarios incluidos</li>
+                                        <li>15 GB de espacio</li>
+                                        <li>Soporte por email</li>
+                                        <li>Acceso al centro de ayuda</li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-lg btn-block">Empezar Ahora</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
 
-                                                            <h1 class="subheader">Formulario</h1>
 
-                                                            <form class="mid-form">
-                                                                <div class="form-group">
-                                                                    <label for="nombre">Nombre</label>
-                                                                    <input type="text" name="nombre" />
-                                                                </div>
+</body>
 
-                                                                <div class="form-group">
-                                                                    <label for="apellidos">Apellidos</label>
-                                                                    <input type="text" name="apellidos" />
-                                                                </div>
-
-                                                                <div class="form-group">
-                                                                    <label for="bio">Biografia</label>
-                                                                    <textarea name="bio"></textarea>
-                                                                </div>
-
-                                                                <div class="form-group radibuttons">
-                                                                    <input type="radio" name="genero" value="hombre" /> Hombre
-                                                                    <input type="radio" name="genero" value="mujer" /> Mujer
-                                                                    <input type="radio" name="genero" value="otro" /> Otro
-                                                                </div>
-
-                                                                <div class="clearfix"></div>
-
-                                                                <input type="submit" value="Enviar" class="btn btn-success" />
-
-                                                            </form>
-
-                                                        </section>
-
-                                                        <aside id="sidebar">
-                                                            <div id="nav-blog" class="sidebar-item">
-                                                                <h3>Puedes hacer esto</h3>
-                                                                <a href="#" class="btn btn-success">Crear artículo</a>
-                                                            </div>
-
-                                                            <div id="search" class="sidebar-item">
-                                                                <h3>Buscador</h3>
-                                                                <p>Encuentra el artículo que buscas</p>
-                                                                <form>
-                                                                    <input type="text" name="search" />
-                                                                    <input type="submit" name="submit" value="Buscar" class="btn" />
-                                                                </form>
-                                                            </div>
-                                                        </aside>
+</html>
