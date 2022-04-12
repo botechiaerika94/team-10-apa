@@ -56,83 +56,46 @@
                             <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
                         </svg> Salir
                     </a>
-
                 </nav>
             </aside>
 
-            <main class="main col">
+            <main class=" main col">
                 <div class="row">
-                    <div class="columna col-12 col-lg-7">
+                    <div class="columna col-12">
                         <div class="widget nueva_entrada">
-                            <h3 class="titulo">Nueva Entrada</h3>
-                            <!DOCTYPE html>
-                            <html lang="es">
+                            <h1 class="subheader">Formulario Cadastro</h1>
 
-                            <head>
-                                <meta charset="UTF-8">
-                                <meta name="APA AFTER-NIGHT" content="BUSCADOR DE TELOS, TELOS SEARCH ENGINE, TELOS ARGENTINA, ARGENTINA, CABA, TELOS-CABA">
-                                <meta name="viewport" content="width=device-width, initial-scale=1">
-                                <%- include('../partials/head.ejs')%>
-                                    <!--FONT AWESOME  -->
-                                    <script src="https://kit.fontawesome.com/0c502158eb.js " crossorigin="anonymous "></script>
-                                    <link rel='stylesheet' href='/public/stylesheets/normalize.css' type="text/css">
-                                    <link rel='stylesheet' href='/stylesheets/style.css' type="text/css">
-                                    <link rel='stylesheet' href='/stylesheets/style_ownersHome.css' type="text/css">
-                                    <!------ Include the above in your HEAD tag ---------->
-                                    <main class="main col">
-                                        <div class="row">
-                                            <div class="columna col-12 col-lg-7">
-                                                <div class="widget nueva_entrada">
+                            <form class="mid-form">
+                                <div class="form-group">
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" name="nombre" />
+                                </div>
 
-                                                    </header>
+                                <div class="form-group">
+                                    <label for="apellidos">Apellidos</label>
+                                    <input type="text" name="apellidos" />
+                                </div>
 
-                                                    <div class="center">
-                                                        <section id="content">
+                                <div class="form-group">
+                                    <label for="bio">Biografia</label>
+                                    <textarea name="bio"></textarea>
+                                </div>
 
-                                                            <h1 class="subheader">Formulario</h1>
+                                <div class="form-group radibuttons">
+                                    <input type="radio" name="genero" value="hombre" /> Hombre
+                                    <input type="radio" name="genero" value="mujer" /> Mujer
+                                    <input type="radio" name="genero" value="otro" /> Otro
+                                </div>
 
-                                                            <form class="mid-form">
-                                                                <div class="form-group">
-                                                                    <label for="nombre">Nombre</label>
-                                                                    <input type="text" name="nombre" />
-                                                                </div>
+                                <div class="clearfix"></div>
 
-                                                                <div class="form-group">
-                                                                    <label for="apellidos">Apellidos</label>
-                                                                    <input type="text" name="apellidos" />
-                                                                </div>
+                                <input type="submit" value="Enviar" class="btn btn-success" />
 
-                                                                <div class="form-group">
-                                                                    <label for="bio">Biografia</label>
-                                                                    <textarea name="bio"></textarea>
-                                                                </div>
+                            </form>
 
-                                                                <div class="form-group radibuttons">
-                                                                    <input type="radio" name="genero" value="hombre" /> Hombre
-                                                                    <input type="radio" name="genero" value="mujer" /> Mujer
-                                                                    <input type="radio" name="genero" value="otro" /> Otro
-                                                                </div>
+                            </section>
+            </main>
 
-                                                                <div class="clearfix"></div>
+</body>
 
-                                                                <input type="submit" value="Enviar" class="btn btn-success" />
-
-                                                            </form>
-
-                                                        </section>
-
-                                                        <aside id="sidebar">
-                                                            <div id="nav-blog" class="sidebar-item">
-                                                                <h3>Puedes hacer esto</h3>
-                                                                <a href="#" class="btn btn-success">Crear artículo</a>
-                                                            </div>
-
-                                                            <div id="search" class="sidebar-item">
-                                                                <h3>Buscador</h3>
-                                                                <p>Encuentra el artículo que buscas</p>
-                                                                <form>
-                                                                    <input type="text" name="search" />
-                                                                    <input type="submit" name="submit" value="Buscar" class="btn" />
-                                                                </form>
-                                                            </div>
-                                                        </aside>
+</html>
