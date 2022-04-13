@@ -6,3 +6,8 @@ node_modules
 
 config.codekit3
 .DS_Store
+
+.vscode/settings.json
+.vscode/extensions.json
+.vscode
+node_modules
