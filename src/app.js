@@ -40,7 +40,4 @@ app.use('/staff', staffRouter)
 app.listen(process.env.PORT || 8080, () => {
     console.log('WS LEVANTADO Y CORRIENDO EN 8080')
 })
-
-
-
 module.exports = app
