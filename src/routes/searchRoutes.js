@@ -1,7 +1,7 @@
 const searchControllers = require('./../controllers/searchControllers.js')
 const express = require('express')
 const router = express.Router()
-router.get('/apa-club/buscarApa', .searchControllers.searchComunas)
-    // router.get('/xUbicacion', searchController.searchP)
-
+router.get('/categoria?', searchControllers.searchAny)
+router.get('/categoria?', searchControllers.searchZone)
+router.get('/categoria?', searchControllers.searchPrice)
 module.exports = router
