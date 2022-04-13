@@ -11,3 +11,6 @@ config.codekit3
 .vscode/extensions.json
 .vscode
 node_modules
+.DS_Store
+.DS_Store
+.DS_Store
