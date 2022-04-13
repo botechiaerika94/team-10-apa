@@ -15,6 +15,9 @@ app.use(methodOverride('_method'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }));
 
+/***********middlewares Metrics*****/
+const aMW_AGauditG = require('./middlewares/aMW_AuditG.js')
+app.use(aMW_AG);
 
 /**************require routes***************/
 const mainRouters = require('./routes/mainRoutes.js')
@@ -39,5 +42,5 @@ app.use('/ApaGame', gameAIRouter);
 /***********Server listen 6996****** */
 app.listen(process.env.PORT || 9994, () => {
     console.log('WS LEVANTADO Y CORRIENDO EN 9994')
-})
-module.exports = app
+});
+module.exports = app()
