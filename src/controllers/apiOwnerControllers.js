@@ -16,8 +16,8 @@ let controller = {
             usersList: usersList
         });
     },
-    showUByID: (req, res) => {
-        let register_user = req.params.register_user
+    showUbyID: (req, res) => {
+        let register_user = req.res.register_user
         res.render('apiOwner/detailsUsers', {
             title: 'Detalles Usuario ' + register_user,
             usersList: usersList

@@ -28,7 +28,8 @@
         <section id="content">
 
             <article class="article-item article-detail">
-                <%for(let u of usersList) {%>
+
+                <%for(u of usersList ){%>
                     <div class="image-wrap">
                         <img src="<%=u.avatar%>" alt="User Avatar" class="img-responsive" />
                     </div>
@@ -51,8 +52,9 @@
                         Donec fermentum ligula at ultrices faucibus. Proin facilisis est vitae vehicula finibus. Praesent rutrum eleifend ligula, sit amet molestie dolor interdum nec. Cras sodales odio nec diam posuere, mollis aliquam magna tempus. Fusce lobortis maximus dapibus.
                         Curabitur aliquam vehicula ultricies. Nulla sed vulputate erat.
                     </p>
+                    <%}%>
 
-                    <div class="clearfix"></div>
+                        <div class="clearfix"></div>
             </article>
 
         </section>
@@ -91,9 +93,10 @@
                 </form>
             </div>
         </aside>
-        <div class="clearfix"></div>
-        </div>
+
         <%-include('../partials/footerSocios.ejs')%>
+            <div class="clearfix"></div>
+            </div>
 
 </html>
 
