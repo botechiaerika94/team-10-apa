@@ -61,39 +61,36 @@
 
             <main class="main col">
                 <div class="row">
-                    <div class="columna col-12 col-lg-7">
-                        <div class="widget nueva_entrada">
-                            <h3 class="titulo">Nueva Entrada</h3>
+                    <div class="columna col-12">
 
-                            <form action="/apaOwners/newEnterprise">
-                                <div class="row">
-                                    <div class="col-12 col-sm-6 mb-3">
-                                        <label for="nameHotel" class="form-label">Nombre Empresa</label>
-                                        <input type="text" class="form-control" id="nameHotel" name="nameHotel" placeholder="Nombre Empresa" required />
-                                    </div>
-                                    <div class="col-12 col-sm-6 mb-3">
-                                        <label for="emailHotel" class="form-label">Email para Envio de Propuesta</label>
-                                        <input type="text" class="form-control" id="emailHotel" name="emailHotel" placeholder="email@correo.com" required />
-                                    </div>
-                                    <div class="col-12 col-sm-6 mb-3">
-                                        <label for="telephoneHotel" class="form-label">Telefono para Contacto</label>
-                                        <input type="text" class="form-control" id="telephoneHotel" name="telephoneHotel" placeholder="Telefono para Contacto" />
-                                    </div>
-                                    <div class="col-12 col-sm-6 mb-3">
-                                        <label class="form-label" for="webPageHotel">Web Site de la Empresa</label>
-                                        <input type="text" class="form-control" placeholder="www.web-empresa.com.ar" name="webPageHotel" id="webPageHote" />
-                                    </div>
-                                    <div class="col-12 col-sm-6 mb-3">
-                                        <label for="addressHotel" class="form-label">Dirección para Clientes</label>
-                                        <input type="text" class="form-control" id="addressHotel" name="addressHotel" placeholder="nombre calle, numero, barrio, codigo postal" required />
-                                    </div>
-                                    <div class="col-12 col-sm-6 mb-3">
-                                        <label for="parkingHotel" class="form-label">Garage-Playa Privada <span class="text-muted">(En caso de Haber)</span></label>
-                                        <input type="text" class="form-control" placeholder="1234 Calle Principal" name="parkingHotel" id="parkingHotel" />
-                                    </div>
+                        <form action="/apaOwners/newEnterprise">
+                            <div class="row">
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="nameHotel" class="form-label">Nombre Empresa</label>
+                                    <input type="text" class="form-control" id="nameHotel" name="nameHotel" placeholder="Nombre Empresa" required />
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="emailHotel" class="form-label">Email para Envio de Propuesta</label>
+                                    <input type="text" class="form-control" id="emailHotel" name="emailHotel" placeholder="email@correo.com" required />
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="telephoneHotel" class="form-label">Telefono para Contacto</label>
+                                    <input type="text" class="form-control" id="telephoneHotel" name="telephoneHotel" placeholder="Telefono para Contacto" />
+                                </div>
+                                <div class="col-12 col-md-4  mb-3">
+                                    <label class="form-label" for="webPageHotel">Web Site de la Empresa</label>
+                                    <input type="text" class="form-control" placeholder="www.web-empresa.com.ar" name="webPageHotel" id="webPageHote" />
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="addressHotel" class="form-label">Dirección para Clientes</label>
+                                    <input type="text" class="form-control" id="addressHotel" name="addressHotel" placeholder="nombre calle, numero, barrio, codigo postal" required />
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="parkingHotel" class="form-label">Garage-Playa Privada </label>
+                                    <input type="text" class="form-control" placeholder="1234 Calle Principal" name="parkingHotel" id="parkingHotel" />
                                 </div>
                                 <div class="row">
-                                    <div class="col-12 col-sm-4 mb-3">
+                                    <div class="col-12 mb-3">
                                         <label for="pais" class="form-label">Seleccionar Comuna</label>
                                         <select name="pais" id="comuna" class="form-select">
 <option value="" selected disabled >Comuna y Barrios</option>
@@ -116,151 +113,12 @@
                                     </div>
                                 </div>
                                 <button type="button" class="btn btn-success" type="submit">ENVIAR</button>
-                                <button type="button" class="btn btn-danger" type="delete">BORRAR                             </button>
-                        </div>
+                                <button type="button" class="btn btn-danger" type="delete">BORRAR </button>
+                            </div>
                         </form>
                     </div>
-                </div>
-                <div class="columna col-12 col-lg-5">
-                    <div class="widget estadisticas">
-                        <h3 class="titulo">Estadisticas</h3>
-                        <div class="contenedor d-flex flex-wrap">
-                            <div class="caja">
-                                <h3>15,236</h3>
-                                <p>Visitas</p>
-                            </div>
-                            <div class="caja">
-                                <h3>1,831</h3>
-                                <p>Registros</p>
-                            </div>
-                            <div class="caja">
-                                <h3>$160,545</h3>
-                                <p>Ingresos</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="widget comentarios">
-                        <h3 class="titulo">Comentarios</h3>
-                        <div class="contenedor">
-                            <div class="comentario d-flex flex-wrap">
-                                <div class="foto">
-                                    <a href="#">
-                                        <img src="img/persona1.jpg" alt="" width="100">
-                                    </a>
-                                </div>
-
-                                <div class="texto">
-                                    <a href="#">John Doe</a>
-                                    <p>en <a href="#">Mi primera entrada</a></p>
-                                    <p class="texto-comentario">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam repellendus itaque optio dolores nemo at eveniet molestias delectus, magni consectetur.
-                                    </p>
-                                </div>
-
-                                <div class="botones d-flex justify-content-start flex-wrap w-100">
-                                    <button class="aprobar">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
-                            <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/>
-                        </svg>
-                        Aprobar
-                    </button>
-                                    <button class="eliminar">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
-                            <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
-                        </svg>
-                        Eliminar
-                    </button>
-                                    <button class="bloquear">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                        Bloquear
-                    </button>
-                                </div>
-                            </div>
-
-                            <div class="comentario d-flex flex-wrap">
-                                <div class="foto">
-                                    <a href="#">
-                                        <img src="img/persona2.jpg" alt="" width="100">
-                                    </a>
-                                </div>
-
-                                <div class="texto">
-                                    <a href="#">John Doe</a>
-                                    <p>en <a href="#">Mi primera entrada</a></p>
-                                    <p class="texto-comentario">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam repellendus itaque optio dolores nemo at eveniet molestias delectus, magni consectetur.
-                                    </p>
-                                </div>
-
-                                <div class="botones d-flex justify-content-start flex-wrap w-100">
-                                    <button class="aprobar">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
-                            <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/>
-                        </svg>
-                        Aprobar
-                    </button>
-                                    <button class="eliminar">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
-                            <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
-                        </svg>
-                        Eliminar
-                    </button>
-                                    <button class="bloquear">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                        Bloquear
-                    </button>
-                                </div>
-                            </div>
-
-                            <div class="comentario d-flex flex-wrap">
-                                <div class="foto">
-                                    <a href="#">
-                                        <img src="img/persona3.jpg" alt="" width="100">
-                                    </a>
-                                </div>
-
-                                <div class="texto">
-                                    <a href="#">John Doe</a>
-                                    <p>en <a href="#">Mi primera entrada</a></p>
-                                    <p class="texto-comentario">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam repellendus itaque optio dolores nemo at eveniet molestias delectus, magni consectetur.
-                                    </p>
-                                </div>
-
-                                <div class="botones d-flex justify-content-start flex-wrap w-100">
-                                    <button class="aprobar">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
-                            <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/>
-                        </svg>
-                        Aprobar
-                    </button>
-                                    <button class="eliminar">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
-                            <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
-                        </svg>
-                        Eliminar
-                    </button>
-                                    <button class="bloquear">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                        Bloquear
-                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </div>
-        </main>
-    </div>
-    </div>
-
+            </main>
+            </div>
 
 </body>
 

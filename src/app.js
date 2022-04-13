@@ -4,6 +4,8 @@ const PORT = 6996
 const port = process.env.PORT || 6996
 const express = require('express')
 const path = require('path');
+const methodOverride = require('method-override');
+const session = require('express-session');
 const app = express()
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
@@ -11,11 +13,14 @@ app.set('views', path.join(__dirname, '/views'));
 app.use(express.static(path.join(__dirname, './../public')));
 
 /***********middlewares expreess*******/
-const methodOverride = require('method-override')
 app.use(methodOverride('_method'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }));
-
+app.use(session({
+    secret: "myAPIAPAseccion",
+    resave: true,
+    saveUninitialized: true
+}));
 
 /**************require routes***************/
 const mainRouters = require('./routes/mainRoutes.js')
