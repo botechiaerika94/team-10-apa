@@ -46,4 +46,3 @@ app.use('/staff', staffRouter)
 app.listen(port, () => {
     console.log('WS LEVANTADO Y CORRIENDO EN 6996')
 })
-module.exports = app
