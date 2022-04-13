@@ -66,31 +66,34 @@
                         <div class="widget nueva_entrada">
                             <h3 class="titulo">Nueva Entrada</h3>
                             <form action="/apaOwners/newEnterprise">
-                                <div class="col-10 col-sm-auto">
+                                <div class="col-10 col-lg-auto">
                                     <label for="nameHotel" class="form-label">Nombre Empresa</label>
                                     <input type="text" class="form-control" id="nameHotel" name="nameHotel" placeholder="Nombre Empresa" required />
                                 </div>
-                                <div class="col-10 col-sm-auto ">
+                                <div class="col-10 col-lg-auto ">
                                     <label for="emailHotel" class="form-label">Email para Envio de Propuesta</label>
                                     <input type="text" class="form-control" id="emailHotel" name="emailHotel" placeholder="email@correo.com" required />
                                 </div>
-                                <div class="col-12 col-sm-6">
-                                    <label for="telephoneHotel" class="form-label">Telefono para Contacto</label>
-                                    <input type="text" class="form-control" id="telephoneHotel" name="telephoneHotel" placeholder="Telefono para Contacto" />
-                                </div>
+                                <div class="row">
+                                    <div class="col-10 col-md-4">
+                                        <label for="telephoneHotel" class="form-label">Telefono para Contacto</label>
+                                        <input type="text" class="form-control" id="telephoneHotel" name="telephoneHotel" placeholder="Telefono para Contacto" />
+                                    </div>
 
-                                <div class="col-6 col-sm-6">
-                                    <label class="form-label" for="webPageHotel">Web Site de la Empresa</label>
-                                    <input type="text" class="form-control" placeholder="www.web-empresa.com.ar" name="webPageHotel" id="webPageHote" />
+                                    <div class="col-6 col-md-6">
+                                        <label class="form-label" for="webPageHotel">Web Site de la Empresa</label>
+                                        <input type="text" class="form-control" placeholder="www.web-empresa.com.ar" name="webPageHotel" id="webPageHote" />
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-6 col-sm-6 mb-3">
-                                        <label for="addressHotel" class="form-label">Dirección para Clientes</label>
-                                        <input type="text" class="form-control" id="addressHotel" name="addressHotel" placeholder="nombre calle, numero, barrio, codigo postal" required />
+                                        <label for="addressHotel" class="form-label">Dirección Clientes<br/>
+                                        <span class="text-muted">(Direccion Principal)</span></label>
+                                        <input type="text" class="form-control" id="addressHotel" name="addressHotel" placeholder="nombre calle, numero, barrio" required />
                                     </div>
-                                    <div class="col-12 col-sm-6 mb-3">
-                                        <label for="parkingHotel" class="form-label">Garage-Playa Privada <span class="text-muted">(En caso de Haber)</span></label>
-                                        <input type="text" class="form-control" placeholder="1234 Calle Principal" name="parkingHotel" id="parkingHotel" />
+                                    <div class="col-12 col-sm-6 ">
+                                        <label for="parkingHotel" class="form-label">Garage-Playa Privada<br/> <span class="text-muted">(En caso de Haber)</span></label>
+                                        <input type="text" class="form-control" placeholder="Ubicacion Parking" name="parkingHotel" id="parkingHotel" />
                                     </div>
                                 </div>
 
@@ -122,114 +125,11 @@
                             </form>
                         </div>
                     </div>
-                    <div class="columna col-12 col-lg-5">
-                        <div class="widget estadisticas">
-                            <h3 class="titulo">Estadisticas</h3>
-                            <div class="contenedor d-flex flex-wrap">
-                                <div class="caja">
-                                    <h3>15,236</h3>
-                                    <p>Visitas</p>
-                                </div>
-                                <div class="caja">
-                                    <h3>1,831</h3>
-                                    <p>Registros</p>
-                                </div>
-                                <div class="caja">
-                                    <h3>$160,545</h3>
-                                    <p>Ingresos</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="widget comentarios">
-                            <h3 class="titulo">Comentarios</h3>
-                            <div class="contenedor">
-                                <div class="comentario d-flex flex-wrap">
-                                    <div class="foto">
-                                        <a href="#">
-                                            <img src="img/persona1.jpg" alt="" width="100">
-                                        </a>
-                                    </div>
-
-                                    <div class="texto">
-                                        <a href="#">John Doe</a>
-                                        <p>en <a href="#">Mi primera entrada</a></p>
-                                        <p class="texto-comentario">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam repellendus itaque optio dolores nemo at eveniet molestias delectus, magni consectetur.
-                                        </p>
-                                    </div>
-
-                                    <div class="botones d-flex justify-content-start flex-wrap w-100">
-                                        <button class="aprobar">
-                                       
-                                        Aprobar
-                                    </button>
-                                        <button class="eliminar">
-                                        Bloquear
-                                    </button>
-                                    </div>
-                                </div>
-
-                                <div class="comentario d-flex flex-wrap">
-                                    <div class="foto">
-                                        <a href="#">
-                                            <img src="img/persona2.jpg" alt="" width="100">
-                                        </a>
-                                    </div>
-
-                                    <div class="texto">
-                                        <a href="#">John Doe</a>
-                                        <p>en <a href="#">Mi primera entrada</a></p>
-                                        <p class="texto-comentario">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam repellendus itaque optio dolores nemo at eveniet molestias delectus, magni consectetur.
-                                        </p>
-                                    </div>
-
-                                    <div class="botones d-flex justify-content-start flex-wrap w-100">
-                                        <button class="aprobar">
-                                       
-                                        Aprobar
-                                    </button>
-                                        <button class="eliminar">
-                                        Bloquear
-                                    </button>
-                                    </div>
-                                </div>
-
-                                <div class="comentario d-flex flex-wrap">
-                                    <div class="foto">
-                                        <a href="#">
-                                            <img src="img/persona3.jpg" alt="" width="100">
-                                        </a>
-                                    </div>
-
-                                    <div class="texto">
-                                        <a href="#">John Doe</a>
-                                        <p>en <a href="#">Mi primera entrada</a></p>
-                                        <p class="texto-comentario">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam repellendus itaque optio dolores nemo at eveniet molestias delectus, magni consectetur.
-                                        </p>
-                                    </div>
-
-                                    <div class="botones d-flex justify-content-start flex-wrap w-100">
-                                        <button class="aprobar">
-                                       
-                                        Aprobar
-                                    </button>
-                                        <button class="eliminar">
-                                        Bloquear
-                                    </button>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
+                    <div class="columna col-10 col-lg-3 bg-dark">
                     </div>
                 </div>
+            </main>
         </div>
-        </main>
-    </div>
     </div>
 
 
