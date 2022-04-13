@@ -25,7 +25,7 @@ const enterpriseRouter = require('./routes/enterpriseRoutes.js')
 const apiOwnerRouter = require('./routes/apiOwnerRoutes.js')
     //const searchRouter = require('./routes/searchRoutes.js')
 const gameAIRouter = require('./routes/gameAIRoutes.js')
-const staffRouter = require('./routes/staffRoutes.js')
+    //const staffRouter = require('./routes/staffRoutes.js')
     /**************define end points***************/
 app.use('/', mainRouters);
 app.use('/apa-club', apaClubRouter);
@@ -34,10 +34,10 @@ app.use('/telos', productsRouter);
 app.use('/empresas', enterpriseRouter);
 app.use('/ApaOwners', apiOwnerRouter);
 //app.use('/buscarApa', searchRouter)
-app.use('/ApaGame', gameAIRouter)
-app.use('/staff', staffRouter)
-    /***********Server listen 6996****** */
-app.listen(process.env.PORT || 8080, () => {
-    console.log('WS LEVANTADO Y CORRIENDO EN 8080')
+app.use('/ApaGame', gameAIRouter);
+// app.use('/staff', staffRouter);
+/***********Server listen 6996****** */
+app.listen(process.env.PORT || 9994, () => {
+    console.log('WS LEVANTADO Y CORRIENDO EN 9994')
 })
 module.exports = app
