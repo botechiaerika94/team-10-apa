@@ -100,7 +100,7 @@
 
                                 <label for="comuna" class="form-label">Seleccionar Comuna</label>
                                 <select name="comuna" id="comuna" class="form-select">
-<option value="" selected disabled >Comuna y Barrios</option>
+<option value="0" selected disabled >Comuna y Barrios</option>
 <option value="1">1 - Retiro, San Nicolás, Puerto Madero, San Telmo, Montserrat y Constitución</option>
 <option value="2">2 - Recoleta</option>
 <option value="3">3 - Balvanera y San Cristóbal</option>
@@ -117,19 +117,42 @@
 <option value="14">14 - Palermo</option>
 <option value="15">15 - Chacarita, Villa Crespo, La Paternal, Villa Ortúzar, Agronomía y Parque Chas</option>
 </select>
-
-                                <div class="d-flex justify-content-end">
-                                    <button class="btn-sucess" type="SUBMIT">Enviar
+                        </div>
+                        <div class="row">
+                            <div class="col-6 col-sm-6 mb-3">
+                                <label for="apaAnchorH class=" form-label ">Enlacee Interno Local</label>
+                                <input type="text " type="text " class="form-control " id="apaAnchorH " name="apaAnchorH " placeholder="apa Anchor " required />
+                            </div>
+							
+                            <div class="col-12 col-sm-6 ">
+                                <label for="startPointsL1 " class="form-label ">START POINT #01</label>
+                                <input type="text " class="form-control " placeholder="START POINTS #01 " name="startPointsL1 " id=" startPointsL1 " />
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-10 col-md-6 ">
+                                <label for="startPointsL2 " class="form-label ">START POINT #02</label>
+                                <input type="text " class="form-control " id="startPointsL2 " name="startPointsL2 " placeholder="startPointsL2 " />
+                            </div>
+                            <div class="col-10 col-md-6 ">
+                                <label for="startPointsL3 " class="form-label ">START POINT #04</label>
+                                <input type="text " class="form-control " placeholder="START POINTS #03 " name="startPointsL3 " id="startPointsL3 " />
+                            </div>
+							</div>
+                            <div class="col-6 justify-content-end mb-5 ">
+                                <button class="btn-sucess " type="SUBMIT ">Enviar
                                     </button>
-                                </div>
+                            </div>
                             </form>
                         </div>
                     </div>
-                    <div class="columna col-10 col-lg-3 bg-dark">
+                    <div class="columna col-12 col-md-3 bg-dark mt-5 ">
+                        <%-include ('../partials/apiOwner/aside01_numbers')%>
                     </div>
                 </div>
-            </main>
         </div>
+        </main>
+    </div>
     </div>
 
 
