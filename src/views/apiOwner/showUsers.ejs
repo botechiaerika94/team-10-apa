@@ -29,28 +29,29 @@
                 </hr>
                 <div id="articles">
                     <article class="article-item" id="article-template">
-                        <%for(let u of usersList){ %>
-                            <div class="image-wrap">
-                                <img src="<%=u.avatar%>" alt="Avatar  User" class="rounded" height="50px" width="130px" />
-                            </div>
-                            <h2>
-                                <%=u.user_name%>
-                            </h2>
-                            <p><strong>ID usuario:</strong>
-                                <%=u.id%>
-                            </p>
-                            <p><strong>Numero Registro Usuario:</strong>
-                                <%=u.register_user%>
-                            </p>
+                        <%let u = userList.user_name %>
+                            <%for(let u of userList){ %>
+                                <div class="image-wrap">
+                                    <img src="<%=u.avatar%>" alt="Avatar  User" class="rounded" height="50px" width="130px" />
+                                </div>
+                                <h2>
+                                    <%=u.user_name%>
+                                </h2>
+                                <p><strong>ID usuario:</strong>
+                                    <%=u.id%>
+                                </p>
+                                <p><strong>Numero Registro Usuario:</strong>
+                                    <%=u.register_user%>
+                                </p>
 
-                            <div class="btn-group btn-group-sm">
-                                <a href="/owners/editarUsuario-<%=u.register_user%>" class="btn btn-edit text-light">Editar</a>
-                                <a href="/owners/detalles-<%=u.register_user%>" class="btn btn-read">Detalles</a>
-                                <a href="/owners/deletar-<%=u.register_user%>" class="btn btn-delete">Deletar</a>
-                            </div>
-                            <div class="clearfix"></div>
-                            <hr/>
-                            <%}%>
+                                <div class="btn-group btn-group-sm">
+                                    <a href="/owners/editarUsuario-<%=u.register_user%>" class="btn btn-edit text-light">Editar</a>
+                                    <a href="/owners/detalles-<%=u.register_user%>" class="btn btn-read">Detalles</a>
+                                    <a href="/owners/deletar-<%=u.register_user%>" class="btn btn-delete">Deletar</a>
+                                </div>
+                                <div class="clearfix"></div>
+                                <hr/>
+                                <%}%>
                     </article>
                     <!--AÑADIR ARTICULOS VIA JS-->
 

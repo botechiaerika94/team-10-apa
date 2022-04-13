@@ -1,6 +1,7 @@
 /***********settings****** */
-//require('dotenv').config
-//const port = process.env.PORT
+require('dotenv').config
+const PORT = 6996
+const port = process.env.PORT || 6996
 const express = require('express')
 const path = require('path');
 const app = express()
@@ -37,7 +38,7 @@ app.use('/ApaOwners', apiOwnerRouter);
 app.use('/ApaGame', gameAIRouter)
 app.use('/staff', staffRouter)
     /***********Server listen 6996****** */
-app.listen(process.env.PORT || 8080, () => {
-    console.log('WS LEVANTADO Y CORRIENDO EN 8080')
+app.listen(port, () => {
+    console.log('WS LEVANTADO Y CORRIENDO EN 6996')
 })
 module.exports = app

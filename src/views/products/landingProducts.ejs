@@ -19,75 +19,83 @@
 
 <body class="bodyPage bg-light">
     <%- include('../partials/navbarTop'); %>
-            <section id="hero ">
-                <div class="row g-0 h-100">
-                    <div class="col-lg-6 d-flex bg-light">
-                        <div class="content mx-auto align-self-center px-4 my-5">
-                            <div class="d-block mb-3"><span class="badge bg-custom-02 me-2">Nuevo</span><span class="text-secondary">haga tu cadastro en el</span><strong> CLUB!</strong>
-                            </div>
-                            <h1 class="display-4 mb-4"><span class="apa-name"> APA!</span> After Night<span class="apa-name">.</span>
-                                <p class="lead mb-4">Dile adiós a los buscadores Complicados en el momento del placer tenga toda la info facil y practica en tus manos</p>
-                                <a href="/cadastroUsuario" class="btn btn-primary mb-5">Abre tu cuenta hoy</a>
-                                <div class="d-flex">
-                                    <div class="d-flex me-2">
+        <section id="hero ">
+            <div class="row g-0 h-100">
+                <div class="col-lg-6 d-flex bg-light">
+                    <div class="content mx-auto align-self-center px-4 my-5">
+                        <div class="d-block mb-3"><span class="badge bg-custom-02 me-2">Nuevo</span><span class="text-secondary">haga tu cadastro en el</span><strong> CLUB!</strong>
+                        </div>
+                        <h1 class="display-4 mb-4"><span class="apa-name"> APA!</span> After Night<span class="apa-name">.</span>
+                            <p class="lead mb-4">Dile adiós a los buscadores Complicados en el momento del placer tenga toda la info facil y practica en tus manos</p>
+                            <a href="/cadastroUsuario" class="btn btn-primary mb-5">Abre tu cuenta hoy</a>
+                            <div class="d-flex">
+                                <div class="d-flex me-2">
 
-                                    </div>
-                                    <div class="d-flex me-4">
-                                        <img src="images/svg/icoon01.svg" class="me-8 image-responsive" max-height="15px">
-                                        <div>
-                                            <small>Placer</small>
-                                            <p class="fw-bold mb-0">Facil</p>
-                                        </div>
+                                </div>
+                                <div class=" px-30  mg-5 pt-5">
+                                    <img src="../images/svg/icoon01.svg" class="me-8 image-responsive" style="max-height: 200px ; align-content: center">
+                                    <div>
+                                        <small>Placer</small>
+                                        <p class="fw-bold mb-0">Facil</p>
                                     </div>
                                 </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 d-flex bg-frame-03">
-                        <div class="content mx-auto align-self-center px-1 my-2">
-                            <img src="https://live.staticflickr.com/65535/51951757261_3bba5e6e1d_z.jpg" class="img-fluid rounded" max-height="320px" style="margin-top: -9px;" alt="hombreavatar" />
-                        </div>
+                            </div>
                     </div>
                 </div>
-            </section>
-
-            <header class="header w-100 text-center ">
-                <div class="hero bg-light">
-                    <div class="px-2 py-2 my-9 text-center">
+                <div class="col-lg-6 d-flex bg-frame-03">
+                    <div class="content mx-auto align-self-center px-1 my-2">
+                        <img src="https://live.staticflickr.com/65535/51951757261_3bba5e6e1d_z.jpg" class="img-fluid rounded" max-height="320px" style="margin-top: -9px;" alt="hombreavatar" />
                     </div>
-                    <h1 class="display-2 fw-bold h101"><span class="apa-name">APA!</span>CABA</h1>
-                    <p class="herod "> FACILIDAD, VENTAJAS y PLACER ahora en tu celu con APA! app!</p>
-            </header>
-            <div class="container bg-light">
-                <div class="row">
+                </div>
+            </div>
+        </section>
 
-                    <div class="col-md-4 card-container">
-                        <div class="card-flip">
-                            <!-- Card 1 Front -->
-                            <div class="card front">
-                                <img src="https://live.staticflickr.com/65535/51930776611_0bdb1b2850_n.jpg"  class="card-img-top img-fluid" alt="comuna 1"/>
-                                <div class="card-block">
-                                    <h4 class="card-title">Comuna 0<%=comunas[0].cID%></h4>
-                                    <p class="card-text"><%=comunas[0].cI%></p>
+        <header class="header w-100 text-center ">
+            <div class="hero bg-light">
+                <div class="px-2 py-2 my-9 text-center">
+                </div>
+                <h1 class="display-2 fw-bold h101"><span class="apa-name">APA!</span>CABA</h1>
+                <p class="herod "> FACILIDAD, VENTAJAS y PLACER ahora en tu celu con APA! app!</p>
+        </header>
+        <div class="container bg-light">
+            <div class="row">
 
-                                </div>
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 1 Front -->
+                        <div class="card front">
+                            <img src="https://live.staticflickr.com/65535/51930776611_0bdb1b2850_n.jpg" class="card-img-top img-fluid" alt="comuna 1" />
+                            <div class="card-block">
+                                <h4 class="card-title">Comuna 0
+                                    <%=comunas[0].cID%>
+                                </h4>
+                                <p class="card-text">
+                                    <%=comunas[0].cI%>
+                                </p>
+
                             </div>
-                            <!-- End Card 1 Front -->
-
-                            <!-- Card 1 Back -->
-                            <div class="card back">
-                                <div class="card-header">
-                                    C.A.B.A.
-                                </div>
-                                <div class="card-block">
-                                    <h4 class="card-title">Lo MEJOR de la <br/> COMUNA 0<%=comunas[0].cID%></h4>
-                                    <p class="card-text"><%=comunas[0].cP%></p>
-                                    <a type="button" href="/productos/comuna-1" class="btn btn-primary">COMPROBE!</a>
-                                </div>
-                            </div>
-                            <!-- End Card 1 Back -->
                         </div>
+                        <!-- End Card 1 Front -->
+
+                        <!-- Card 1 Back -->
+                        <div class="card back">
+                            <div class="card-header">
+                                C.A.B.A.
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA 0
+                                    <%=comunas[0].cID%>
+                                </h4>
+                                <p class="card-text">
+                                    <%=comunas[0].cP%>
+                                </p>
+                                <a type="button" href="/productos/comuna-1" class="btn btn-primary">COMPROBE!</a>
+                            </div>
+                        </div>
+                        <!-- End Card 1 Back -->
                     </div>
-                    <!-- End Card 1 -->
+                </div>
+                <!-- End Card 1 -->
 
                 <!-- Card 2 -->
                 <div class="col-md-4 card-container">
@@ -96,8 +104,12 @@
                         <div class="card front">
                             <img src="https://live.staticflickr.com/65535/51931299427_2281f3a92d_o.png" class="card-img-top img-fluid" alt="comuna 2">
                             <div class="card-block">
-                                <h4 class="card-title">Comuna 0<%=comunas[1].cID%></h4>
-                                <p class="card-text"><%=comunas[1].cI%></p>
+                                <h4 class="card-title">Comuna 0
+                                    <%=comunas[1].cID%>
+                                </h4>
+                                <p class="card-text">
+                                    <%=comunas[1].cI%>
+                                </p>
 
                             </div>
                         </div>
@@ -109,8 +121,12 @@
                                 C.A.B.A.
                             </div>
                             <div class="card-block">
-                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA 0<%=comunas[1].cID%></h4>
-                                <p class="card-text"><%=comunas[1].cP%></p>
+                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA 0
+                                    <%=comunas[1].cID%>
+                                </h4>
+                                <p class="card-text">
+                                    <%=comunas[1].cP%>
+                                </p>
                                 <a href="/productos/comuna-2" class="btn btn-primary">COMPROBE!</a>
                             </div>
                         </div>
@@ -126,8 +142,12 @@
                         <div class="card front">
                             <img src="https://live.staticflickr.com/65535/51932357033_aa6f098015_o.png" alt="comuna 3" class="card-img-top img-fluid">
                             <div class="card-block">
-                                <h4 class="card-title">Comuna 0<%=comunas[2].cID%></h4>
-                                <p class="card-text"><%=comunas[2].cI%></p>
+                                <h4 class="card-title">Comuna 0
+                                    <%=comunas[2].cID%>
+                                </h4>
+                                <p class="card-text">
+                                    <%=comunas[2].cI%>
+                                </p>
                             </div>
                         </div>
                         <!-- End Card 3 Front -->
@@ -138,8 +158,12 @@
                                 C.A.B.A.
                             </div>
                             <div class="card-block">
-                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA 0<%=comunas[2].cID%></h4>
-                                <p class="card-text"><%=comunas[2].cP%></p>
+                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA 0
+                                    <%=comunas[2].cID%>
+                                </h4>
+                                <p class="card-text">
+                                    <%=comunas[2].cP%>
+                                </p>
                                 <a type="button" href="/productos/comuna-3" class="btn btn-primary">COMPROBE!</a>
                             </div>
                         </div>
@@ -155,8 +179,12 @@
                         <div class="card front">
                             <img src="https://live.staticflickr.com/65535/51931299707_c0b5726679_o.png" alt="comuna 4" class="card-img-top img-fluid">
                             <div class="card-block">
-                                <h4 class="card-title">Comuna 0<%=comunas[3].cID%></h4>
-                                <p class="card-text"><%=comunas[3].cI%></p>
+                                <h4 class="card-title">Comuna 0
+                                    <%=comunas[3].cID%>
+                                </h4>
+                                <p class="card-text">
+                                    <%=comunas[3].cI%>
+                                </p>
                             </div>
                         </div>
                         <!-- End Card 4 Front -->
@@ -167,8 +195,12 @@
                                 C.A.B.A.
                             </div>
                             <div class="card-block">
-                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA 0<%=comunas[2].cID%></h4>
-                                <p class="card-text"><%=comunas[3].cP%></p>
+                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA 0
+                                    <%=comunas[2].cID%>
+                                </h4>
+                                <p class="card-text">
+                                    <%=comunas[3].cP%>
+                                </p>
                                 <a type="button" href="/productos/comuna-4" class="btn btn-primary">COMPROBE!</a>
                             </div>
                         </div>
@@ -183,8 +215,12 @@
                         <div class="card front">
                             <img src="https://live.staticflickr.com/65535/51932356783_9c6188276a_o.png" alt="comuna 5" class="card-img-top img-fluid">
                             <div class="card-block">
-                                <h4 class="card-title">Comuna 0<%=comunas[4].cID%></h4>
-                                <p class="card-text"><%=comunas[4].cI%></p>
+                                <h4 class="card-title">Comuna 0
+                                    <%=comunas[4].cID%>
+                                </h4>
+                                <p class="card-text">
+                                    <%=comunas[4].cI%>
+                                </p>
                             </div>
                         </div>
                         <!-- End Card 5 Front -->
@@ -195,8 +231,12 @@
                                 C.A.B.A.
                             </div>
                             <div class="card-block">
-                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA 0<%=comunas[4].cID%></h4>
-                                <p class="card-text"><%=comunas[4].cP%></p>
+                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA 0
+                                    <%=comunas[4].cID%>
+                                </h4>
+                                <p class="card-text">
+                                    <%=comunas[4].cP%>
+                                </p>
                                 <a type="button" href="/productos/comuna-5" class="btn btn-primary">COMPROBE!</a>
                             </div>
                         </div>
@@ -212,8 +252,12 @@
                         <div class="card front">
                             <img src="https://live.staticflickr.com/65535/51932279611_3a09bd09e6_o.png" alt="comuna 6" class="card-img-top img-fluid">
                             <div class="card-block">
-                                <h4 class="card-title">Comuna 0<%=comunas[5].cID%></h4>
-                                <p class="card-text"><%=comunas[5].cI%></p>
+                                <h4 class="card-title">Comuna 0
+                                    <%=comunas[5].cID%>
+                                </h4>
+                                <p class="card-text">
+                                    <%=comunas[5].cI%>
+                                </p>
                             </div>
                         </div>
                         <!-- End Card 6 Front -->
@@ -224,8 +268,12 @@
                                 C.A.B.A.
                             </div>
                             <div class="card-block">
-                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA 0<%=comunas[5].cID%></h4>
-                                <p class="card-text"><%=comunas[5].cP%></p>
+                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA 0
+                                    <%=comunas[5].cID%>
+                                </h4>
+                                <p class="card-text">
+                                    <%=comunas[5].cP%>
+                                </p>
                                 <a type="button" href="/productos/comuna-6" class="btn btn-primary">COMPROBE!</a>
                             </div>
                         </div>
@@ -237,15 +285,19 @@
 
                 <div class="col-md-4 card-container">
                     <div class="card-flip">
-                                <!-- Card 7 Front -->
-                                <div class="card front">
-                                    <img src="https://live.staticflickr.com/65535/51937488067_0f7029922f_o.png" alt="construccion" class="card-img-top img-fluid">
-                                    <div class="card-block">
-                                        <h4 class="card-title">Lo MEJOR de la <br/> COMUNA <%=comunas[6].cID%></h4>
-                                        <p class="card-text"><%=comunas[6].cP%></p>
-                                    </div>
-                                </div>
-                                <!-- End Card 7 Front -->
+                        <!-- Card 7 Front -->
+                        <div class="card front">
+                            <img src="https://live.staticflickr.com/65535/51937488067_0f7029922f_o.png" alt="construccion" class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA
+                                    <%=comunas[6].cID%>
+                                </h4>
+                                <p class="card-text">
+                                    <%=comunas[6].cP%>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- End Card 7 Front -->
                         <!-- End Card 7 Front -->
 
                         <!-- Card 7 Back -->
@@ -254,8 +306,12 @@
                                 C.A.B.A.
                             </div>
                             <div class="card-block">
-                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA 0<%=comunas[6].cID%></h4>
-                                <p class="card-text"><%=comunas[6].cP%></p>
+                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA 0
+                                    <%=comunas[6].cID%>
+                                </h4>
+                                <p class="card-text">
+                                    <%=comunas[6].cP%>
+                                </p>
                                 <a type="button" href="/productos/comuna-7" class="btn btn-primary">COMPROBE!</a>
                             </div>
                         </div>
@@ -265,32 +321,40 @@
 
 
                 <!-- Card 8 -->
-                    <div class="col-md-4 card-container">
-                        <div class="card-flip">
-                            <!-- Card 8 Front -->
-                            <div class="card front">
-                                <img src="https://live.staticflickr.com/65535/51937488067_0f7029922f_o.png" alt="construccion" class="card-img-top img-fluid">
-                                <div class="card-block">
-                                    <h4 class="card-title">Comuna <%=comunas[7].cID %></h4>
-                                    <p class="card-text"><%=comunas[7].cI%></p>
-                                </div>
+                <div class="col-md-4 card-container">
+                    <div class="card-flip">
+                        <!-- Card 8 Front -->
+                        <div class="card front">
+                            <img src="https://live.staticflickr.com/65535/51937488067_0f7029922f_o.png" alt="construccion" class="card-img-top img-fluid">
+                            <div class="card-block">
+                                <h4 class="card-title">Comuna
+                                    <%=comunas[7].cID %>
+                                </h4>
+                                <p class="card-text">
+                                    <%=comunas[7].cI%>
+                                </p>
                             </div>
-                            <!-- End Card 8 Front -->
-
-                            <!-- Card 8 Back -->
-                            <div class="card back">
-                                <div class="card-header">
-                                    C.A.B.A.
-                                </div>
-                                <div class="card-block">
-                                    <h4 class="card-title">Lo MEJOR de la <br/> COMUNA 0<%=comunas[7].cID%></h4>
-                                    <p class="card-text"><%=comunas[7].cP%></p>
-                                    <a type="button" href="/productos/comuna-8" class="btn btn-primary">COMPROBE!</a>
-                                </div>
-                            </div>
-                            <!-- End Card 8 Back -->
                         </div>
+                        <!-- End Card 8 Front -->
+
+                        <!-- Card 8 Back -->
+                        <div class="card back">
+                            <div class="card-header">
+                                C.A.B.A.
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA 0
+                                    <%=comunas[7].cID%>
+                                </h4>
+                                <p class="card-text">
+                                    <%=comunas[7].cP%>
+                                </p>
+                                <a type="button" href="/productos/comuna-8" class="btn btn-primary">COMPROBE!</a>
+                            </div>
+                        </div>
+                        <!-- End Card 8 Back -->
                     </div>
+                </div>
 
 
                 <!-- End Card 8 -->
@@ -303,8 +367,12 @@
                         <div class="card front">
                             <img src="https://live.staticflickr.com/65535/51937488067_0f7029922f_o.png" alt="construccion" class="card-img-top img-fluid">
                             <div class="card-block">
-                                <h4 class="card-title">Comuna 0<%=comunas[8].cID%></h4>
-                                <p class="card-text"><%=comunas[8].cI%></p>
+                                <h4 class="card-title">Comuna 0
+                                    <%=comunas[8].cID%>
+                                </h4>
+                                <p class="card-text">
+                                    <%=comunas[8].cI%>
+                                </p>
                             </div>
                         </div>
                         <!-- End Card 9 Front -->
@@ -315,8 +383,14 @@
                                 C.A.B.A.
                             </div>
                             <div class="card-block">
-                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA 0<p><%=comunas[8].cID%></p></h4>
-                                <p class="card-text"><%=comunas[8].cP%></p>
+                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA 0
+                                    <p>
+                                        <%=comunas[8].cID%>
+                                    </p>
+                                </h4>
+                                <p class="card-text">
+                                    <%=comunas[8].cP%>
+                                </p>
                                 <a type="button" href="/productos/comuna-9" class="btn btn-primary">COMPROBE!</a>
                             </div>
                         </div>
@@ -332,8 +406,12 @@
                         <div class="card front">
                             <img src="https://live.staticflickr.com/65535/51937488067_0f7029922f_o.png" alt="construccion" class="card-img-top img-fluid">
                             <div class="card-block">
-                                <h4 class="card-title">Comuna 0<%=comunas[9].cID%></h4>
-                                <p class="card-text"><%=comunas[9].cI%></p>
+                                <h4 class="card-title">Comuna 0
+                                    <%=comunas[9].cID%>
+                                </h4>
+                                <p class="card-text">
+                                    <%=comunas[9].cI%>
+                                </p>
                             </div>
                         </div>
                         <!-- End Card 10 Front -->
@@ -344,8 +422,12 @@
                                 C.A.B.A.
                             </div>
                             <div class="card-block">
-                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA <%=comunas[9].cID%></h4>
-                                <p class="card-text"><%=comunas[9].cP%></p>
+                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA
+                                    <%=comunas[9].cID%>
+                                </h4>
+                                <p class="card-text">
+                                    <%=comunas[9].cP%>
+                                </p>
                                 <a type="button" href="/productos/comuna-10" class="btn btn-primary">COMPROBE!</a>
                             </div>
                         </div>
@@ -360,8 +442,12 @@
                         <div class="card front">
                             <img src="https://live.staticflickr.com/65535/51937488067_0f7029922f_o.png" alt="construccion" class="card-img-top img-fluid">
                             <div class="card-block">
-                                <h4 class="card-title">Comuna <%=comunas[10].cID%></h4>
-                                <p class="card-text"><%=comunas[10].cI%></p>
+                                <h4 class="card-title">Comuna
+                                    <%=comunas[10].cID%>
+                                </h4>
+                                <p class="card-text">
+                                    <%=comunas[10].cI%>
+                                </p>
                             </div>
                         </div>
                         <!-- End Card 11 Front -->
@@ -372,8 +458,12 @@
                                 C.A.B.A.
                             </div>
                             <div class="card-block">
-                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA <%=comunas[10].cID%></h4>
-                                <p class="card-text"><%=comunas[10].cP%></p>
+                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA
+                                    <%=comunas[10].cID%>
+                                </h4>
+                                <p class="card-text">
+                                    <%=comunas[10].cP%>
+                                </p>
                                 <a type="button" href="/productos/comuna-11" class="btn btn-primary">COMPROBE!</a>
                             </div>
                         </div>
@@ -389,8 +479,12 @@
                         <div class="card front">
                             <img src="https://live.staticflickr.com/65535/51937488067_0f7029922f_o.png" alt="construccion" class="card-img-top img-fluid">
                             <div class="card-block">
-                                <h4 class="card-title">Comuna <%=comunas[11].cID%></h4>
-                                <p class="card-text"><%=comunas[11].cI%></p>
+                                <h4 class="card-title">Comuna
+                                    <%=comunas[11].cID%>
+                                </h4>
+                                <p class="card-text">
+                                    <%=comunas[11].cI%>
+                                </p>
                             </div>
                         </div>
                         <!-- End Card 12 Front -->
@@ -401,8 +495,12 @@
                                 C.A.B.A.
                             </div>
                             <div class="card-block">
-                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA <%=comunas[11].cID%></h4>
-                                <p class="card-text"><%=comunas[11].cP%></p>
+                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA
+                                    <%=comunas[11].cID%>
+                                </h4>
+                                <p class="card-text">
+                                    <%=comunas[11].cP%>
+                                </p>
                                 <a type="button" href="/productos/comuna-12" class="btn btn-primary">COMPROBE!</a>
                             </div>
                         </div>
@@ -419,8 +517,12 @@
                         <div class="card front">
                             <img src="https://live.staticflickr.com/65535/51937488067_0f7029922f_o.png" alt="construccion" class="card-img-top img-fluid">
                             <div class="card-block">
-                                <h4 class="card-title">Comuna <%=comunas[12].cID%></h4>
-                                <p class="card-text"><%=comunas[12].cI%></p>
+                                <h4 class="card-title">Comuna
+                                    <%=comunas[12].cID%>
+                                </h4>
+                                <p class="card-text">
+                                    <%=comunas[12].cI%>
+                                </p>
                             </div>
                         </div>
                         <!-- End Card 13 Front -->
@@ -431,8 +533,12 @@
                                 C.A.B.A.
                             </div>
                             <div class="card-block">
-                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA 0<%=comunas[12].cID%></h4>
-                                <p class="card-text"><%=comunas[12].cP%></p>
+                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA 0
+                                    <%=comunas[12].cID%>
+                                </h4>
+                                <p class="card-text">
+                                    <%=comunas[12].cP%>
+                                </p>
                                 <a type="button" href="/productos/comuna-13" class="btn btn-primary">COMPROBE!</a>
                             </div>
                         </div>
@@ -447,8 +553,12 @@
                         <div class="card front">
                             <img src="https://live.staticflickr.com/65535/51937488067_0f7029922f_o.png" alt="construccion" class="card-img-top img-fluid">
                             <div class="card-block">
-                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA <%=comunas[13].cID%></h4>
-                                <p class="card-text"><%=comunas[13].cI%></p>
+                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA
+                                    <%=comunas[13].cID%>
+                                </h4>
+                                <p class="card-text">
+                                    <%=comunas[13].cI%>
+                                </p>
                             </div>
                         </div>
                         <!-- End Card 14 Front -->
@@ -459,8 +569,12 @@
                                 C.A.B.A.
                             </div>
                             <div class="card-block">
-                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA 0<%=comunas[13].cID%></h4>
-                                <p class="card-text"><%=comunas[13].cP%></p>
+                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA 0
+                                    <%=comunas[13].cID%>
+                                </h4>
+                                <p class="card-text">
+                                    <%=comunas[13].cP%>
+                                </p>
                                 <a type="button" href="/productos/comuna-14" class="btn btn-primary">COMPROBE!</a>
                             </div>
                         </div>
@@ -475,10 +589,14 @@
                         <!-- Card 15 Front -->
                         <div class="card front">
                             <img src="https://live.staticflickr.com/65535/51937488067_0f7029922f_o.png" alt="construccion" class="card-img-top img-fluid">
-                                <div class="card-block">
-                                    <h4 class="card-title">Comuna <%=comunas[14].cID %></h4>
-                                    <p class="card-text"><%=comunas[14].cI%></p>
-                                </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Comuna
+                                    <%=comunas[14].cID %>
+                                </h4>
+                                <p class="card-text">
+                                    <%=comunas[14].cI%>
+                                </p>
+                            </div>
 
                         </div>
                         <!-- End Card 15 Front -->
@@ -489,8 +607,12 @@
                                 C.A.B.A.
                             </div>
                             <div class="card-block">
-                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA <%=comunas[14].cID%></h4>
-                                <p class="card-text"><%=comunas[14].cP%></p>
+                                <h4 class="card-title">Lo MEJOR de la <br/> COMUNA
+                                    <%=comunas[14].cID%>
+                                </h4>
+                                <p class="card-text">
+                                    <%=comunas[14].cP%>
+                                </p>
                                 <a type="button" href="/productos/comuna-15" class="btn btn-primary">COMPROBE!</a>
                             </div>
                         </div>
