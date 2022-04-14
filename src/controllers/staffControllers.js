@@ -7,6 +7,9 @@ let controller = {
     },
     staff02: (req, res) => {
         res.render('staff/staff_01', { title: 'STAFF' })
+    },
+    createID: (req, res) => {
+        res.render('staff/staff_04', {title: 'CADASTRO NUEVO STAFF'})
     }
 }
 
