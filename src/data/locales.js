@@ -1,8 +1,11 @@
-function Locales(id, cmRL, cmnID, gRL, aL, wL, roomsL, dL, servicesL, priceL, img1, img2, img3, img4, img5) {
-    this.id = id, //id
+var rIDL=(cmnID, idL)=>{"CD"+this.cmnID+"idL"+this.idL'}
+function Locales(nameL, idL, cmRL, cmnID, gRL, aL, wL, roomsL, dL, servicesL, priceL, img1, img2, img3, img4, img5) {
+  constructor(){  
+      this.nameL = nameL,
+         this.idL = id++, //id
         this.cmRL = cmRL, //registro en la COMUNA --> 1 AL 9
         this.cmnID = cmnID, // numeero comuna quue pertenence
-        this.gRL = gRL, // RREGISTROO GENEERAL DE LOCALEES DEJAR EN BLANCO
+        this.gRL = riDL(cmnID, idL), // RREGISTROO GENEERAL DE LOCALEES DEJAR EN BLANCO
         this.aL = aL, // ADDRESS --> UBICACION LOCAL
         this.wL = wL, // WEB PAGE
         this.roomsL = roomsL, // CITAR SOLAMENTE NOMBRE DE HABIIACION
@@ -21,10 +24,10 @@ Locales()
 /*COMUNA 1*/
 /**CONSTITUCION */
 /*Hotel Acuario */
-let localesCreate = new Locales(null, null, 1, null, " Brasil 1777", "4304-3579", ["Normal", "Especial", "Suite", "Suite Especial", , "hidro"], "los precios no estan actualizados, comunicarse con el local para detalles de precio", "Telo en barrio Constitucion", "https://ibb.co/XFZSMpZ", "https://ibb.co/12nJbN3", "https://ibb.co/LdT0b0H", "https://ibb.co/1XFCdH6", "https://ibb.co/30LJTK2")
+let localesCreate = new Locales('Acuario' , 1, riDL() , " Brasil 1777", "4304-3579", ["Normal", "Especial", "Suite", "Suite Especial", , "hidro"], "los precios no estan actualizados, comunicarse con el local para detalles de precio", "Telo en barrio Constitucion", "https://ibb.co/XFZSMpZ", "https://ibb.co/12nJbN3", "https://ibb.co/LdT0b0H", "https://ibb.co/1XFCdH6", "https://ibb.co/30LJTK2")
 
 /**Hotel Origen */
-let localesCreate = new Locales(null, null, 1, null, "Pavón 1719 ", " 11 2308 7383", ["Standar", "Especial", "Suite", "Hidro vip", "Cinema", "Ducha Esosesa"], "los precios no estan actualizados, comunicarse con el local para detalles de precio", "Telo en barrio Constitucion", "https://ibb.co/3SLmfsk", "https://ibb.co/3SLmfsk", "https://ibb.co/xFWZh93", "https://ibb.co/mXkv4t1", "https://ibb.co/b62TwhS", 2 "https://ibb.co/kGQ4736")
+let localesCreate = new Locales(null, null,  riDL(), 1, "Pavón 1719 ", " 11 2308 7383", ["Standar", "Especial", "Suite", "Hidro vip", "Cinema", "Ducha Esosesa"], "los precios no estan actualizados, comunicarse con el local para detalles de precio", "Telo en barrio Constitucion", "https://ibb.co/3SLmfsk", "https://ibb.co/3SLmfsk", "https://ibb.co/xFWZh93", "https://ibb.co/mXkv4t1", "https://ibb.co/b62TwhS", 2 "https://ibb.co/kGQ4736")
 
 
 
