@@ -22,7 +22,8 @@ app.use(session({
     saveUninitialized: true
 }));
 
-/**************require routes***************/./routes/mainRoutes.js')
+/**************require routes***************/
+
 const mongoose = require('mongoose');
 const apaClubRouter = require('./routes/apaClubRoutes.js')
 const usersRouter = require('./routes/usersRoutes.js')
@@ -32,7 +33,6 @@ const apiOwnerRouter = require('./routes/apiOwnerRoutes.js')
 const searchRouter = require('./routes/searchRoutes.js')
 const gameAIRouter = require('./routes/gameAIRoutes.js')
 const staffRouter = require('./routes/staffRoutes.js')
-    /**************define end points***************/
 app.use('/', mainRouters);
 app.use('/apa-club', apaClubRouter);
 app.use('/usuarios', usersRouter);
@@ -46,4 +46,4 @@ app.use('/staff', staffRouter)
 app.listen(port, () => {
     console.log('WS LEVANTADO Y CORRIENDO EN 6996')
 })
-module.exports = app
+module.exports = app()
