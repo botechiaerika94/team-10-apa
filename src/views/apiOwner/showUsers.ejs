@@ -29,8 +29,7 @@
                 </hr>
                 <div id="articles">
                     <article class="article-item" id="article-template">
-                        <%let u = userList.user_name %>
-                            <%for(let u of userList){ %>
+                       <% for(let u of usersList){ %>
                                 <div class="image-wrap">
                                     <img src="<%=u.avatar%>" alt="Avatar  User" class="rounded" height="50px" width="130px" />
                                 </div>

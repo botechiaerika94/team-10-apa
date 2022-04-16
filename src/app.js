@@ -22,8 +22,8 @@ app.use(session({
     saveUninitialized: true
 }));
 
-/**************require routes***************/./routes/mainRoutes.js')
-const mongoose = require('mongoose');
+/**************require routes***************/
+const mainRouters = require('./routes/mainRoutes.js')
 const apaClubRouter = require('./routes/apaClubRoutes.js')
 const usersRouter = require('./routes/usersRoutes.js')
 const productsRouter = require('./routes/productsRoutes.js')
