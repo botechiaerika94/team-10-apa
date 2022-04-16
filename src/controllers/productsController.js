@@ -11,8 +11,8 @@ const p00 = JSON.parse(fs.readFileSync(p00BaseFilePath, 'utf-8'));
 let controller = {
     index: (req, res) => {
         res.render('products/products00_telos', {
-            title: p00.title
-        })
+            title: p00.title,
+            localsList: p00})
     },
     comunasP: (req, res) => {
         let comunaID = req.params.comunaID

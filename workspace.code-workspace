@@ -6,5 +6,8 @@
 		{
 			"path": "."
 		}
-	]
+	],
+	"settings": {
+		"colorWheel.settings.workspaceColor": "hsl(116,77%,49%)"
+	}
 }

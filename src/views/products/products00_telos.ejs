@@ -29,18 +29,17 @@
 
             <div class="container">
                 <!-- COL-1 DIV 1  -->
-<%for(let h of hotelsList)%>
+
                 <h3 class="h3">
-                    T1
+                 <%for let h of localsList){%>
                 </h3>
                 <div class="row">
-                    <!--<% for( let h of hotels){%>-->
+                 <% for(h=0 ; h <= h.lenght; h++){%>
                     <div class="col-md-4 col-sm-6">
                         <div class="product-grid8">
                             <div class="product-image8">
-                                <!--<a href="telos/<%h.ID%>">-->
+                            <a href="telos/local-<%=h[i].rgL%>">
                                 <img class="pic-1 img-fluid" src="images/hands_01.png" alt="hands 01" class="h.img01" />
-                                <!--<img class="pic-2" src="img1">-->
                                 </a>
                                 <ul class="social">
                                     <li>
@@ -53,8 +52,8 @@
                                         <a href="" class="fa fa-shopping-cart"></a>
                                     </li>
                                 </ul>
-                                <!--<span class="product-discount-label"><%h.ico></span>-->
-                            </div>
+                                <!--<span class="product-discount-label"><%h.icon%></span>-->
+                            </div><%}%>
                             <div class="product-content">
                                 <div class="price">£ 8.00
                                     <span>£ 10.00</span>

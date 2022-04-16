@@ -4,6 +4,7 @@ const PORT = 6996
 const port = process.env.PORT || 6996
 const express = require('express')
 const path = require('path');
+const extType = path.extname('file')
 const methodOverride = require('method-override');
 const session = require('express-session');
 const app = express()
@@ -43,7 +44,7 @@ app.use('/buscarTelos', searchRouter)
 app.use('/ApaGame', gameAIRouter)
 app.use('/staff', staffRouter)
     /***********Server listen 6996****** */
-app.listen(port, () => {
+app.listen(port||PORT ,() => {
     console.log('WS LEVANTADO Y CORRIENDO EN 6996')
 })
 module.exports = app
