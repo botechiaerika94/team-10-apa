@@ -2,15 +2,16 @@ const fs = require('fs')
 const path = require('path')
     //REQUIRE PATH, READ FILE and SYNC JSON DOCUMENT
 const comunasFilePath = path.join(__dirname, '../data/comunasDataBase.json')
-const ofertasDataBaseFilePath = path.join(__dirname, '../data/ofertasDataBase.json')
+const p00BaseFilePath = path.join(__dirname, '../data/p00_DataBase.json')
     //JSON OBJECT --> JS OBJECT
 const comunas = JSON.parse(fs.readFileSync(comunasFilePath, 'utf-8'));
-const ofertasMes = JSON.parse(fs.readFileSync(ofertasDataBaseFilePath, 'utf-8'));
+const p00 = JSON.parse(fs.readFileSync(p00BaseFilePath, 'utf-8'));
+
+/* ******LANDING ******* */
 let controller = {
-    landingProducts: (req, res) => {
-        res.render('products/landingProducts', {
-            title: 'PRODUCTOS - CABA',
-            comunas: comunas
+    index: (req, res) => {
+        res.render('products/products00_telos', {
+            title: p00.title
         })
     },
     comunasP: (req, res) => {
@@ -31,8 +32,11 @@ let controller = {
             title: 'Producto ' + idRooms,
         })
     },
-    sale: (req, res) => {
-        res.render('products/ofertas', { title: ofertasMes.title, ofertasMes: { ofertasMes } })
+    listCABA: (req, res) => {
+        res.render('products/landingProducts', {
+            title: 'PRODUCTOS - CABA',
+            comunas: comunas
+        })
     }
 }
 module.exports = controller

@@ -11,18 +11,22 @@ let controller = {
     buscar: (req, res) => {
         res.render('apaClub/buscarProducto', { title: 'BUSCAR' });
     },
-    miCuenta: (req, res) => {
-        res.render('users/dashboard', {
-            title: 'miCuenta',
-            usersList: usersList
-        })
-    },
-    edit: (req, res) => {
-        let user = req.params.user_register
-        res.render('apaClub/perfilApa', {
-            title: 'Perfil Usuario' + userList.id,
-            user: usersList
-        })
+    //miCuenta: (req, res) => {
+    //    res.render('users/dashboard', {
+    //        title: 'miCuenta',
+    //        usersList: usersList
+    //    })
+    //},
+    //edit: (req, res) => {
+    //    let user = req.params.user_register
+    //    res.render('apaClub/perfilApa', {
+    //        title: 'Perfil Usuario' + userList.id,
+    //        user: usersList
+    //    })
+    //
+    showCart: (req, res) => {
+        res.render('apaClub/apaClub_shopCart', { title: 'APA' })
     }
+
 }
 module.exports = controller

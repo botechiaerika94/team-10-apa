@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="APA AFTER-NIGHT" content="BUSCADOR DE TELOS, TELOS SEARCH ENGINE, TELOS ARGENTINA, ARGENTINA, CABA, TELOS-CABA">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%- include('../partials/head.ejs')%>
+        <!--FONT AWESOME  -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <script src="https://kit.fontawesome.com/0c502158eb.js " crossorigin="anonymous "></script>
+        <link rel="stylesheet" href="/public/stylesheets/normalize.css" type="text/css" />
+        <link rel="stylesheet" href="/stylesheets/style.css" type="text/css" />
+        <link rel="stylesheet" href="/stylesheets/style_apiOwners.css" type="text/css" />
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <title>APA!
+            <%= title ;%>
+        </title>
+
+</head>
+
+<body>
+    <%-include('../partials/topUser.ejs')%>
+
+        <!------ Include the above in your HEAD tag ---------->
+        <div class="center">
+            <section id="content">
+                <hr>
+                <h2 class="subheader text-center py-6">APA!
+                    <%=title%>
+                </h2>
+                </hr>
+                <div id="articles">
+                    <article class="article-item" id="article-template">
+                        <% forEach(let u of register_user){%>
+                            if( this.id === usersList[u].id ){%>
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">INFORMACION PERSONAL</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-md-3 col-lg-3 " align="center">
+                                            <img alt="User Pic" src="<%=r.avatar%>" class=" img-circle img-responsive ">
+                                            <%}%>
+                                        </div>
+
+                                        <!--<div class="col-xs-10 col-sm-10 hidden-md hidden-lg "> <br>
+                      <dl>
+                        <dt>DEPARTMENT:</dt>
+                        <dd>Administrator</dd>
+                        <dt>HIRE DATE</dt>
+                        <dd>11/12/2013</dd>
+                        <dt>DATE OF BIRTH</dt>
+                           <dd>11/12/2013</dd>
+                        <dt>GENDER</dt>
+                        <dd>Male</dd>
+                      </dl>
+                    </div>-->
+                                        <div class=" col-md-9 col-lg-9 ">
+                                            <table class="table table-user-information ">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>CODIGO:</td>
+                                                        <td>Programming</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>NOMBRE:</td>
+                                                        <td>06/23/2013</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DOCUMENTO:</td>
+                                                        <td>01/24/1988</td>
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <tr>
+                                                            <td>Email</td>
+                                                            <td><a href="mailto:info@support.com ">info@support.com</a></td>
+                                                        </tr>
+                                                        <td>NUMERO TELEFONICO:</td>
+                                                        <td>123-4567-890(Landline)
+                                                        </td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-heading ">
+                                    <h3 class="panel-title ">DOCUMENTACION</h3>
+                                </div>
+                                <div class="panel-body ">
+                                    <div class="row ">
+
+                                        <!--<div class="col-xs-10 col-sm-10 hidden-md hidden-lg "> <br>
+                      <dl>
+                        <dt>DEPARTMENT:</dt>
+                        <dd>Administrator</dd>
+                        <dt>HIRE DATE</dt>
+                        <dd>11/12/2013</dd>
+                        <dt>DATE OF BIRTH</dt>
+                           <dd>11/12/2013</dd>
+                        <dt>GENDER</dt>
+                        <dd>Male</dd>
+                      </dl>
+                    </div>-->
+                                        <div class=" col-md-9 col-lg-9 ">
+                                            <table class="table table-user-information ">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>FOTO DOCUMENTO:</td>
+                                                        <td>Programming</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Certificado de Notas/ICFES:</td>
+                                                        <td>06/23/2013</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Certificado de residencia:</td>
+                                                        <td>01/24/1988</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Recibo Publico:</td>
+                                                        <td>Male</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+
+                                            <a href="# " class="btn btn-primary ">Actualizar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-heading ">
+                                    <h3 class="panel-title ">CAMBIO CONTRASEÑA</h3>
+                                </div>
+                                <div class="panel-body ">
+                                    <div class="row ">
+
+                                        <!--<div class="col-xs-10 col-sm-10 hidden-md hidden-lg "> <br>
+                      <dl>
+                        <dt>DEPARTMENT:</dt>
+                        <dd>Administrator</dd>
+                        <dt>HIRE DATE</dt>
+                        <dd>11/12/2013</dd>
+                        <dt>DATE OF BIRTH</dt>
+                           <dd>11/12/2013</dd>
+                        <dt>GENDER</dt>
+                        <dd>Male</dd>
+                      </dl>
+                    </div>-->
+                                        <div class=" col-md-9 col-lg-9 ">
+                                            <table class="table table-user-information ">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Contraseña:</td>
+                                                        <td>Programming</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Nueva Contraseña:</td>
+                                                        <td>06/23/2013</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Confirmar Nueva Contraseña:</td>
+                                                        <td>01/24/1988</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+
+                                            <a href="# " class="btn btn-primary ">Cambiar Contraseña</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                </div>
+                </article>
+                <!--AÑADIR ARTICULOS VIA JS-->
+
+        </div>
+        </section>
+
+        <aside id="sidebar ">
+            <div id="nav-blog " class="sidebar-item ">
+                <h3>Puedes hacer esto</h3>
+                <a href="# " class="btn btn-success ">OPINAR</a>
+            </div>
+
+            <div id="search " class="sidebar-item ">
+                <h3>BUSCAR TELO</h3>
+                <p>Encuentra el TELO que buscas!</p>
+                <form>
+                    <input type="text " name="search " />
+                    <input type="submit " name="submit " value="Buscar " class="btn " />
+                </form>
+            </div>
+        </aside>
+        <%}%>
+            <div class="clearfix "></div>
+            </div>
+
+
+            <%-include('../partials/footerSocios.ejs')%>
+
+</html>
+
+</body>

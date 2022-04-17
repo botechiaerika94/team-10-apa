@@ -18,8 +18,7 @@ let controller = {
     },
     showUByID: (req, res) => {
         let register_user = req.params.register_user
-        res.render('apiOwner/detailsUsers',
-            {
+        res.render('apiOwner/detailsUsers', {
             title: 'Detalles Usuario ' + register_user,
             usersList: usersList
         })
@@ -30,6 +29,10 @@ let controller = {
             title: 'listar Locales',
             localsList: localsList
         })
+    },
+    createLocal: (req, res) => {
+        res.render('apiOwner/newEnterprise.ejs', { title: "FORM EMPRESA" })
     }
 }
+
 module.exports = controller
