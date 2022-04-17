@@ -141,7 +141,7 @@
     border-radius: 15px;
 }
 
-bg-02 {
+.bg-02 {
     background: url("../images/svg/bg-02.svg");
     background-repeat: repeat;
 }
@@ -149,4 +149,10 @@ bg-02 {
 .footer-link {
     text-decoration: none;
     color: black;
+}
+
+.ownerApi {
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.5rem;
+    color: #dbd7ff;
 }

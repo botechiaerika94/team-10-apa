@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>
+        <%=title%>
+    </title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="barra-lateral col-12 col-sm-auto p-0">
+                <div class="logo">
+                    <h2 class="py-4 m-0">Dashboard</h2>
+                </div>
+                <nav class="menu d-flex d-sm-block justify-content-center flex-wrap">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                            <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+                        </svg> Inicio
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text-fill" viewBox="0 0 16 16">
+                            <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1h-4z"/>
+                        </svg> Entradas
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                            <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
+                            <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+                        </svg> Usuarios
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                            <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                        </svg> Configuracion
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                            <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                        </svg> Salir
+                    </a>
+
+                </nav>
+            </aside>
+            </header>
+            <div class="container">
+                <h2>Mesa de Entrada</h2>
+                <h3>APA - Empresas</h3>
+            </div>
+            <form class="form-horizontal">
+                <fieldset>
+                    <!-- Form Name -->
+                    <legend>Nuevo Registro</legend>
+                    <!-- Text input-->
+
+                    <!-- #01 - NUEVO REGISTRO  -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="local_id">Credencial del Local</label>
+                        <div class="col-md-4">
+                            <input id="local_id" name="local_id" placeholder="Ingrese el Numero " class="form-control input-md" required="" type="text">
+                        </div>
+                    </div>
+                    <div class="container container-register" ;>
+                        <div class="row"></div>
+                        <div class="containe container-fluid ">
+
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6">
+                                    <h4>HOTEL PLATINUM</h4>
+                                    <form action="" method="post">
+                                        <div class="mb-3 <label for=" exampleDataList " class="form-label ">Fecha de RESERVA</label>
+					<input type="date " name="date " class="form-control " id="<i class="fa fa-calendar-check-o" aria-hidden="true">
+                                            </i>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">HOSPEDAGEN seleccionda</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                </div>
+                                <div>
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">HOSPEDAGEN seleccionda</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bootstrap JavaScript Libraries -->
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>idProducto</th>
+                                <th>idComuna</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Default</td>
+                                <td>Defaultson</td>
+                                <td>def@somemail.com</td>
+                            </tr>
+                            <tr class="success">
+                                <td>Success</td>
+                                <td>Doe</td>
+                                <td>john@example.com</td>
+                            </tr>
+                            <tr class="danger">
+                                <td>Danger</td>
+                                <td>Moe</td>
+                                <td>mary@example.com</td>
+                            </tr>
+                            <tr class="info">
+                                <td>Info</td>
+                                <td>Dooley</td>
+                                <td>july@example.com</td>
+                            </tr>
+                            <tr class="warning">
+                                <td>Warning</td>
+                                <td>Refs</td>
+                                <td>bo@example.com</td>
+                            </tr>
+                            <tr class="active">
+                                <td>Active</td>
+                                <td>Activeson</td>
+                                <td>act@example.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+        </div>
+
+</body>
+
+</html>
+<li>
+    <a href="index.html#">See all messages</a>
+</li>
+</ul>
+</li>
+<!-- inbox dropdown end -->
+<!-- notification dropdown start-->
+<li id="header_notification_bar" class="dropdown">
+    <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+        <i class="fa fa-bell-o"></i>
+        <span class="badge bg-warning">7</span>
+    </a>
+    <ul class="dropdown-menu extended notification">
+        <div class="notify-arrow notify-arrow-yellow"></div>
+        <li>
+            <p class="yellow">You have 7 new notifications</p>
+        </li>
+        <li>
+            <a href="index.html#">
+                <span class="label label-danger"><i class="fa fa-bolt"></i></span> Server Overloaded.
+                <span class="small italic">4 mins.</span>
+            </a>
+        </li>
+        <li>
+            <a href="index.html#">
+                <span class="label label-warning"><i class="fa fa-bell"></i></span> Memory #2 Not Responding.
+                <span class="small italic">30 mins.</span>
+            </a>
+        </li>
+        <li>
+            <a href="index.html#">
+                <span class="label label-danger"><i class="fa fa-bolt"></i></span> Disk Space Reached 85%.
+                <span class="small italic">2 hrs.</span>
+            </a>
+        </li>
+        <li>
+            <a href="index.html#">
+                <span class="label label-success"><i class="fa fa-plus"></i></span> New User Registered.
+                <span class="small italic">3 hrs.</span>
+            </a>
+        </li>
+        <li>
+            <a href="index.html#">See all notifications</a>
+        </li>
+    </ul>
+</li>
+<!-- notification dropdown end -->
+</ul>
+<!--  notification end -->
+</div>
+<div class="top-menu">
+    <ul class="nav pull-right top-menu">
+        <li><a class="logout" href="login.html">Logout</a></li>
+    </ul>
+</div>
+</header>
+<!--header end-->
+<!-- **********************************************************************************************************************************************************
+          MAIN SIDEBAR MENU
+          *********************************************************************************************************************************************************** -->
+<!--sidebar start-->
+<aside>
+    <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+            <p class="centered">
+                <a href="profile.html"><img src="img/ui-sam.jpg" class="img-circle" width="80"></a>
+            </p>
+            <h5 class="centered">Sam Soffes</h5>
+            <li class="mt">
+                <a href="index.html">
+                    <i class="fa fa-dashboard"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="sub-menu">
+                <a href="javascript:;">
+                    <i class="fa fa-desktop"></i>
+                    <span>UI Elements</span>
+                </a>
+                <ul class="sub">
+                    <li><a href="general.html">General</a></li>
+                    <li><a href="buttons.html">Buttons</a></li>
+                    <li><a href="panels.html">Panels</a></li>
+                    <li><a href="font_awesome.html">Font Awesome</a></li>
+                </ul>
+            </li>
+            <li class="sub-menu">
+                <a href="javascript:;">
+                    <i class="fa fa-cogs"></i>
+                    <span>Components</span>
+                </a>
+                <ul class="sub">
+                    <li><a href="grids.html">Grids</a></li>
+                    <li><a href="calendar.html">Calendar</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="todo_list.html">Todo List</a></li>
+                    <li><a href="dropzone.html">Dropzone File Upload</a></li>
+                    <li><a href="inline_editor.html">Inline Editor</a></li>
+                    <li><a href="file_upload.html">Multiple File Upload</a></li>
+                </ul>
+            </li>
+            <li class="sub-menu">
+                <a class="active" href="javascript:;">
+                    <i class="fa fa-book"></i>
+                    <span>Extra Pages</span>
+                </a>
+                <ul class="sub">
+                    <li><a href="blank.html">Blank Page</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="lock_screen.html">Lock Screen</a></li>
+                    <li class="active"><a href="profile.html">Profile</a></li>
+                    <li><a href="invoice.html">Invoice</a></li>
+                    <li><a href="pricing_table.html">Pricing Table</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="404.html">404 Error</a></li>
+                    <li><a href="500.html">500 Error</a></li>
+                </ul>
+            </li>
+            <li class="sub-menu">
+                <a href="javascript:;">
+                    <i class="fa fa-tasks"></i>
+                    <span>Forms</span>
+                </a>
+                <ul class="sub">
+                    <li><a href="form_component.html">Form Components</a></li>
+                    <li><a href="advanced_form_components.html">Advanced Components</a></li>
+                    <li><a href="form_validation.html">Form Validation</a></li>
+                    <li><a href="contactform.html">Contact Form</a></li>
+                </ul>
+            </li>
+            <li class="sub-menu">
+                <a href="javascript:;">
+                    <i class="fa fa-th"></i>
+                    <span>Data Tables</span>
+                </a>
+                <ul class="sub">
+                    <li><a href="basic_table.html">Basic Table</a></li>
+                    <li><a href="responsive_table.html">Responsive Table</a></li>
+                    <li><a href="advanced_table.html">Advanced Table</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="inbox.html">
+                    <i class="fa fa-envelope"></i>
+                    <span>Mail </span>
+                    <span class="label label-theme pull-right mail-info">2</span>
+                </a>
+            </li>
+            <li class="sub-menu">
+                <a href="javascript:;">
+                    <i class=" fa fa-bar-chart-o"></i>
+                    <span>Charts</span>
+                </a>
+                <ul class="sub">
+                    <li><a href="morris.html">Morris</a></li>
+                    <li><a href="chartjs.html">Chartjs</a></li>
+                    <li><a href="flot_chart.html">Flot Charts</a></li>
+                    <li><a href="xchart.html">xChart</a></li>
+                </ul>
+            </li>
+            <li class="sub-menu">
+                <a href="javascript:;">
+                    <i class="fa fa-comments-o"></i>
+                    <span>Chat Room</span>
+                </a>
+                <ul class="sub">
+                    <li><a href="lobby.html">Lobby</a></li>
+                    <li><a href="chat_room.html"> Chat Room</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="google_maps.html">
+                    <i class="fa fa-map-marker"></i>
+                    <span>Google Maps </span>
+                </a>
+            </li>
+        </ul>
+        <!-- sidebar menu end-->
+    </div>
+</aside>
+<div class="container-fluid">
+    <div class="row">
+        <aside class="barra-lateral col-12 col-sm-auto p-0">
+            <div class="logo">
+                <h2 class="py-4 m-0">Dashboard</h2>
+            </div>
+        </aside>
+        <nav class="menu d-flex d-sm-block justify-content-center flex-wrap">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                            <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+                        </svg> Inicio
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text-fill" viewBox="0 0 16 16">
+                            <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1h-4z"/>
+                        </svg> Entradas
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                            <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
+                            <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+                        </svg> Usuarios
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                            <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                        </svg> Configuracion
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                            <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                        </svg> Salir
+            </a>
+
+        </nav>
+        </aside>
+        </header>
+        <div class="container">
+            <h2>Mesa de Entrada</h2>
+            <h3>APA - Empresas</h3>
+        </div>
+        <form class="form-horizontal">
+            <fieldset>
+                <!-- Form Name -->
+                <legend>Nuevo Registro</legend>
+                <!-- Text input-->
+
+                <!-- #01 - NUEVO REGISTRO  -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="local_id">Credencial del Local</label>
+                    <div class="col-md-4">
+                        <input id="local_id" name="local_id" placeholder="Ingrese el Numero " class="form-control input-md" required="" type="text">
+                    </div>
+                </div>
+                <div class="container container-register" ;>
+                    <div class="row"></div>
+                    <div class="containe container-fluid ">
+
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <h4>HOTEL PLATINUM</h4>
+                                <form action="" method="post">
+                                    <div class="mb-3 <label for=" exampleDataList " class="form-label ">Fecha de RESERVA</label>
+					<input type="date " name="date " class="form-control " id="<i class="fa fa-calendar-check-o" aria-hidden="true">
+                                        </i>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">HOSPEDAGEN seleccionda</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div>
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">HOSPEDAGEN seleccionda</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bootstrap JavaScript Libraries -->
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>idProducto</th>
+                            <th>idComuna</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Default</td>
+                            <td>Defaultson</td>
+                            <td>def@somemail.com</td>
+                        </tr>
+                        <tr class="success">
+                            <td>Success</td>
+                            <td>Doe</td>
+                            <td>john@example.com</td>
+                        </tr>
+                        <tr class="danger">
+                            <td>Danger</td>
+                            <td>Moe</td>
+                            <td>mary@example.com</td>
+                        </tr>
+                        <tr class="info">
+                            <td>Info</td>
+                            <td>Dooley</td>
+                            <td>july@example.com</td>
+                        </tr>
+                        <tr class="warning">
+                            <td>Warning</td>
+                            <td>Refs</td>
+                            <td>bo@example.com</td>
+                        </tr>
+                        <tr class="active">
+                            <td>Active</td>
+                            <td>Activeson</td>
+                            <td>act@example.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="barra-lateral col-12 col-sm-auto p-0">
+                <div class="logo">
+                    <h2 class="py-4 m-0">Dashboard</h2>
+                </div>
+                <nav class="menu d-flex d-sm-block justify-content-center flex-wrap">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                            <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+                        </svg> Inicio
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text-fill" viewBox="0 0 16 16">
+                            <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1h-4z"/>
+                        </svg> Entradas
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                            <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
+                            <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+                        </svg> Usuarios
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                            <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                        </svg> Configuracion
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                            <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                        </svg> Salir
+                    </a>
+
+                </nav>
+                < /aside>
+                    <script>
+                        <%jQuery(function ($) {
+
+$(".sidebar-dropdown > a").click(function() {
+$(".sidebar-submenu").slideUp(200);
+if (
+$(this)
+  .parent()
+  .hasClass("active")
+) {
+$(".sidebar-dropdown").removeClass("active");
+$(this)
+  .parent()
+  .removeClass("active");
+} else {
+$(".sidebar-dropdown").removeClass("active");
+$(this)
+  .next(".sidebar-submenu")
+  .slideDown(200);
+$(this)
+  .parent()
+  .addClass("active");
+}
+});
+
+$("#close-sidebar").click(function() {
+$(".page-wrapper").removeClass("toggled");
+});
+$("#show-sidebar").click(function() {
+$(".page-wrapper").addClass("toggled");
+
+});%>
+                    </script>
+                    < /body>
+
+                        </html>

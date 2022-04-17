@@ -1,32 +1,52 @@
+<style>
+    .apa-drop1 {
+        text-align: center;
+        text-decoration: none;
+        color: rgb(255, 120, 239);
+    }
+</style>
+
 <div class="div1">
     <nav class="navbar navbar-light bg-light fixed-top menu">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a><span class="apaBrand">APA</span>
+            <a class="navbar-brand" href="/apa"></a><span class="apaBrand">APA</span>
             <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon text"></span>
             </button>
             <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
                 <ul class="navbar-nav bg-light me-auto mb-5 mb-lg-0 menu-expand">
+
                     <li class="nav-item">
-                        <a class="nav-link" href="/home"><span class="nLink">HOME</span></a>
+                        <a class="nav-link" href="/HOME"><span class="nLink">APA! HOME</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/productos"><span class="nLink">APA! CABA</span></a>
+                        <a class="nav-link" href="/telos/CABA"><span class="nLink">APA! CABA</span></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle show" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true" style="color: ">
-                            <span class="nLink">CLUB</span>
+                            <span class="nLink">APA! CLUB</span>
                         </a>
                         <ul class="dropdown-menu show" aria-labelledby="navbarScrollingDropdown" data-bs-popper="none">
-                            <li><a class="dropdown-item" href="/usuarios"><span class="nLink">APA LOGIN </span></a></li>
+                            <li><a class="dropdown-item" href="/usuarios"><span class="apa-drop1">LOGIN <strong class="text-dark" >SOCIOS!</strong> </a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="/usuarios/nuevos-socios"><span class="nLink"> CREAR Cuenta</span></a></li>
+                            <li><a class="dropdown-item" href="/usuarios/nuevos-socios"><strong class="text-dark" >NUEVOS</strong><span class="apa-drop1"> SOCIOS!</span></a></li>
+                            <hr class="dropdown-divider">
+                    </li>
+                    <!-- EMPRESAS -->
+                    </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle show" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true" style="color: ">
+                            <span class="nLink text-secondary">EMPRESAS</span>
+                        </a>
+                        <ul class="dropdown-menu show" aria-labelledby="navbarScrollingDropdown" data-bs-popper="none">
+                            <li><a class="dropdown-item" href="/empresas"><span class="text-secondary">LOGIN</span></a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="/empresas"><span class="nLink">EMPRESAS</span></a></li>
+                            <li><a class="dropdown-item" href="/empresas/cadastro"><span class="text-secondary">CADASTRO</span></a></li>
                         </ul>
                     </li>
                 </ul>

@@ -1,72 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 
     <meta charset="UTF-8">
     <meta name="APA AFTER-NIGHT" content="BUSCADOR DE TELOS, TELOS SEARCH ENGINE, TELOS ARGENTINA, ARGENTINA, CABA, TELOS-CABA">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%- include('../partials/head'); %>
-    <link rel='stylesheet' href='./../stylesheets/style.css' type="text/css" />
-    <link rel='stylesheet' href='./../stylesheets/style_cadastroUsuarioEmpresa.css' type="text/css" />
+        <link rel='stylesheet' href='./../stylesheets/style.css' type="text/css" />
+        <link rel='stylesheet' href='./../stylesheets/style_cadastroUsuarioEmpresa.css' type="text/css" />
 
-    <script src="https://kit.fontawesome.com/0c502158eb.js" crossorigin="anonymous"></script>
-    <title> APA! <%= title %> </title>
+        <script src="https://kit.fontawesome.com/0c502158eb.js" crossorigin="anonymous"></script>
+        <title> APA!
+            <%= title %>
+        </title>
 
-
+        <style>
+            .form-group {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+            
+            .placeholder_Custom {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+            }
+            
+            .avatar {
+                width: 20px;
+                height: 20px;
+            }
+        </style>
 </head>
-<body class="bodyPage">
-<%- include('../partials/navbarTop');%>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-md-6 bg-form"></div>
-            <div class="col-12 col-md-6 bg-form">
-                <form class="form-group" action="" method="post">
-                    <div class="elem-grupo">
-                        <label for="nombre">Nombre y Apellido:</label>
-                        <input type="text" name="nombre" class="placeholder_Custom" placeholder="nombre y apellido" required>
-                    </div>
-                    <div class="elem-grupo">
-                        <label for="nombreUsuario">Nombre Usuario:</label>
-                        <input type="text" name="nombreUsuario" class="placeholder_Custom" placeholder="Usuario" required>
-                    </div>
-                    <div class="elem-grupo">
-                        <label for="email"></label>E-MAIL:</label>
-                        <input type="text" name="nombre" class="placeholder_Custom" placeholder="nombre@mail.com" required>
-                    </div>
-                    <div class="elem-grupo">
-                        <label for="contrasena">CONTRASEÑA:</label>
-                        <input type="password" name="contraseña" class="placeholder_Custom" placeholder="contraseña" required>
-                    </div>
-                    <div class="elem-grupo ">
-                        <div class="row">
-                            <div class="col-6">
-                                <input type="checkbox" name="hobbies" value="Precio">
-                                <label for="Precio">PRECIO</label>
-                            </div>
-                            <div class="col-6">
-                                <input type="checkbox" name="hobbies" value="Música">
-                                <label for="Música">LOCALIZACION</label>
-                            </div>
-                            <div class="col-6">
-                                <input type="checkbox" name="hobbies" value="Música">
-                                <label for="Música">EVALUACION</label>
-                            </div>
-                            <div class="col-6">
-                                <input type="checkbox" name="hobbies" value="Música">
-                                <label for="Música">NOMBRE</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="elem-grupo">
-                        <label for="mensaje">Comentarios</label>
-                        <textarea class="textarea mensaje" name="mensaje" id="mensaje" cols="1" rows="0" ></textarea>
-                        <button type="submit">ENVIAR  <i class="bi bi-send"></i></button>
-                        <button  type="reset" type="reset">BORRAR DATOS <i class="bi bi-x-square-fill"></i></button>
-                    </div>
-                </form>
-            </div>
-        </div>
 
-<%- include('../partials/navbarBottom'); %>
+<body class="bodyPage">
+    <%- include('../partials/navbarTop');%>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-6 bg-form"></div>
+                <div class="col-12 col-md-6 bg-form bg-secondary">
+                    <form class="form-group" action="/apiOwner/create" method="post">
+                        <fieldset class="elem-grupo">
+                            <legend>Crear Usuario</legend>
+                            <input type="text" name="first_name" class="placeholder_Custom" placeholder="Ingrese el Primer Nombre" required>
+                            <input type="text" name="last_name" class="placeholder_Custom" placeholder="Ingrese el Apellido" required>
+                            <input type="text" name="user_name" class="placeholder_Custom" placeholder="Nombre Usuario" required>
+                            <input type="text" name="emailE" class="placeholder_Custom" placeholder="nombre@mail.com" required>
+                            <input type="password" name="contraseña" class="placeholder_Custom" placeholder="contraseña" required>
+                            <p>
+                                <input type="checkbox" name="user_preferences" value="preference_price">
+                                <label for="preference_price">PRECIO</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="user_preferences" value="preference_zone">
+                                <label for="preference_zone">ZONA UBICACION</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="user_preferences" value="preference_stars">
+                                <label for="preference_stars">EVALUACION</label>
+                            </p>
+                            <div class="d-flex justify-center align-center flex-grow ">
+                                <button type="submit " class="btn btn-success px-4">ENVIAR  <i class="bi bi-send "></i></button>
+                                <button type="reset " class="btn btn-danger px-4">BORRAR<i class="bi bi-x-square-fill "></i></button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+
+            <%- include('../partials/navbarBottom'); %>
 </body>
+
 </html>

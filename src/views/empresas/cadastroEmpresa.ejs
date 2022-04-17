@@ -23,62 +23,52 @@
 
         <div class="div2">
             </style>
-            <div class="container-fluid">
+            <div class="container-fluid" style="background: #0c0c0c;">
                 <div class="row">
-                    <div class="col-12 col-md-6 bg-side">
+                    <div class="col-12 col-md-6 bg-side" style="background: #0c0c0c; background-image:url('/images/svg/icoon10.svg') ; background-size: cover;">
 
                     </div>
-                    <div class="col-12 col-md-6 bg-form">
+                    <div class="col-12 col-md-6 bg-form mt-5"style="background: #0c0c0c; ">
                         <!-- final navbar---------------------- -->
-                        <form class="form-group" action="" method="POST">
+                        <form class="form-group" action="/empresas/cadastro" method="POST">
 
                             <div class="elem-grupo">
-                                <label for="nombre">Nombre y Responsable:</label>
-                                <input type="text" name="nombre" class="placeholder_Custom" placeholder="nombre y apellido" required>
+                                <label for="nameE">Nombre de la Empresa:</label>
+                                <input type="text" name="nameE" class="placeholder_Custom" placeholder="Nombre LOCAL" required>
                             </div>
                             <div class="elem-grupo">
-                                <label for="nombreUsuario">Nombre Establecimiento:</label>
-                                <input type="text" name="nombreUsuario" class="placeholder_Custom" placeholder="Nombre LOCAL" required>
+                                <label for="emailE"></label>E-mail Contacto :</label>
+                                <input type="text" name="emailE" class="placeholder_Custom" placeholder="nombre@mail.com" required>
                             </div>
                             <div class="elem-grupo">
-                                <label for="email"></label>E-MAIL para ENVIAR PROPUESTA PERSONALIZADA :</label>
-                                <input type="text" name="nombre" class="placeholder_Custom" placeholder="nombre@mail.com" required>
+                                <label for="webE"></label>Pagina Web :</label>
+                                <input type="text" name="webE" class="placeholder_Custom" placeholder="WEB-SITE de la EMPRESA">
                             </div>
-
-                            <div class="elem-grupo ">
-                                <label for="checkboxGroup">OBJETIVO BUSCADO:</label>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <input type="checkbox" name="hobbies" value="Música">
-                                        <label for="Música">PUBLICIDAD</label>
-                                    </div>
-                                    <div class="col-6">
-                                        <input type="checkbox" name="practicidad" value="Música">
-                                        <label for="Música">PRACTICIDAD </label>
-                                    </div>
-                                    <div class="col-6">
-                                        <input type="checkbox" name="hobbies" value="Música">
-                                        <label for="Música">VISIBILIDAD WEB</label>
-                                    </div>
-                                    <div class="col-6">
-                                        <input type="checkbox" name="hobbies" value="Música">
-                                        <label for="Música">CONTROL </label>
-                                    </div>
+                            <div class="elem-grupo text-center ">
+                                <label for="checkE">OBJETIVO:</label>
+                                <div class="col-12">
+                                    <input type="checkbox" name="checkE" value="publicity">
+                                    <label for="publicity">PUBLICIDAD</label>
+                                    <input type="checkbox" name="checkE" value="Facility">
+                                    <label for="facility">FACILIDAD </label>
+                                    <input type="checkbox" name="checkE" value="visibility">
+                                    <label for="visibillity">VISIBILIDAD WEB</label>
+                                    <input type="checkbox" name="checkE" value="automatization">
+                                    <label for="automatization">AUTOMATIZACIÓN</label>
                                 </div>
                             </div>
                             <div class="elem-grupo">
-                                <label for="mensaje">Algun DESEO ESPECIAL como <br/>OBJETIVO de la EMPRESA?</label>
-                                <textarea class="textarea mensaje" name="usuario_mensaje" id="mensaje" cols="30" rows="10" required></textarea>
-                            </div>
-                            <div>
-                                <button class="submit" type="submit">ENVIAR  <i class="bi bi-send"></i></button>
-                                <button class="reset" type="reset" type="reset">BORRAR DATOS <i class="bi bi-x-square-fill"></i></button>
+                                <label for="notesE">Anexar Observaciones de Notas e Imagens se necesario</label>
+                                <textarea name="notesE" rows="3" cols="1" style="background-color: #D7E8EF; "></textarea>
                             </div>
 
-                        </form>
+                            <button class="submit " type="submit ">ENVIAR  <i class="bi bi-send "></i></button>
+                            <button class="reset " type="reset " type="reset ">BORRAR <i class="bi bi-x-square-fill "></i></button>
                     </div>
+                    </form>
                 </div>
             </div>
+        </div>
         </div>
 
         </div>

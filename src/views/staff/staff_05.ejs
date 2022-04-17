@@ -1,0 +1,109 @@
+<!DOCTYPE html:5>
+<html lang="es">
+
+<head>
+    <%-include ('../partials/staff/staff_head.ejs')%>
+        <%-include ('../partials/staff/staff_style.ejs')%>
+</head>
+
+<body>
+    <%-include ('../partials/staff/staff_menu.ejs')%>
+        <!--/row-->
+
+
+
+
+        <%-include ('../partials/staff/staff_display01.ejs')%>
+
+
+
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Modal</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                        </div>
+                        <div class="modal-body">
+                            This is a dashboard layout for Bootstrap 4. This is an example of the Modal component which you can use to show content. Any content can be placed inside the modal and it can use the Bootstrap grid classes.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary-outline" data-dismiss="modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                // sandbox disable popups
+                if (window.self !== window.top && window.name != "view1") {
+                    window.alert = function() {
+                        /*disable alert*/
+                    };
+                    window.confirm = function() {
+                        /*disable confirm*/
+                    };
+                    window.prompt = function() {
+                        /*disable prompt*/
+                    };
+                    window.open = function() {
+                        /*disable open*/
+                    };
+                }
+
+                // prevent href=# click jump
+                document.addEventListener(
+                    "DOMContentLoaded",
+                    function() {
+                        var links = document.getElementsByTagName("A");
+                        for (var i = 0; i < links.length; i++) {
+                            if (links[i].href.indexOf("#") != -1) {
+                                links[i].addEventListener("click", function(e) {
+                                    console.debug("prevent href=# click");
+                                    if (this.hash) {
+                                        if (this.hash == "#") {
+                                            e.preventDefault();
+                                            return false;
+                                        } else {
+                                            /*
+                                                var el = document.getElementById(this.hash.replace(/#/, ""));
+                                                if (el) {
+                                                  el.scrollIntoView(true);
+                                                }
+                                                */
+                                        }
+                                    }
+                                    return false;
+                                });
+                            }
+                        }
+                    },
+                    false
+                );
+            </script>
+
+            <!--scripts loaded here-->
+
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"></script>
+            <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+
+            <script>
+                $(document).ready(function() {
+                    $("[data-toggle=offcanvas]").click(function() {
+                        $(".row-offcanvas").toggleClass("active");
+                    });
+                });
+            </script>
+
+</body>
+
+</html>

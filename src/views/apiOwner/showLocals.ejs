@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="APA AFTER-NIGHT" content="BUSCADOR DE TELOS, TELOS SEARCH ENGINE, TELOS ARGENTINA, ARGENTINA, CABA, TELOS-CABA">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%- include('../partials/head.ejs')%>
+    <!--FONT AWESOME  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/0c502158eb.js " crossorigin="anonymous "></script>
+    <link rel="stylesheet" href="/public/stylesheets/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="/stylesheets/style.css" type="text/css" />
+    <link rel="stylesheet" href="/stylesheets/style_apiOwners.css" type="text/css" />
+
+    <title>APA!
+        <%= title ;%>
+    </title>
+
+</head>
+
+<body>
+<%-include('../partials/navSocio.ejs')%>
+
+<div class="center">
+    <section id="content">
+        <hr>
+        <h2 class="subheader text-center py-6">Lista Locales</h2>
+        </hr>
+        <div id="articles">
+            <article class="article-item" id="article-template">
+                <%for(let l of localsList){ %>
+                <hr>
+                <div class="image-wrap col-6">
+                    <img src="<%=l.img0%>" alt="AvatarUser" class="thumbnail" style="width: 150px ; height="50px"; />
+                </div>
+                <h2 style="color: white; background-color: #1d0744;">
+                    <%=l.nameL%>
+                </h2>
+                <p><strong>rgL:</strong>
+                    <%=l.rgL%>
+                </p>
+                <p><strong>Numero de la Comuna:</strong>
+                    <%=l.comunaID%>
+                </p>
+                <p><strong>web page:</strong>
+                    <%=l.wL%>
+                </p>
+                <div class="col-5"></div>
+                <div class="btn-group btn-group-sm col-6">
+                    <a href="/owners/editarUsuario-<%=l.rgL%>" class="btn btn-edit text-light">Editar</a>
+                    <a href="/owners/detalles-<%=l.rgL%>" class="btn btn-read">Detalles</a>
+                    <a href="/owners/deletar-<%=l.rgL%>" class="btn btn-delete">Deletar</a>
+                </div>
+            </div>
+                <div class="clearfix"></div>
+                <hr/>
+                <%}%>
+            </article>
+            <!--AÑADIR ARTICULOS VIA JS-->
+
+        </div>
+
+    </section>
+
+    <aside id="sidebar">
+        <div id="nav-blog" class="sidebar-item">
+            <h3>Puedes hacer esto</h3>
+            <a href="#" class="btn btn-success">Crear artículo</a>
+        </div>
+
+        <div id="search" class="sidebar-item">
+            <h3>Buscador</h3>
+            <p>Encuentra el artículo que buscas</p>
+            <form>
+                <input type="text" name="search" />
+                <input type="submit" name="submit" value="Buscar" class="btn" />
+            </form>
+        </div>
+    </aside>
+    <div class="clearfix"></div>
+</div>
+<%-include('../partials/footerSocios.ejs')%>
+<script async src="https://imgbb.com/upload.js"></script>
+</html>
+
+</body>

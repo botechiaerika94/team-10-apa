@@ -4,17 +4,58 @@
 <head>
     <title>Bootstrap Example</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
 </head>
 
 <body>
 
     <div class="container">
+
+        <h2>Mesa de Entrada</h2>
+        <h3>APA - Empresas</h3>
+
+        <form class="form-horizontal">
+            <fieldset>
+                <!-- Form Name -->
+                <legend>Nuevo Registro</legend>
+                <!-- Text input-->
+
+                <!-- #01 - NUEVO REGISTRO  -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="local_id">Credencial del Local</label>
+                    <div class="col-md-4">
+                        <input id="local_id" name="local_id" placeholder="Ingrese el Numero " class="form-control input-md" required="" type="text">
+                    </div>
+                </div>
+                <!-- #02 - NUEVA ENTRADA  -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="product_name">Nombre del SERVICIO:</label>
+                    <div class="col-md-4">
+                        <input id="product_name" name="product_name" placeholder="Ingrese el Nombre de lo Servicio" class="form-control input-md" required="" type="text">
+                    </div>
+                </div>
+                <!-- #01 -  PRECIO  -->
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="product_priceTurno">Ingrese el Precio del TURNO</label>
+                    <div class="col-md-4">
+                        <input id="product_priceTurno" name="product_priceTurno" placeholder="Precio Turno" class="form-control input-md" required="" type="text">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="type_priceTurno">Ingrese el TIPO de Turno</label>
+                    <div class="col-md-4">
+                        <input id="type_priceTurno" name="type_priceTurno" placeholder="Tipo de Turno" class="form-control input-md" required="" type="text">
+                    </div>
+                </div>
+=======
         <h2>Contextual Classes</h2>
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
@@ -53,6 +94,7 @@
                     </div>
                 </div>
 
+
                 <!-- Select Basic -->
                 <div class="form-group">
                     <label class="col-md-4 control-label" for="product_categorie">PRODUCT CATEGORY</label>
@@ -90,7 +132,7 @@
 
                 <!-- Textarea -->
                 <div class="form-group">
-                    <label class="col-md-4 control-label" for="product_name_fr">PRODUCT DESCRIPTION FR</label>
+
                     <div class="col-md-4">
                         <textarea class="form-control" id="product_name_fr" name="product_name_fr"></textarea>
                     </div>
@@ -203,6 +245,8 @@
                             <label class="col-md-4 control-label" for="singlebutton">Single Button</label>
                             <div class="col-md-4">
                                 <button id="singlebutton" name="singlebutton" class="btn btn-primary">Button</button>
+          <button id="singlebutton" name="singlebutton" class="btn btn-primary">Button</button>
+
                             </div>
                         </div>
 

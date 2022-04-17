@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="APA AFTER-NIGHT" content="BUSCADOR DE TELOS, TELOS SEARCH ENGINE, TELOS ARGENTINA, ARGENTINA, CABA, TELOS-CABA">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%- include('../partials/head.ejs')%>
+        <!--FONT AWESOME  -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <script src="https://kit.fontawesome.com/0c502158eb.js " crossorigin="anonymous "></script>
+        <link rel="stylesheet" href="/public/stylesheets/normalize.css" type="text/css" />
+        <link rel="stylesheet" href="/stylesheets/style.css" type="text/css" />
+        <link rel="stylesheet" href="/stylesheets/style_apiOwners.css" type="text/css" />
+
+        <title>APA!
+            <%= title;%>
+        </title>
+</head>
+
+<body>
+    <%-include('../partials/navSocio')%>
+        <div class="center">
+            <section id="content">
+                <hr>
+                <h2 class="subheader text-center py-6">Lista Locales</h2>
+                </hr>
+                <div id="articles">
+                    <article class="article-item" id="article-template">
+                        <%for(let l of localsList){ %>
+                            <div class="image-wrap">
+                                <img src="<%=l.mapL%>" alt="Avatar  User" class="rounded" height="50px" width="130px" />
+                            </div>
+                            <h2>
+                                <%=l.nameL%>
+                            </h2>
+                            <p><strong>ID Local:</strong>
+                                <%=l.id%>
+                            </p>
+                            <p><strong>Numero Registro General:</strong>
+                                <%=l.gRL%>
+                            </p>
+                            <div class="pt-5 pb-5">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h3 class="mb-3">Imagens </h3>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                                                <i class="fa fa-arrow-left"></i>
+                                            </a>
+                                            <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                                                <i class="fa fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                        <div class="col-12">
+                                            <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <div class="row">
+
+                                                            <div class="col-md-4 mb-3">
+                                                                <div class="card">
+                                                                    <img class="img-fluid" alt="100%x280" src="<%=l.img01%>">
+                                                                    <div class="card-body">
+                                                                        <h4 class="card-title">Special title treatment</h4>
+                                                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 mb-3">
+                                                                <div class="card">
+                                                                    <img class="img-fluid" alt="100%x280" src="<%=l.img02%>">
+                                                                    <div class="card-body">
+                                                                        <h4 class="card-title">Special title treatment</h4>
+                                                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 mb-3">
+                                                                <div class="card">
+                                                                    <img class="img-fluid" alt="100%x280" src="<%=l.img03%>">
+                                                                    <div class="card-body">
+                                                                        <h4 class="card-title">Special title treatment</h4>
+                                                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="row">
+                                                            <div class="col-md-4 mb-3">
+                                                                <div class="card">
+                                                                    <img class="img-fluid" alt="100%x280" src="<%=l.img04%>">
+                                                                    <div class="card-body">
+                                                                        <h4 class="card-title">Special title treatment</h4>
+                                                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 mb-3">
+                                                                <div class="card">
+                                                                    <img class="img-fluid" alt="100%x280" src="<%=l.img03%>">
+                                                                    <div class="card-body">
+                                                                        <h4 class="card-title">Special title treatment</h4>
+                                                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 mb-3">
+                                                                <div class="card">
+                                                                    <iframe <=% l.mapL%></iframe>
+                                                                    <div class="card-body">
+                                                                        <h4 class="card-title">Special title treatment</h4>
+                                                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <%}%>
+                    </article>
+                    </div>
+            </section>
+            </div>
+            <aside id="sidebar">
+                <div id="nav-blog" class="sidebar-item">
+                    <h3>Puedes hacer esto</h3>
+                    <a href="#" class="btn btn-success">Crear artículo</a>
+                </div>
+
+                <div id="search" class="sidebar-item">
+                    <h3>Buscador</h3>
+                    <p>Encuentra el artículo que buscas</p>
+                    <form>
+                        <input type="text" name="search" />
+                        <input type="submit" name="submit" value="Buscar" class="btn" />
+                    </form>
+                </div>
+            </aside>
+            <div class="clearfix"></div>
+            </div>
+            <%-include('../partials/footerSocios.ejs')%>
+                <script href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</html>
+
+</body>

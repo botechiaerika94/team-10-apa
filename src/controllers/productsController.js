@@ -1,31 +1,45 @@
 const fs = require('fs')
 const path = require('path')
-    //REQUIRE PATH, READ FILE and SYNC JSON DOCUMENT;
-let comunasFilePath = path.join(__dirname, '../data/comunasDataBase.json')
-    //JSONconst localesFilePath = path.join(__dirname, '../data/localesDataBase.json')
-    //JSON OBJECT --> JS OBJECT
-let comunas = JSON.parse(fs.readFileSync(comunasFilePath, 'utf-8'));
-// const locales = JSON.parse(fs.readFileSync(localesFilePath, 'utf-8'));
 
+    //REQUIRE PATH, READ FILE and SYNC JSON DOCUMENT
+const comunasFilePath = path.join(__dirname, '../data/comunasDataBase.json')
+const p00BaseFilePath = path.join(__dirname, '../data/p00_DataBase.json')
+    //JSON OBJECT --> JS OBJECT
+const comunas = JSON.parse(fs.readFileSync(comunasFilePath, 'utf-8'));
+const p00 = JSON.parse(fs.readFileSync(p00BaseFilePath, 'utf-8'));
+
+
+/* ******LANDING ******* */
 let controller = {
-    landingProducts: (req, res) => {
+    index: (req, res) => {
+        res.render('products/products00_telos', {
+            title: p00.title
+        })
+    },
+    comunasP: (req, res) => {
+        let comunaID = req.params.comunaID
+        res.render('products/productosComuna', {
+
+            title: 'Comuna ' + comunaID
+        })
+    },
+    detallesL: (req, res) => {
+        let idLocal = req.params.idLocal
+        res.render('products/comunaLocales', {
+            title: 'Local ' + idLocal,
+        })
+    },
+    detallesR: (req, res) => {
+        let idRooms = req.params.idRooms
+        res.render('products/detallesP', {
+            title: 'Producto ' + idRooms,
+        })
+    },
+    listCABA: (req, res) => {
         res.render('products/landingProducts', {
             title: 'PRODUCTOS - CABA',
             comunas: comunas
         })
-    },
-    comunasP: (req, res) => {
-        let comunaSelect = null
-        comunaSelect = req.params.comunaID
-        res.render('products/productosComuna', {
-            title: locales
-        })
-    },
-    sale: (req, res) => {
-        res.render('products/ofertas', { title: 'ofertas' })
-    },
-    pn: (req, res) => {
-        res.sendFile('testeTemplate/baseNOsocios')
     }
 }
 module.exports = controller

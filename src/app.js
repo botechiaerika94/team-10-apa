@@ -1,40 +1,43 @@
-/**************REQUISICION + FUNCIONALIDAD de EXPRESS ***************/
-const express = require('express');
-const mongoose = require('mongoose');
-
-
-/**NODE ENVIRNOMENT VARIABLES */
-/**************VARIABLES GLOBALES  ***************/
+/***********settings****** */
+//require('dotenv').config
+//const port = process.env.PORT
+const express = require('express')
 const path = require('path');
-
 const app = express()
-
-const methodOverride = require('method-override')
-app.use(methodOverride('_method'))
-    //RECIBE + ENTTENDE USUARIIO PERO NO RECIBI VISITA
-app.use(express.urlencoded({ extended: false }));
-app.use(express.json())
-
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
+/***********static  files***************************/
+app.use(express.static(path.join(__dirname, './../public')));
 
-        /***********middlewares****** */
+/***********middlewares expreess*******/
+const methodOverride = require('method-override')
+app.use(methodOverride('_method'))
+app.use(express.json())
+app.use(express.urlencoded({ extended: false }));
 
-        /***********CARPETAS PUBLICAS****** */
-        app.use(express.static(path.join(__dirname, './../public')));
-        /**************REQUISICION***************/
-        const mainRouters = require('./routes/mainRoutes.js')
-        const apaClubRouter = require('./routes/apaClubRoutes.js')
-        const usersRouter = require('./routes/usersRoutes.js')
-        const productsRouter = require('./routes/productsRoutes.js')
-        const enterpriseRouter = require('./routes/enterpriseRoutes.js')
 
-        /** RUAS QUE LLEVAN A ROUTES-> CONTROLLERS* */
-        app.use('/', mainRouters); app.use('/apa-club', apaClubRouter); app.use('/usuarios', usersRouter); app.use('/productos', productsRouter); app.use('/empresas', enterpriseRouter);
-
-        /**************WS LISTEN ON 6669 ***************/
-        app.listen(process.env.PORT || 8080, () => {
-            console.log('WS LEVANTADO Y CORRIENDO EN 8080')
-        })
-
-        module.exports = app
+/**************require routes***************/
+const mainRouters = require('./routes/mainRoutes.js')
+const apaClubRouter = require('./routes/apaClubRoutes.js')
+const usersRouter = require('./routes/usersRoutes.js')
+const productsRouter = require('./routes/productsRoutes.js')
+const enterpriseRouter = require('./routes/enterpriseRoutes.js')
+const apiOwnerRouter = require('./routes/apiOwnerRoutes.js')
+    //const searchRouter = require('./routes/searchRoutes.js')
+const gameAIRouter = require('./routes/gameAIRoutes.js')
+    //const staffRouter = require('./routes/staffRoutes.js')
+    /**************define end points***************/
+app.use('/', mainRouters);
+app.use('/apa-club', apaClubRouter);
+app.use('/usuarios', usersRouter);
+app.use('/telos', productsRouter);
+app.use('/empresas', enterpriseRouter);
+app.use('/ApaOwners', apiOwnerRouter);
+//app.use('/buscarApa', searchRouter)
+app.use('/ApaGame', gameAIRouter);
+// app.use('/staff', staffRouter);
+/***********Server listen 6996****** */
+app.listen(process.env.PORT || 9994, () => {
+    console.log('WS LEVANTADO Y CORRIENDO EN 9994')
+});
+module.exports = app()

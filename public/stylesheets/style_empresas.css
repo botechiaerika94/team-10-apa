@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    background-color: cornsilk;
+    grid-template-columns: 20.6rem 20.6rem 20.6rem 20.6rem;
+}
+
+.grid-container div {
+    background-image: url("img/svg/fondo2.svg");
+    border: 4px dashed #FF0B55;
+    /* rgb(64, 182, 250) ;*/
+    text-align: center;
+    color: white;
+}
+
+.header {
+    height: 4rem;
+}
+
+.main-one {
+    grid-column: 1/5;
+    height: 25rem;
+}
+
+.main-two {
+    grid-column: 1/5;
+    float: left;
+    height: 25rem;
+}
+
+.main-three {
+    grid-column: 1/5;
+    height: 25rem;
+}
+
+.main-four {
+    grid-column: 1/5;
+    height: 22rem;
+}
+
+.banner {
+    width: 700px;
+    height: 300px;
+    margin: 15px;
+}
+
+.logo-main {
+    height: 10rem;
+    grid-column: 1/5;
+}
+
+.aside-one {
+    grid-column: 1/3;
+    height: 15rem;
+}
+
+.aside-two {
+    grid-column: 3/5;
+    height: 15rem;
+}
+
+.footer-one {
+    height: 3.9rem;
+    grid-column: 1/2;
+}
+
+.footer-two {
+    height: 3.9rem;
+    grid-column: 2/3;
+}
+
+.footer-three {
+    height: 3.9rem;
+    grid-column: 3/4;
+}
+
+.titulo04 {
+    /* COOPERACION */
+    position: absolute;
+    width: 143px;
+    height: 23px;
+    font-family: Noto Sans Tamil;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    color: white;
+}
+
+.titulo05 {
+    /* BUTTON - TRIP SCHEDULE */
+    position: relative;
+    width: 124px;
+    height: 32px;
+    color: white;
+}
+
+.boton02 {
+    /* Iconic Right · Dark */
+    width: 200px;
+    height: 29px;
+    border-radius: 2rem;
+    background-color: #fff;
+    color: #FF0B55;
+}
+
+
+/* Twitter */
+
+.twitter {
+    width: 34.86px;
+    height: 34.86px;
+    padding: 1rem;
+    padding: 2rem;
+    margin-right: 0.5rem;
+}
+
+
+/* Gmail */
+
+.gmail {
+    width: 34.86px;
+    height: 34.86px;
+    padding: 2rem;
+    margin-right: 0.5rem;
+    margin-top: 2rem;
+}
+
+.messenger {
+    /* Instagram */
+    width: 34.86px;
+    height: 34.86px;
+    padding: 2rem;
+    margin-right: 0.5rem;
+}
+
+.titulo00 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.titulo02 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.parrafo02 {
+    /* para saber más.. */
+    width: 300px;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #FF0B55;
+    background-color: white;
+    border-radius: 1rem;
+    margin-left: 10rem;
+}
+
+.parrafo03 {
+    /* Nuestro servicio brinda una opción para el público conocimiento de acceso a reservas para hoteles transitorios. Nuestra audiencia son los usuarios jóvenes y adultos millennials. Ajustamos la oferta según el parámetro de lo que el usuario esté buscando, de esa forma él/ella puede elegir según su interés. */
+    width: 500px;
+    height: 210px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FF0B55;
+    background-color: #0E185F;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-left: 3rem;
+}
+
+.persona02 {
+    width: 480px;
+}
+
+.titulo01 {
+    /* sobre nosotros */
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FF0B55;
+    background-color: white;
+    width: 278px;
+    height: 50px;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-left: 50rem;
+    /* width: 300px;
+  height: 50px;
+  
+  
+  font-family:'Poppins', sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size:2rem;
+  color:#FF0B55;
+  background-color:white;
+  border-radius: 1rem;
+  margin-left: 10rem;
+  }*/
+}
+
+.parrafo04 {
+    /* Luego conocer a la facilidad de APP de reservas en diversas ramas, identificamos la carencia de una APP eficiente. Queriendo abarcar todas expectativas de un usuario que use la APP. Por lo que surge APA, para facilitar el placer de diversión y en donde los usuarios,tengan accesibilidad y usabilidad para planear su momento de felicidad */
+    width: 550px;
+    height: 210px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FF0B55;
+    background-color: #0E185F;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-left: 41rem;
+}
+
+
+/*
+.visa{
+  width:3rem;
+  height:3rem;
+ margin-top: 3rem;
+}
+.masterCard{
+  
+  width:3rem;
+  height:3rem;
+ margin-top: 3rem;
+}
+.americanExpress{
+  
+  width:3rem;
+  height:3rem;
+ margin-top: 3rem;
+}
+.maestro{
+  
+  width:3rem;
+  height:3rem;
+ margin-top: 3rem;
+}
+*/
+
+@media screen and (max-width:600px) {
+    .footer-one,
+    .footer-two,
+    .footer-three,
+    .footer-four,
+    .aside-one,
+    .aside-two,
+    .logo-main,
+    .main-one,
+    .main-two,
+    .main-three,
+    .main-four,
+    .header {
+        grid-column: 1/1;
+        align-items: center;
+    }
+}

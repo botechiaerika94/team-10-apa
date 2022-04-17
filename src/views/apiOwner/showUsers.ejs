@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="APA AFTER-NIGHT" content="BUSCADOR DE TELOS, TELOS SEARCH ENGINE, TELOS ARGENTINA, ARGENTINA, CABA, TELOS-CABA">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%- include('../partials/head.ejs')%>
+        <!--FONT AWESOME  -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <script src="https://kit.fontawesome.com/0c502158eb.js " crossorigin="anonymous "></script>
+        <link rel="stylesheet" href="/public/stylesheets/normalize.css" type="text/css" />
+        <link rel="stylesheet" href="/stylesheets/style.css" type="text/css" />
+        <link rel="stylesheet" href="/stylesheets/style_apiOwners.css" type="text/css" />
+
+        <title>APA!
+            <%= title ;%>
+        </title>
+
+</head>
+
+<body>
+    <%-include('../partials/navSocio.ejs')%>
+
+        <div class="center">
+            <section id="content">
+                <hr>
+                <h2 class="subheader text-center py-6">Lista Usuarios</h2>
+                </hr>
+                <div id="articles">
+                    <article class="article-item" id="article-template">
+                        <%for(let u of usersList){ %>
+                            <div class="image-wrap">
+                                <img src="<%=u.avatar%>" alt="Avatar  User" class="rounded" height="50px" width="130px" />
+                            </div>
+                            <h2>
+                                <%=u.user_name%>
+                            </h2>
+                            <p><strong>ID usuario:</strong>
+                                <%=u.id%>
+                            </p>
+                            <p><strong>Numero Registro Usuario:</strong>
+                                <%=u.register_user%>
+                            </p>
+
+                            <div class="btn-group btn-group-sm">
+                                <a href="/owners/editarUsuario-<%=u.register_user%>" class="btn btn-edit text-light">Editar</a>
+                                <a href="/owners/detalles-<%=u.register_user%>" class="btn btn-read">Detalles</a>
+                                <a href="/owners/deletar-<%=u.register_user%>" class="btn btn-delete">Deletar</a>
+                            </div>
+                            <div class="clearfix"></div>
+                            <hr/>
+                            <%}%>
+                    </article>
+                    <!--AÑADIR ARTICULOS VIA JS-->
+
+                </div>
+
+            </section>
+
+            <aside id="sidebar">
+                <div id="nav-blog" class="sidebar-item">
+                    <h3>Puedes hacer esto</h3>
+                    <a href="#" class="btn btn-success">Crear artículo</a>
+                </div>
+
+                <div id="search" class="sidebar-item">
+                    <h3>Buscador</h3>
+                    <p>Encuentra el artículo que buscas</p>
+                    <form>
+                        <input type="text" name="search" />
+                        <input type="submit" name="submit" value="Buscar" class="btn" />
+                    </form>
+                </div>
+            </aside>
+            <div class="clearfix"></div>
+        </div>
+        <%-include('../partials/footerSocios.ejs')%>
+
+</html>
+
+</body>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="APA AFTER-NIGHT" content="BUSCADOR DE TELOS, TELOS SEARCH ENGINE, TELOS ARGENTINA, ARGENTINA, CABA, TELOS-CABA">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%- include('../partials/head.ejs')%>
+        <!--FONT AWESOME  -->
+        <script src="https://kit.fontawesome.com/0c502158eb.js " crossorigin="anonymous "></script>
+        <link rel='stylesheet' href='/public/stylesheets/normalize.css' type="text/css">
+        <link rel='stylesheet' href='/stylesheets/style_perfilApa.css' type="text/css">
+        <!------ Include the above in your HEAD tag ---------->
+        <title>APA!
+            <%= title ;%>
+        </title>
+
+</head>
+
+
+<body>
+
+    <body>
+        <!-- HEADER INICIO -->
+        <header class="fixed-top">
+            <div class="container-fluid">
+                <div class="row justify-content-between align-items-center">
+                    <!-- Logo y barra de busqueda -->
+                    <div class="col col-lg-3 col-xl-2 d-flex align-items-center order-1">
+                        <a href="" class="logo me-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
+                            <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z"/>
+                            <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396H5.062z"/>
+                        </svg>
+                        </a>
+                        <div class="barra-busqueda d-none d-sm-block">
+                            <div class="icono">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                            </div>
+                            <input type="search" placeholder="Buscar">
+                        </div>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="menu col-12 col-lg-6 col-xl-6 text-center order-3 order-lg-2">
+                        <a href="/apa-club" class="bg-rose  ">
+                            <img src="images/svg/dash_club/asideNav00.svg" alt="icon" class="icoon">
+                        </a>
+                        <a href="/apa-club/amigos" class="bg-rose   ">
+                            <img src="images/svg/dash_club/asideNav02.svg" alt="icon" class="icoon">
+                        </a>
+                        </a>
+                        <a href="/apa-club/miPerfil " class="bg-rose  ">
+                            <img src="images/svg/dash_club/asideNav01.svg" alt="icon" class="icoon">
+                        </a>
+                        <a href="/apa-club/misReservas" class="bg-rose  ">
+                            <img src="images/svg/dash_club/asideNav03.svg" alt="icon" class="icoon">
+                        </a>
+                        <a href="/apa-club/misFavoritos" class="bg-rose  ">
+                            <img src="images/svg/dash_club/asideNav05.svg" alt="icon" class="icoon">
+                        </a>
+                    </div>
+
+                    <!-- Botones -->
+                    <nav class="botones col-auto col-lg-3 col-xl-2 text-end d-flex align-items-center justify-content-end order-2 order-lg-3">
+                        <a href="#" class="perfil">
+                            <img src="img/persona2.jpg" alt=""> APA! Ventajas
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-fill" viewBox="0 0 16 16">
+                            <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/>
+                        </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-fill" viewBox="0 0 16 16">
+                            <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z"/>
+                        </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                            <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+                        </svg>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- HEADER FINAL -->
+        <div class="container-fluid">
+            <div class="contenido-principal row justify-content-center justify-content-md-between">
+                <!-- ASIDE ENLACES RAPID IINICIO -->
+                <aside class="enlaces-rapidos col-3 col-xl-2">
+
+                    <nav>
+
+                        <a href="/apa-club" class="perfil">
+                            <img src="images/svg/dash_club/asideNav00.svg" alt="icon" class="icoon"> Home
+                        </a>
+                        <a href="/apa-club/misAmigos" class="social">
+                            <img src="images/svg/dash_club/asideNav02.svg" alt="icon" class="icoon"> Amigos
+                        </a>
+                        <a href="/apa-club/miPerfil" class="perfil">
+                            <img src="images/svg/dash_club/asideNav01.svg" alt="icon" class="icoon"> Mi Perfil
+                        </a>
+                        <a href="/apa-club/misReservas">
+                            <img src="images/svg/dash_club/asideNav03.svg" alt="icon" class="icoon"> Mis Reservas
+                        </a>
+                        <a href="/apa-club/misFavoritos">
+                            <img src="images/svg/dash_club/asideNav05.svg" alt="icon" class="icoon"> Mis Favoritos
+                        </a>
+                        <a href="/apa-club/puntaje">
+                            <img src="images/svg/dash_club/asideNav04.svg" alt="icon" class="icoon"> Mis Puntos
+                        </a>
+                        <a href="/apa-club/buscarApa">
+                            <img src="images/svg/dash_club/asideNav06.svg" alt="icon" class="icoon"> APA! Busca
+                        </a>
+
+                    </nav>
+
+                    <footer>
+                        <nav>
+                            <a href="#">Privacidad</a>
+                            <a href="#">Condiciones</a>
+                            <a href="#">Publicidad</a>
+                            <a href="#">Opciones de anuncios</a>
+                            <a href="#">Cookies</a>
+                            <a href="#">Más</a>
+                        </nav>
+                    </footer>
+                </aside>
+                <!--ASIIDE ENLACES FINAL  -->
+                <main class="col-12 col-sm-10 col-md-6 col-xxl-4">
+                    <!-- game -->
+
+                    <div id="home" class="flex-column flex-center">
+                        <h1>Estas List@?</h1>
+                        <a href="/questions" class="btn">Play</a>
+                        <a href="/ranking" id="highscore-btn" class="btn">High Scores<i class="fas fa-crown"></i
+                        ></a>
+                    </div>
+            </div>
+
+            <!-- gamee final -->
+            </main>
+
+            <aside class="contactos col-3 col-xl-2">
+                <div class="seccion">
+                    <h3 class="titulo">Publicidad</h3>
+                    <div class="publicidad">
+                        <a href="#">
+                            <img src="img/ad1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="publicidad">
+                        <a href="#">
+                            <img src="img/ad2.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="seccion">
+                    <h3 class="titulo">Contactos</h3>
+                    <nav>
+                        <a href="#" class="perfil">
+                            <img src="img/persona1.jpg" alt="">Alejandro Doe
+                        </a>
+                        <a href="#" class="perfil">
+                            <img src="img/persona3.jpg" alt="">Stephanie Doe
+                        </a>
+                        <a href="#" class="perfil">
+                            <img src="img/persona4.jpg" alt="">Cesar Doe
+                        </a>
+                        <a href="#" class="perfil">
+                            <img src="img/persona5.jpg" alt="">Manuel Doe
+                        </a>
+                    </nav>
+                </div>
+            </aside>
+        </div>
+        </div>
+
+
+    </body>
+
+</html>

@@ -4,6 +4,7 @@ const router = express.Router()
 
 
 router.get('/', enterpriseControllers.login)
+router.get('/club', enterpriseControllers.clubE)
 router.get('/cadastro', enterpriseControllers.register)
-
+router.post('/cadastro', enterpriseControllers.create)
 module.exports = router
