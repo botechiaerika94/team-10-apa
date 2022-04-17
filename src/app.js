@@ -15,9 +15,6 @@ app.use(methodOverride('_method'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }));
 
-/***********middlewares Metrics*****/
-const aMW_AGauditG = require('./middlewares/aMW_AuditG.js')
-app.use(aMW_AG);
 
 /**************require routes***************/
 const mainRouters = require('./routes/mainRoutes.js')
