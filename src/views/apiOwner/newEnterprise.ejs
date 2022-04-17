@@ -181,7 +181,43 @@
         z-index:1;
     }
 
+    footer a.tz:before{
+        content: '';
+        width: 138px;
+        height: 20px;
+        display: inline-block;
+        position: relative;
+        bottom: -3px;
+    }
 
+    footer .close{
+        position: absolute;
+        cursor: pointer;
+        width: 8px;
+        height: 8px;
+        top:10px;
+        right:10px;
+        z-index: 3;
+    }
+
+    footer #tzine-actions{
+        position: absolute;
+        top: 8px;
+        width: 500px;
+        right: 50%;
+        margin-right: -650px;
+        text-align: right;
+        z-index: 2;
+    }
+
+    footer #tzine-actions iframe{
+        display: inline-block;
+        height: 21px;
+        width: 95px;
+        position: relative;
+        float: left;
+        margin-top: 11px;
+    }
 
     @media (max-width: 1024px) {
         #bsaHolder, footer{ display:none;}
