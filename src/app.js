@@ -7,6 +7,7 @@ const path = require('path');
 const extType = path.extname('file')
 const methodOverride = require('method-override');
 const session = require('express-session');
+const metricsForEntry = require('./middlewares/metricsForEntry')
 const app = express()
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
@@ -14,14 +15,17 @@ app.set('views', path.join(__dirname, '/views'));
 app.use(express.static(path.join(__dirname, './../public')));
 
 /***********middlewares expreess*******/
-app.use(methodOverride('_method'))
-app.use(express.json())
+app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(methodOverride('_method'));
+app.use(metricsForEntry);
 app.use(session({
     secret: "myAPIAPAseccion",
     resave: true,
     saveUninitialized: true
 }));
+
+/**************APA MIDDLEWARES***************/
 
 /**************require routes***************/
 const mainRouters = require('./routes/mainRoutes.js')
