@@ -15,59 +15,222 @@
         <title>APA!
             <%= title ;%>
         </title>
+<Style>
+    /*------------------------------------
+	Simple reset and page styles
+-------------------------------------*/
 
+    * {
+        margin:0;
+        padding:0;
+    }
+
+    html{
+        background-color: #f3f3f3;
+    }
+
+    body{
+        font: normal 14px sans-serif;
+    }
+
+
+    /*------------------------------------
+        Pertinent code for the sidebar
+    -------------------------------------*/
+
+
+    #page {
+
+        /*
+             First, we set the top-level element to display:flex. By
+            default, it will orient its children horizontally. We are
+            providing -webkit- versions for Safari and iOS.
+         */
+
+        display: -webkit-flex;
+        display: flex;
+
+        /* Then, we give it a max-width and center it */
+
+        max-width:1200px;
+        margin:0 auto;
+    }
+
+    #main {
+
+        /*
+            We then set the child with the main content of
+            the page to grow automatically and take all the space
+        */
+
+        -webkit-flex-grow:1;
+        flex-grow:1;
+    }
+
+    aside{
+
+        /*
+            The sidebar wont grow automatically (flex-grow defaults to 0),
+            and has a width. We should only disable shrinking by setting
+            flex-shrink to 0.
+        */
+
+        -webkit-flex-shrink:0;
+        flex-shrink:0;
+        width:280px;
+    }
+
+
+    /*------------------------------------
+        Styling the content and sidebar
+    -------------------------------------*/
+
+
+    #main {
+        background-color:#fff;
+        padding:40px 100px 40px 40px;
+        line-height: 1.5;
+        color:#565a5c;
+    }
+
+    #main h1{
+        margin-bottom: 28px;
+        font-size: 24px;
+    }
+
+    #main p{
+        margin-bottom: 24px;
+    }
+
+    #main .wireframe-box{
+        background-color:#e2e2e2;
+        padding:200px 0;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    aside{
+        background-color:#292c2f;
+        color:#fff;
+        padding:20px;
+    }
+
+    aside .wireframe-box{
+        background-color: #37393C;
+        margin-top:20px;
+        padding:50px;
+    }
+
+    aside .wireframe-box.double{
+        padding:100px;
+    }
+
+    @media all and (max-width: 800px) {
+
+        /* On small screens, make elements show one beneath the other */
+
+        #page {
+            -webkit-flex-flow:column;
+            flex-flow:column;
+        }
+
+        /* Also make the sidebar take the entire width of the screen */
+
+        aside{
+            width:auto;
+        }
+
+        #main{
+            padding-right:40px;
+        }
+    }
+
+
+    /*------------------------------------
+        Demo footer. Ignore and remove
+    -------------------------------------*/
+
+
+    footer {
+
+        width: 770px;
+        font: normal 16px Arial, Helvetica, sans-serif;
+        padding: 15px 35px;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        margin-left: -420px;
+
+        background-color:#1f1f1f;
+        background-image:linear-gradient(to bottom, #1f1f1f, #101010);
+
+        border-radius:2px 2px 0 0;
+        box-shadow: 0 -1px 4px rgba(0,0,0,0.4);
+        z-index:1;
+    }
+
+    footer a.tz{
+        font-weight:normal;
+        font-size:16px !important;
+        text-decoration:none !important;
+        display:block;
+        margin-right: 300px;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+        color:#bfbfbf !important;
+        z-index:1;
+    }
+
+
+
+    @media (max-width: 1024px) {
+        #bsaHolder, footer{ display:none;}
+    }
+</Style>
 </head>
 
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <aside class="barra-lateral col-12 col-sm-auto p-0">
-                <div class="logo">
-                    <h2 class="py-4 m-0">Dashboard</h2>
-                </div>
-                <nav class="menu d-flex d-sm-block justify-content-center flex-wrap">
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
-                            <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
-                        </svg> Inicio
-                    </a>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text-fill" viewBox="0 0 16 16">
-                            <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1h-4z"/>
-                        </svg> Entradas
-                    </a>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
-                            <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                            <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
-                            <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
-                        </svg> Usuarios
-                    </a>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
-                            <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
-                        </svg> Configuracion
-                    </a>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
-                            <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
-                        </svg> Salir
-                    </a>
-
-                </nav>
-            </aside>
-
+<%-include ('../partials/aside-01.ejs') %>
             <main class="main col">
                 <div class="row">
                     <div class="columna col-12">
+                        <section id="page">
+                            <div id="main">
+                                <h1>Nombre Local:<br/>
+                                    <strong><!--l[i].nameL-->""</strong></h1>
+                                <p>rGL:<!--rGL[i].rGL-->"" </p>
+                                <strong class="text-secondary">|</strong> comuna: <strong>l[i].comunaID</strong>
+                                <strong class="text-secondary">|</strong> rGL: <strong> 'C'+ l[i].comunaID + 'RG' + l[i] </strong>
+                                <strong class="text-secondary">|</strong> rGL: <strong> 'C'+ l[i].comunaID + 'RG' + l[i] </strong>
+                                <p>The sidebar and the main content of the page always have an equal height, no matter which has longer content. Try it out by making the content of this element longer by duplicating the following lorem ipsum paragraphs a few times over. You will see how the sidebar adapts to the height automatically. Did we mention this example is also responsive?</p>
+
+                                <p>Morbi elementum massa faucibus ullamcorper posuere. Mauris lectus sem, scelerisque sit amet leo vitae, congue tincidunt ex. Nullam feugiat enim at massa ultricies pellentesque. Nam tempus turpis viverra, mattis diam ac, malesuada mi. Cras vitae lobortis enim, non vulputate libero. Donec sed eros sem. Vivamus nec erat ipsum. Nullam a placerat mauris, id tincidunt metus.</p>
+
+                                <p>Pellentesque quis eros dignissim, volutpat augue in, lacinia lacus. Etiam vitae nunc et risus varius placerat sed eu arcu. Sed vel tellus magna. In tempor vel nibh non congue. Praesent auctor ullamcorper metus.</p>
+
+                                <div class="wireframe-box">An image goes here.</div>
+
+                            </div>
+
+                            <aside>
+                                <div class="wireframe-box double"></div>
+                                <div class="wireframe-box double"></div>
+                                <div class="wireframe-box double"></div>
+                                <div class="wireframe-box"></div>
+                                <div class="wireframe-box"></div>
+                                <div class="wireframe-box"></div>
+                            </aside>
+
+                        </section>
+
 
                         <form action="/apaOwners/newEnterprise">
+
                             <div class="row">
                                 <div class="col-12 col-md-6 mb-3">
-                                    <label for="nameHotel" class="form-label">Nombre Empresa</label>
-                                    <input type="text" class="form-control" id="nameHotel" name="nameHotel" placeholder="Nombre Empresa" required />
+                                    <label for="nameL" class="form-label">Nombre Empresa</label>
+                                    <input type="text" class="form-control" id="nameL" name="nameL" placeholder="Nombre Empresa" required />
                                 </div>
                                 <div class="col-12 col-md-6 mb-3">
                                     <label for="emailHotel" class="form-label">Email para Envio de Propuesta</label>
@@ -119,7 +282,6 @@
                     </div>
             </main>
             </div>
-
 </body>
 
 </html>

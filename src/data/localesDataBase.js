@@ -3,10 +3,11 @@
     "nameL": "INDEX",
     "gRL": 0,
     "aL": " Ubicacion",
+    "aL2" : "Ubicacion PARKING",
     "cL": "Nombre Telo",
     "roomsL": "['habitaciones01', 'room2']",
     "dL": "descripcioon",
-    "sL": "SERVICIOS",
+    "sL" : "SERVICIOS",
     "priceL": "PRECIO - RANGO O NO ACTUALIIZADO",
     "img1": "IMG 01",
     "img2": "IMG 02",
@@ -26,6 +27,6 @@
     "img1": "https://ibb.co/LdT0b0H",
     "img2": "https://ibb.co/1XFCdH6",
     "img3": "https://ibb.co/30LJTK2",
-    "img4": "https://ibb.co/12nJbN3",
+    "img4" : "https://ibb.co/12nJbN3",
     "img5": "null"
 }]
