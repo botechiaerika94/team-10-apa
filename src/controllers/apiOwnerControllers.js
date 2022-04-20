@@ -31,7 +31,7 @@ let controller = {
         })
     },
     createLocal: (req, res) => {
-        res.render('apiOwner/newEnterprise.ejs', { title: "FORM EMPRESA" })
+        res.render('apiOwner/readLocal.ejs', { title: "FORM EMPRESA" })
     },
     storeLocal: (req, res) => {
 
