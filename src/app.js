@@ -1,7 +1,7 @@
 /***********settings****** */
 require('dotenv').config;
-const PORT = 6996;
-const port = process.env.PORT || 6996;
+const PORT = 8080;
+const port = process.env.PORT || 8080;
 const express = require('express');
 const path = require('path');
 const extType = path.extname('file');
@@ -20,11 +20,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
 //app.use(metricsForEntry);
 app.use(
-	session({
-		secret: 'myAPIAPAseccion',
-		resave: true,
-		saveUninitialized: true,
-	})
+    session({
+        secret: 'myAPIAPAseccion',
+        resave: true,
+        saveUninitialized: true,
+    })
 );
 
 /**************APA MIDDLEWARES***************/
