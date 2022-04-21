@@ -5,11 +5,14 @@ let controller = {
     staff01: (req, res) => {
         res.render('staff/staff_05', { title: 'STAFF' })
     },
-    staff02: (req, res) => {
-        res.render('staff/staff_01', { title: 'STAFF' })
+    getByReserve: (req, res) => {
+        idReserve = req.params.idReserve
+        res.render('staff/staff_01', {
+            title: 'RESERVA ' + idReserve
+        })
     },
     createID: (req, res) => {
-        res.render('staff/staff_04', {title: 'CADASTRO NUEVO STAFF'})
+        res.render('staff/staff_04', { title: 'CADASTRO NUEVO STAFF' })
     }
 }
 

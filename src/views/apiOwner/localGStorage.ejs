@@ -352,7 +352,7 @@
                             <main class="col-md-8 bg-alert">
                                 <h2 >FORM EMPRESA</h2>
                                 <div class="col-8">
-                                    <form class="form-horizontal bg-alert" method="POST" action="/apiowners/enterprise">
+                                    <form class="form-horizontal bg-alert" method="POST" action="/data/general_dataDataBase.json">
                                         <fieldset>
 
                                             <!-- Form Name -->
@@ -490,18 +490,56 @@
                                     </div>
                             </main>
 
-                            <aside class="col-md-4">
+                            <aside class="col-md-6">
+                               <%for(let l of general_data){%>
+                     <%if( l ==general_data.nameL){return%>
                                 <h3>general_data: </h3>
                                 <table class="col-12">
                                     <thead>
                                         <tr>
-                                            <th data-field="id">cod:</th>
-                                            <th data-field="name">Item Name</th>
-                                            <th data-field="price">Item Price</th>
+                                            <th data-field="legend">rgL:</th>
+                                            <th data-field=rgL"><%=l.rgL%></th>
                                         </tr>
                                     </thead>
+                                    <tbody>
+                                       <tr>
+                                            <td data-field="legend">Nombre Local:</td>
+                                            <td data-field="nameL"> <%=l.addressL%> </td>
+                                       </tr>
+                                       <tr>
+                                            <td data-field="legend">Direccion PRINCIPAL:</td>
+                                            <td data-field="addressL">
+                                               <%=l.addressL%>
+                                            </td>
+                                       </tr>
+                                       <tr> 
+                                            <td data-field="legend">Direccion PRINCIPAL:</td>
+                                            <td data-field="address2"><%=l.address2%></td>
+                                       </tr>
+                                       <tr>
+                                            <td data-field="legend">Web Page:</td>
+                                            <td data-field="webL"> <%=l.webL%> </td>
+                                       </tr>
+                                       <tr>
+                                            <td data-field="legend">telefono:</td>
+                                            <td data-field="telL">
+                                               <%=l.telL%>
+                                            </td>
+                                       </tr>
+                                       <tr> 
+                                            <td data-field="legend">SocialMidia:</td>
+                                            <td data-field="socialMidiaL"><%=l.socialMidiaL%></td>
+                                       </tr>
+                                       <tr> 
+                                            <td data-field="legend">Comuna:</td>
+                                            <td data-field="cmnL"><%=l.cmnL%></td>
+                                       </tr>
+                                       <tr> 
+                                            <td data-field="legend">Break Points:</td>
+                                            <td data-field="socialMidiaL"><%=l.breakPointL%></td>
+                                       </tr>
+                                    </tbody>
                                 </table>
-
                             </aside>
                         </section>
 

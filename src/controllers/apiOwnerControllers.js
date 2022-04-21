@@ -31,27 +31,24 @@ let controller = {
         })
     },
     createLocal: (req, res) => {
-        res.render('apiOwner/localGCreate', { title: "Form Empresa General" })
+        res.render('apiOwner/readLocal.ejs', { title: "FORM EMPRESA" })
     },
     storeLocal: (req, res) => {
 
         class CreateTelo {
             constructor() {
-                this.nameHotel = req.body.nameHotel,
-                    this.emailHotel = req.body.emailHotel,
-                    this.telephoneHotel = req.body.telephoneHotel,
-                    this.webPageHotel = req.body.webPageHotel,
-                    this.addressHotel = req.body.addressHotel,
-                    this.parkingHotel = req.body.parkingHotel,
-                    this.comuna = `Comuna: + ${req.body.comuna}`
-            }
-        }
-
-        let createTelo = new CreateTelo()
-        console.log(createTelo)
-        let newEJSON = JSON.stringify(fs.readFileSync(createTelo))
-        app.get(newEJSON, (req, res) => {
-            JSON.exports(__dirname, './../data/newEjson.json')
+                this.nameHotel = req.body.nameL,
+                    this.emailHotel = req.body.emailL,
+                    this.telephoneHotel = req.body.telL,
+                    this.webPageHotel = req.body.webL,
+                    this.addressL = req.body.addressL,
+                    this.parkingHotel =  req.body.addressL2,
+                    this.comuna = req.body.breakPointL,
+					this.breakPoint = req.body.breakPointL
+						}
+        newEJSON = new CreateTelo(newEJSON ( JSON.stringify(fs.readFileSync(createTelo))))
+        newEJSON(req.body.newEJSON => {
+            JSON.exports(__dirname, '../data/newEjson.json')
         })
     }
 }

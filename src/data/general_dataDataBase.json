@@ -1,17 +1,14 @@
 [
-	{
-		"nameL": "Nombre Empresa": string;
-		"addressL": "Direccion Principal": string;
-		"address2": "Direccion Secundaria": string;
-		"webL": "pagina WEB": string;
-		"socialMidiaL": "@Instagram, facebook, twittter": string;
-		"telL": "Telefono para Contacto": number;
-		"emailL": "E-MAIL EMPRESA": string;
-		"cmnL": null :number;
-		"breakPointL.Publicidad": true :boolean; 
-		"breakPointL.Marketing": true :boolean; 
-		"breakPointL.Automatizacion": true :boolean; 
-		"breakPointL.Facilidad": true :boolean; 
-		"rgL" : "generalDataBase.lenght++ :number": string;
-	}
+  {
+    "nameL": "Nombre Empresa",
+    "addressL": "Direccion Principal",
+    "address2": "Direccion Secundaria",
+    "webL": "pagina WEB",
+    "socialMidiaL": "@Instagram, facebook, twittter",
+    "telL": "Telefono para Contacto",
+    "emailL": "E-MAIL EMPRESA",
+    "cmnL": null,
+    "breakPointL": [],
+    "rgL": " rgL000"
+  }
 ]

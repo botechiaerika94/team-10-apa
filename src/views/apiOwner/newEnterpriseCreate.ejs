@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="APA AFTER-NIGHT" content="BUSCADOR DE TELOS, TELOS SEARCH ENGINE, TELOS ARGENTINA, ARGENTINA, CABA, TELOS-CABA">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<%- include('../partials/head.ejs')%>
+		<!--FONT AWESOME  -->
+		<script src="https://kit.fontawesome.com/0c502158eb.js " crossorigin="anonymous "></script>
+		<link rel='stylesheet' href='/public/stylesheets/normalize.css' type="text/css">
+		<link rel='stylesheet' href='/stylesheets/style.css' type="text/css">
+		<link rel='stylesheet' href='/stylesheets/style_ownersHome.css' type="text/css">
+		<!------ Include the above in your HEAD tag ---------->
+		<title>APA!
+			<%= title ;%>
+		</title>
+<Style>
+	/*------------------------------------
+	Simple reset and page styles
+-------------------------------------*/
+
+	* {
+		margin:0;
+		padding:0;
+	}
+
+	html{
+		background-color: #f3f3f3;
+	}
+
+	body{
+		font: normal 14px sans-serif;
+	}
+
+
+	/*------------------------------------
+		Pertinent code for the sidebar
+	-------------------------------------*/
+
+
+	#page {
+
+		/*
+			 First, we set the top-level element to display:flex. By
+			default, it will orient its children horizontally. We are
+			providing -webkit- versions for Safari and iOS.
+		 */
+
+		display: -webkit-flex;
+		display: flex;
+
+		/* Then, we give it a max-width and center it */
+
+		max-width:1200px;
+		margin:0 auto;
+	}
+
+	#main {
+
+		/*
+			We then set the child with the main content of
+			the page to grow automatically and take all the space
+		*/
+
+		-webkit-flex-grow:1;
+		flex-grow:1;
+	}
+
+	aside{
+
+		/*
+			The sidebar wont grow automatically (flex-grow defaults to 0),
+			and has a width. We should only disable shrinking by setting
+			flex-shrink to 0.
+		*/
+
+		-webkit-flex-shrink:0;
+		flex-shrink:0;
+		width:280px;
+	}
+
+
+	/*------------------------------------
+		Styling the content and sidebar
+	-------------------------------------*/
+
+
+	#main {
+		background-color:#fff;
+		padding:40px 100px 40px 40px;
+		line-height: 1.5;
+		color:#565a5c;
+	}
+
+	#main h1{
+		margin-bottom: 28px;
+		font-size: 24px;
+	}
+
+	#main p{
+		margin-bottom: 24px;
+	}
+
+	#main .wireframe-box{
+		background-color:#e2e2e2;
+		padding:200px 0;
+		text-align: center;
+		margin-bottom: 24px;
+	}
+
+	aside{
+		background-color:#292c2f;
+		color:#fff;
+		padding:20px;
+	}
+
+	aside .wireframe-box{
+		background-color: #37393C;
+		margin-top:20px;
+		padding:50px;
+	}
+
+	aside .wireframe-box.double{
+		padding:100px;
+	}
+
+	@media all and (max-width: 800px) {
+
+		/* On small screens, make elements show one beneath the other */
+
+		#page {
+			-webkit-flex-flow:column;
+			flex-flow:column;
+		}
+
+		/* Also make the sidebar take the entire width of the screen */
+
+		aside{
+			width:auto;
+		}
+
+		#main{
+			padding-right:40px;
+		}
+	}
+
+
+	/*------------------------------------
+		Demo footer. Ignore and remove
+	-------------------------------------*/
+
+
+	footer {
+
+		width: 770px;
+		font: normal 16px Arial, Helvetica, sans-serif;
+		padding: 15px 35px;
+		position: fixed;
+		bottom: 0;
+		left: 50%;
+		margin-left: -420px;
+
+		background-color:#1f1f1f;
+		background-image:linear-gradient(to bottom, #1f1f1f, #101010);
+
+		border-radius:2px 2px 0 0;
+		box-shadow: 0 -1px 4px rgba(0,0,0,0.4);
+		z-index:1;
+	}
+
+	footer a.tz{
+		font-weight:normal;
+		font-size:16px !important;
+		text-decoration:none !important;
+		display:block;
+		margin-right: 300px;
+		text-overflow:ellipsis;
+		white-space: nowrap;
+		color:#bfbfbf !important;
+		z-index:1;
+	}
+
+	footer a.tz:before{
+		content: '';
+		width: 138px;
+		height: 20px;
+		display: inline-block;
+		position: relative;
+		bottom: -3px;
+	}
+
+	footer .close{
+		position: absolute;
+		cursor: pointer;
+		width: 8px;
+		height: 8px;
+		top:10px;
+		right:10px;
+		z-index: 3;
+	}
+
+	footer #tzine-actions{
+		position: absolute;
+		top: 8px;
+		width: 500px;
+		right: 50%;
+		margin-right: -650px;
+		text-align: right;
+		z-index: 2;
+	}
+
+	footer #tzine-actions iframe{
+		display: inline-block;
+		height: 21px;
+		width: 95px;
+		position: relative;
+		float: left;
+		margin-top: 11px;
+	}
+
+	@media (max-width: 1024px) {
+		#bsaHolder, footer{ display:none;}
+	}
+</Style>
+</head>
+
+
+<body>
+<%-include ('../partials/aside-01.ejs') %>
+			<main class="main col mt-10">
+			<main class="main col">
+				<div class="row">
+					<div class="columna col-12">
+						<section id="page">
+							<div id="main">
+								<h1>Nombre Local:<br/>
+									<strong><!--l[i].nameL-->""</strong></h1>
+								<p>rGL:<!--rGL[i].rGL-->"" </p>
+								<strong class="text-secondary">|</strong> comuna: <strong>l[i].comunaID</strong>
+								<strong class="text-secondary">|</strong> rGL: <strong> 'C'+ l[i].comunaID + 'RG' + l[i] </strong>
+								<strong class="text-secondary">|</strong> rGL: <strong> 'C'+ l[i].comunaID + 'RG' + l[i] </strong>
+								<p>The sidebar and the main content of the page always have an equal height, no matter which has longer content. Try it out by making the content of this element longer by duplicating the following lorem ipsum paragraphs a few times over. You will see how the sidebar adapts to the height automatically. Did we mention this example is also responsive?</p>
+
+								<p>Morbi elementum massa faucibus ullamcorper posuere. Mauris lectus sem, scelerisque sit amet leo vitae, congue tincidunt ex. Nullam feugiat enim at massa ultricies pellentesque. Nam tempus turpis viverra, mattis diam ac, malesuada mi. Cras vitae lobortis enim, non vulputate libero. Donec sed eros sem. Vivamus nec erat ipsum. Nullam a placerat mauris, id tincidunt metus.</p>
+
+								<p>Pellentesque quis eros dignissim, volutpat augue in, lacinia lacus. Etiam vitae nunc et risus varius placerat sed eu arcu. Sed vel tellus magna. In tempor vel nibh non congue. Praesent auctor ullamcorper metus.</p>
+
+								<div class="wireframe-box">An image goes here.</div>
+
+							</div>
+
+							<aside>
+								<div class="wireframe-box double"></div>
+								<div class="wireframe-box double"></div>
+								<div class="wireframe-box double"></div>
+								<div class="wireframe-box"></div>
+								<div class="wireframe-box"></div>
+								<div class="wireframe-box"></div>
+							</aside>
+
+						</section>
+
+
+						<form action="/apaOwners/newEnterprise" method="post">
+
+							<div class="row">
+								<div class="col-12 col-md-6 mb-3">
+									<label for="nameL" class="form-label">Nombre Empresa</label>
+									<input type="text" class="form-control" id="nameL" name="nameL" placeholder="Nombre Empresa" required />
+								</div>
+								<div class="col-12 col-md-6 mb-3">
+									<label for="emailHotel" class="form-label">Email para Envio de Propuesta</label>
+									<input type="text" class="form-control" id="emailHotel" name="emailHotel" placeholder="email@correo.com" required />
+								</div>
+								<div class="col-12 col-md-6 mb-3">
+									<label for="telephoneHotel" class="form-label">Telefono para Contacto</label>
+									<input type="text" class="form-control" id="telephoneHotel" name="telephoneHotel" placeholder="Telefono para Contacto" />
+								</div>
+								<div class="col-12 col-md-4  mb-3">
+									<label class="form-label" for="webPageHotel">Web Site de la Empresa</label>
+									<input type="text" class="form-control" placeholder="www.web-empresa.com.ar" name="webPageHotel" id="webPageHote" />
+								</div>
+								<div class="col-12 col-md-6 mb-3">
+									<label for="addressHotel" class="form-label">Dirección para Clientes</label>
+									<input type="text" class="form-control" id="addressHotel" name="addressHotel" placeholder="nombre calle, numero, barrio, codigo postal" required />
+								</div>
+								<div class="col-12 col-md-6 mb-3">
+									<label for="parkingHotel" class="form-label">Garage-Playa Privada </label>
+									<input type="text" class="form-control" placeholder="1234 Calle Principal" name="parkingHotel" id="parkingHotel" />
+								</div>
+								<div class="row">
+									<div class="col-12 mb-3">
+										<label for="pais" class="form-label">Seleccionar Comuna</label>
+										<select name="pais" id="comuna" class="form-select">
+<option value="" selected disabled >Comuna y Barrios</option>
+<option value="1">1 - Retiro, San Nicolás, Puerto Madero, San Telmo, Montserrat y Constitución</option>
+<option value="2">2 - Recoleta</option>
+<option value="3">3 - Balvanera y San Cristóbal</option>
+<option value="4">4 - La Boca, Barracas, Parque Patricios y Nueva Pompeya.</option>
+<option value="5">5 - Almagro y Boedo</option>
+<option value="6">6 - Caballito</option>
+<option value="7">7 - Flores y Parque Chacabuco</option>
+<option value="8">8 - Villa Soldati, Villa Riachuelo, Villa Lugano</option>
+<option value="9">9- Liniers, Mataderos y Parque Avellaneda</option>
+<option value="10">10 - Villa Real, Monte Castro, Versalles, Floresta, Vélez Sarsfield y Villa Luro</option>
+<option value="11">11 - Villa General Mitre, Villa Devoto, Villa del Parque y Villa Santa Rita</option>
+<option value="12">12 - Coghlan, Saavedra, Villa Urquiza y Villa Pueyrredón.</option>
+<option value="13">13 - Núñez, Belgrano y Colegiales</option>
+<option value="14">14 - Palermo</option>
+<option value="15">15 - Chacarita, Villa Crespo, La Paternal, Villa Ortúzar, Agronomía y Parque Chas</option>
+</select>
+									</div>
+								</div>
+								<button type="button" class="btn btn-success" type="submit">ENVIAR</button>
+								<button type="button" class="btn btn-danger" type="delete">BORRAR </button>
+							</div>
+						</form>
+					</div>
+			</main>
+			</div>
+</body>
+
+</html>
