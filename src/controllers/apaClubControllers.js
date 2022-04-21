@@ -8,6 +8,11 @@ let controller = {
             title: 'Perfil del Socio'
         })
     },
+    reserveUser: (req, res) => {
+        res.render('apaClub/reserveCheckOut', {
+            title: 'Dados Check-Out RESERVA'
+        })
+    },
     buscar: (req, res) => {
         res.render('apaClub/buscarProducto', { title: 'BUSCAR' });
     },
@@ -29,4 +34,5 @@ let controller = {
     }
 
 }
+module.exports = controller
 module.exports = controller

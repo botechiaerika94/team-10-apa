@@ -1,0 +1,420 @@
+\
+<div class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col py-5 text-center">
+                <h2>Formulario de pago</h2>
+                <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ab sunt optio dolorum distinctio necessitatibus?</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-8 order-2 order-md-1 mb-3">
+                <h4 class="mb-3">Direccion de Envio</h4>
+                <form action="">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre">
+                        </div>
+                        <div class="col-12 col-sm-6 mb-3">
+                            <label for="correo" class="form-label">Correo</label>
+                            <input type="text" class="form-control" id="correo" name="correo">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="usuario" class="form-label">Usuario</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">@</span>
+                                </div>
+                                <input type="text" id="usuario" class="form-control" placeholder="Usuario">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label class="form-label" for="correo">Correo <span class="text-muted">(Opcional)</span></label>
+                            <input type="email" class="form-control" placeholder="nombre@correo.com" name="correo">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label class="form-label" for="direccion">Direccion</label>
+                            <input type="text" class="form-control" placeholder="1234 Calle Principal" name="direccion">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label class="form-label" for="direccion2">Direccion 2</label>
+                            <input type="text" class="form-control" placeholder="Interior o informacion adicional" name="direccion2">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-sm-4 mb-3">
+                            <label for="pais" class="form-label">Pais</label>
+                            <select name="pais" id="pais" class="form-select">
+								<option value="">Seleccionar Pais</option>
+								<option value="mexico">Mexico</option>
+								<option value="españa">España</option>
+								<option value="colombia">Colombia</option>
+							</select>
+                        </div>
+                        <div class="col-12 col-sm-4 mb-3">
+                            <label for="pais" class="form-label">Estado</label>
+                            <select name="pais" id="pais" class="form-select">
+								<option value="">Seleccionar Estado</option>
+								<option value="mexico">Mexico</option>
+								<option value="españa">España</option>
+								<option value="colombia">Colombia</option>
+							</select>
+                        </div>
+                        <div class="col-12 col-sm-4 mb-3">
+                            <label for="codigo-postal" class="form-label">Codigo Postal</label>
+                            <input type="text" id="codigo-postal" class="form-control">
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="misma-direccion">
+                                <label for="misma-direccion" class="form-label">Enviar a la misma direccion de facturacion</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="guardar-informacion">
+                                <label for="guardar-informacion" class="form-label">Guardar informacion para la siguiente compra</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input type="radio" name="metodo-pago" class="form-check-input" id="tarjeta-credito">
+                                <label for="tarjeta-credito" class="form-check-label">Tarjeta de Credito</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="metodo-pago" class="form-check-input" id="tarjeta-debito">
+                                <label for="tarjeta-debito" class="form-check-label">Tarjeta de Debito</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="metodo-pago" class="form-check-input" id="paypal">
+                                <label for="paypal" class="form-check-label">Paypal</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-sm-6 mb-3">
+                            <label class="form-label" for="nombre-tarjeta">Nombre en la tarjeta</label>
+                            <input type="text" id="nombre-tarjeta" class="form-control">
+                            <small class="text-muted">Nombre completo como se muestra en la tarjeta</small>
+                        </div>
+                        <div class="col-12 col-sm-6 mb-3">
+                            <label class="form-label" for="numero-tarjeta">Numero de tarjeta</label>
+                            <input type="text" id="numero-tarjeta" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6 col-sm-4 mb-3">
+                            <label class="form-label" for="tarjeta-expiracion">Expiracion</label>
+                            <input type="text" id="tarjeta-expiracion" class="form-control">
+                        </div>
+                        <div class="col-6 col-sm-4 mb-3">
+                            <label class="form-label" for="tarjeta-ccv">CVV</label>
+                            <input type="text" id="tarjeta-ccv" class="form-control">
+                        </div>
+                    </div>
+
+                    <hr class="mb-4">
+                    <input type="submit" value="Continuar al pago" class="btn btn-block btn-lg btn-primary">
+                </form>
+            </div>
+
+            <div class="col-12 col-md-4 order-1 order-md-2 mb-3">
+                <h4 class="mb-3 d-flex justify-content-between align-items-center">
+                    <span class="text-muted">Tu carrito</span>
+                    <span class="badge bg-secondary rounded-pill">3</span>
+                </h4>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between">
+                        <div>
+                            <h6 class="my-0">Nombre del Producto</h6>
+                            <small class="text-muted">Pequeña descripcion</small>
+                        </div>
+                        <span class="text-muted">$12</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <div>
+                            <h6 class="my-0">Segundo Producto</h6>
+                            <small class="text-muted">Pequeña Descripcion</small>
+                        </div>
+                        <span class="text-muted">$8</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <div>
+                            <h6 class="my-0">Tercer Producto</h6>
+                            <small class="text-muted">Pequeña Descripcion</small>
+                        </div>
+                        <span class="text-muted">$5</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between bg-light">
+                        <div class="text-success">
+                            <h6 class="my-0">Codigo de descuento</h6>
+                            <small class="text-success">CUPONEJEMPLO</small>
+                        </div>
+                        <span class="text-success">$-5</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Total (USD)</span>
+                        <strong>$20</strong>
+                    </li>
+                </ul>
+
+                <form action="" class="card p-2">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Cupon">
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary">Canjear</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer class="row my-5 py-5 text-muted text-center text-small">
+            <div class="col">
+                <p class="mb-1">© 2020-2021 Company Name</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="#">Privacidad</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">Terminos y Condiciones</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">Soporte</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div> <input type="checkbox" class="form-check-input" id="guardar-informacion">
+    <label for="guardar-informacion" class="form-label">Guardar informacion para la siguiente compra</label>
+</div>
+</div>
+</div>
+
+<hr>
+
+<div class="row mb-3">
+    <div class="col-12">
+        <div class="form-check">
+            <input type="radio" name="metodo-pago" class="form-check-input" id="tarjeta-credito">
+            <label for="tarjeta-credito" class="form-check-label">Tarjeta de Credito</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" name="metodo-pago" class="form-check-input" id="tarjeta-debito">
+            <label for="tarjeta-debito" class="form-check-label">Tarjeta de Debito</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" name="metodo-pago" class="form-check-input" id="paypal">
+            <label for="paypal" class="form-check-label">Paypal</label>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12 col-sm-6 mb-3">
+        <label class="form-label" for="nombre-tarjeta">Nombre en la tarjeta</label>
+        <input type="text" id="nombre-tarjeta" class="form-control">
+        <small class="text-muted">Nombre completo como se muestra en la tarjeta</small>
+    </div>
+    <div class="col-12 col-sm-6 mb-3">
+        <label class="form-label" for="numero-tarjeta">Numero de tarjeta</label>
+        <input type="text" id="numero-tarjeta" class="form-control">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6 col-sm-4 mb-3">
+        <label class="form-label" for="tarjeta-expiracion">Expiracion</label>
+        <input type="text" id="tarjeta-expiracion" class="form-control">
+    </div>
+    <div class="col-6 col-sm-4 mb-3">
+        <label class="form-label" for="tarjeta-ccv">CVV</label>
+        <input type="text" id="tarjeta-ccv" class="form-control">
+    </div>
+</div>
+
+<hr class="mb-4">
+<input type="submit" value="Continuar al pago" class="btn btn-block btn-lg btn-primary">
+</form>
+</div>
+
+<div class="col-12 col-md-4 order-1 order-md-2 mb-3">
+    <h4 class="mb-3 d-flex justify-content-between align-items-center">
+        <span class="text-muted">Tu carrito</span>
+        <span class="badge bg-secondary rounded-pill">3</span>
+    </h4>
+    <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between">
+            <div>
+                <h6 class="my-0">Nombre del Producto</h6>
+                <small class="text-muted">Pequeña descripcion</small>
+            </div>
+            <span class="text-muted">$12</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+            <div>
+                <h6 class="my-0">Segundo Producto</h6>
+                <small class="text-muted">Pequeña Descripcion</small>
+            </div>
+            <span class="text-muted">$8</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+            <div>
+                <h6 class="my-0">Tercer Producto</h6>
+                <small class="text-muted">Pequeña Descripcion</small>
+            </div>
+            <span class="text-muted">$5</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between bg-light">
+            <div class="text-success">
+                <h6 class="my-0">Codigo de descuento</h6>
+                <small class="text-success">CUPONEJEMPLO</small>
+            </div>
+            <span class="text-success">$-5</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+            <span>Total (USD)</span>
+            <strong>$20</strong>
+        </li>
+    </ul>
+
+    <form action="" class="card p-2">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Cupon">
+            <div class="input-group-append">
+                <button class="btn btn-secondary">Canjear</button>
+            </div>
+        </div>
+    </form>
+</div>
+</div>
+</div>
+<!--ASIIDE ENLACES FINAL  -->
+<main class="col-12 col-sm-10 col-md-6 col-xxl-4">
+    <!-- DIV PUBLICAR INICIO -->
+    <div class="publicar">
+        <div class="formulario">
+            <h5> Especiales para:</h5>
+            <br/>
+            <hr/>
+            <h3>@user_name</h3>
+        </div>
+        <div class="botones d-flex ">
+            <a href="#" class="active-link">
+                <span class="text-light">
+                <i class="bi bi-balloon-fill"></i>  APA!Indica</span>
+            </a>
+            <a href="# ">
+                <span class="text-light">
+                <i class="bi bi-chat-heart"></i> Menor Precio</span>
+            </a>
+            <a href=" ">
+                <span><i class="bi bi-award"></i> + Puntuados</span>
+            </a>
+        </div>
+    </div>
+    <!-- DIV PUBLIC AR FIN -->
+    <div class="publicaciones">
+        <div class="publicacion">
+            <div class="header">
+                <a class="foto" href="#">
+                    <img src="img/persona3.jpg" alt="">
+                </a>
+                <div class="datos">
+                    <a class="nombre" href="#">Stephanie Doe</a>
+                    <a class="hora" href="#">1hr</a>
+                </div>
+            </div>
+            <div class="body">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <img src="img/paisaje1.jpg" alt="">
+            </div>
+            <div class="comentarios d-flex justify-content-between">
+                <div class="me-gusta d-flex justify-content-start align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                        </svg>
+                    <span>60</span>
+                </div>
+                <a href="#">7 comentarios</a>
+            </div>
+            <div class="botones  d-flex">
+                <button class="me-gusta">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
+                            <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111L8.864.046zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
+                        </svg>
+                        Me gusta
+                    </button>
+                <button class="comentar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left" viewBox="0 0 16 16">
+                            <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                        </svg>
+                        Comentar
+                    </button>
+            </div>
+        </div>
+        <footer class="row my-5 py-5 text-muted text-center text-small">
+            <div class="col">
+                <p class="mb-1">© 2020-2021 Company Name</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="#">Privacidad</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">Terminos y Condiciones</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">Soporte</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <div class="seccion">
+        <h3 class="titulo">Contactos</h3>
+        <nav>
+            <a href="#" class="perfil">
+                <img src="img/persona1.jpg" alt="">Alejandro Doe
+            </a>
+            <a href="#" class="perfil">
+                <img src="img/persona3.jpg" alt="">Stephanie Doe
+            </a>
+            <a href="#" class="perfil">
+                <img src="img/persona4.jpg" alt="">Cesar Doe
+            </a>
+            <a href="#" class="perfil">
+                <img src="img/persona5.jpg" alt="">Manuel Doe
+            </a>
+        </nav>
+    </div>
+    </aside>
+    </div>
+    </div>
+
+    </body>
+
+    </html>

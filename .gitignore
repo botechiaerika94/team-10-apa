@@ -11,3 +11,4 @@ config.codekit3
 .vscode/extensions.json
 .vscode
 node_modules
+notes
