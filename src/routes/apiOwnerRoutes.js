@@ -5,6 +5,6 @@ router.get('/', apiOwnerControllers.dashAPA);
 router.get('/sociosApa', apiOwnerControllers.list);
 router.get('/sociosApa/perfil-:register_user', apiOwnerControllers.showUbyID);
 router.get('/enterprise', apiOwnerControllers.listLocals);
-router.get('/newEnterprise', apiOwnerControllers.createLocal);
-router.post('/enterprise/:rgL', apiOwnerControllers.storeLocal);
+//router.get('/newEnterprise', apiOwnerControllers.createLocal);
+//router.post('/enterprise/:rgL', apiOwnerControllers.storeLocal);
 module.exports = router;

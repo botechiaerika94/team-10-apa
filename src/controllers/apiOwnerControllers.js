@@ -26,30 +26,29 @@ let controller = {
     listLocals: (req, res) => {
         let rgL = req.params.rgL;
         res.render('apiOwner/showLocals', {
-            title: 'listar Locales',
-            localsList: localsList
-        })
-    },
-    createLocal: (req, res) => {
-        res.render('apiOwner/readLocal.ejs', { title: "FORM EMPRESA" })
-    },
-    storeLocal: (req, res) => {
-
-        class CreateTelo {
-            constructor() {
-                this.nameHotel = req.body.nameL,
-                    this.emailHotel = req.body.emailL,
-                    this.telephoneHotel = req.body.telL,
-                    this.webPageHotel = req.body.webL,
-                    this.addressL = req.body.addressL,
-                    this.parkingHotel =  req.body.addressL2,
-                    this.comuna = req.body.breakPointL,
-					this.breakPoint = req.body.breakPointL
-						}
-        newEJSON = new CreateTelo(newEJSON ( JSON.stringify(fs.readFileSync(createTelo))))
-        newEJSON(req.body.newEJSON => {
-            JSON.exports(__dirname, '../data/newEjson.json')
-        })
+                title: 'listar Locales',
+                localsList: localsList
+            })
+            /* 
+            //    createLocal: (req, res) => {
+            //        res.render('apiOwner/readLocal.ejs', { title: "FORM EMPRESA" })
+            //    },
+            //    storeLocal: (req, res) => {
+            //
+            //        class CreateTelo {
+            //            constructor() {
+            //                this.nameHotel = req.body.nameL,
+            //                    this.emailHotel = req.body.emailL,
+            //                    this.telephoneHotel = req.body.telL,
+            //                    this.webPageHotel = req.body.webL,
+            //                    this.addressL = req.body.addressL,
+            //                    this.parkingHotel =  req.body.addressL2,
+            //                    this.comuna = req.body.breakPointL,
+            //					this.breakPoint = req.body.breakPointL
+            //						}
+            //        newEJSON = new CreateTelo(newEJSON ( JSON.stringify(fs.readFileSync(createTelo))))
+            //        newEJSON(req.body.newEJSON => {
+            //            JSON.exports(__dirname, '../data/newEjson.json') })*/
     }
 }
 module.exports = controller
