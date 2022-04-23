@@ -4,13 +4,14 @@ const PORT = 8080;
 const port = process.env.PORT || 8080;
 const express = require('express');
 const path = require('path');
-const extType = path.extname('file');
+//const extType = path.extname('file');
 const methodOverride = require('method-override');
 const session = require('express-session');
+l
 //const metricsForEntry = require('./middlewares/metricsForEntry');
 const app = express();
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, '/views'));
+//app.set('views', path.join(__dirname, '/views'));
 /***********static  files***************************/
 app.use(express.static(path.join(__dirname, './../public')));
 
