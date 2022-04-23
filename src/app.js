@@ -1,11 +1,11 @@
 /***********settings****** */
 //require('dotenv').config;
-const PORT = 8080;
-const port = process.env.PORT || 8080;
+const PORT = 6996;
+const port = process.env.PORT || 6996;
 const express = require('express');
 const path = require('path');
 //const extType = path.extname('file');
-const methodOverride = require('method-override');
+//const methodOverride = require('method-override');
 
 const app = express();
 app.set('view engine', 'ejs');
@@ -16,8 +16,8 @@ app.use(express.static(path.join(__dirname, './../public')));
 /***********middlewares expreess*******/
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(methodOverride('_method'));
-app.use(metricsForEntry);
+//app.use(methodOverride('_method'));
+//app.use(metricsForEntry);
 //app.use(
 //    session({
 //        secret: 'myAPIAPAseccion',
@@ -32,7 +32,7 @@ app.use(metricsForEntry);
 const mainRouters = require('./routes/mainRoutes.js');
 const apaClubRouter = require('./routes/apaClubRoutes.js');
 const usersRouter = require('./routes/usersRoutes.js');
-const productsRouter = require('./routes/productsRoutes.js');
+//const productsRouter = require('./routes/productsRoutes.js');
 const enterpriseRouter = require('./routes/enterpriseRoutes.js');
 const apiOwnerRouter = require('./routes/apiOwnerRoutes.js');
 //const searchRouter = require('./routes/searchRoutes.js');
@@ -42,7 +42,7 @@ const staffRouter = require('./routes/staffRoutes.js');
 app.use('/', mainRouters);
 app.use('/apa-club', apaClubRouter);
 app.use('/usuarios', usersRouter);
-app.use('/telos', productsRouter);
+//app.use('/telos', productsRouter);
 app.use('/empresas', enterpriseRouter);
 app.use('/ApaOwners', apiOwnerRouter);
 //app.use('/buscarTelos', searchRouter);
