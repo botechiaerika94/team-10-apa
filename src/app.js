@@ -1,9 +1,11 @@
 /***********settings****** */
-//require('dotenv').config;
+
 const PORT = 6996;
 const port = process.env.PORT || 6996;
 const express = require('express');
 const path = require('path');
+
+
 //const extType = path.extname('file');
 //const methodOverride = require('method-override');
 
