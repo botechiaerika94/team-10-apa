@@ -11,3 +11,4 @@ let controller = {
 	},
 };
 module.exports = controller;
+/*Alternativa correta! Pode se classificar o grau em binário ou terciário, em relação ao número de entidades.*/

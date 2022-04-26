@@ -37,7 +37,7 @@ const usersRouter = require('./routes/usersRoutes.js');
 //const productsRouter = require('./routes/productsRoutes.js');
 const enterpriseRouter = require('./routes/enterpriseRoutes.js');
 const apiOwnerRouter = require('./routes/apiOwnerRoutes.js');
-//const searchRouter = require('./routes/searchRoutes.js');
+const searchRouter = require('./routes/searchRoutes.js');
 const gameAIRouter = require('./routes/gameAIRoutes.js');
 const staffRouter = require('./routes/staffRoutes.js');
 /**************define end points***************/

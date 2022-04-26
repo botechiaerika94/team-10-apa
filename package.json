@@ -4,9 +4,10 @@
     "description": "grupo 10 apa api",
     "main": "./src/app.js",
     "scripts": {
-        "test": "mocha ./src/app.js",
+      
         "start": "node ./src/app.js",
-        "dev": "nodemon ./src/app.js"
+        "dev": "nodemon ./src/app.js",
+        "test": "mocha ./src/app.js",
     },
     "repository": {
         "type": "git"
